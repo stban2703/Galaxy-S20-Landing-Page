@@ -1,17 +1,11 @@
-* {
-    margin:0;
-    padding:0;
-    border:0;
-    /*outline:0;*/
-    font-size:100%;
-    /*vertical-align:baseline;*/
-    background:transparent;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.header {
+    width: 100%;
+    padding: 20px 100px;
 }
 
-.mainHead {
-    width: 100%;
-    height: 57px;
-    padding: 0 5%;
+.header--main {
     background-color: #23374D;
     display: flex;
     flex-direction: row;
@@ -22,46 +16,97 @@
     box-sizing: border-box; 
 }
 
-.mainHead__navText {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.mainHead__navText a {
-    text-decoration: none;
-    color: white;
-}
-
-.mainHead__navIcon {
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.subHead {
-    position: absolute;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65625) 41.15%, rgba(0, 0, 0, 0.487832) 67.19%, rgba(0, 0, 0, 0) 100%);
-    color: white;
-    width: 100%;
-    height: 76px;
+.nav--text {
+    width: 600px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.subHead a {
-    text-decoration: none;
+.nav--icon {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header--sub {
+    position: absolute;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65625) 41.15%, rgba(0, 0, 0, 0.487832) 67.19%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button--blue {
+    background-color: #1089FF;
     color: white;
 }
 
-.subHead button {
-    color: white;
+.button--big {
+    width: 100%;
+    font-size: 2.5rem;
 }
 
 .intro {
-    background: radial-gradient(66.55% 50% at 50% 50%, #273788 0%, #094F94 0.01%, #0A0A0E 71.64%, #000000 87.58%);
+    background: radial-gradient(70% 45% at 50% 50%, #273788 0%, #094F94 0.01%, #0A0A0E 71.64%, #000000 87.58%);
+    padding: 400px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__icon {
+    max-width: none;
+    width: 25px;
+}
+
+.header__name {
+    font-size: 1.25em;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.header__text {
+    font-family: 'Open Sans';
+    color: white;
+}
+
+.header__button {
+    font-size: 1em;
+    border-style: none;
+    border-radius: 40px;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+.intro__button {
+    border-style: none;
+    border-radius: 40px;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+.intro__image {
+    height: 100vh;
+}
+
+.intro__info {
+    padding-left: 50px;
+    max-width: 600px;
+}
+
+.intro__text {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    color: white;
 }

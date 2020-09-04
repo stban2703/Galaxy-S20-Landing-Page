@@ -5,45 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung Galaxy S20</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/landStyle.css">
 </head>
 
 <body>
 
-    <header class="mainHead">
-        <img src="./src/icons/logo.svg" alt="Logo">
-        <nav class="mainHead__navText">
-            <a href="">Smathphone</a>
-            <a href="">Tablets</a>
-            <a href="">Watches</a>
-            <a href="">Accesorios</a>
-            <a href="">Oferta</a>
-            <a href="">Soporte</a>
+    <header class="header header--main">
+        <img class="header__logo" src="./src/icons/logo.svg" alt="Logo">
+        <nav class="header__nav nav--text">
+            <a class="header__text" href="">Smathphone</a>
+            <a class="header__text" href="">Tablets</a>
+            <a class="header__text" href="">Watches</a>
+            <a class="header__text" href="">Accesorios</a>
+            <a class="header__text" href="">Oferta</a>
+            <a class="header__text" href="">Soporte</a>
         </nav>
 
-        <nav class="mainHead__navIcon">
-            <img src="./src/icons/usericon.svg" alt="userIcon">
-            <img src="./src/icons/shopcarticon.svg" alt="shopCartIcon">
-            <img src="./src/icons/searchicon.svg" alt="searchIcon">
+        <nav class="header__nav nav--icon">
+            <img class="header__icon" src="./src/icons/usericon.svg" alt="userIcon">
+            <img class="header__icon" src="./src/icons/shopcarticon.svg" alt="shopCartIcon">
+            <img class="header__icon" src="./src/icons/searchicon.svg" alt="searchIcon">
         </nav>
     </header>
 
     <main>
-        <header class="subHead">
-            <h1>Galaxy S20 ULTRA</h1>
-            <nav class="subHead__Nav">
-                <a href="">Descripción</a>
-                <a href="">Imágenes y videos</a>
-                <a href="">Especificaciones</a>
-                <button>Comprar</button>
+        <header class="header header--sub">
+            <h1 class="header__name">Galaxy S20 ULTRA</h1>
+            <nav class="header__nav nav--text">
+                <a class="header__text" href="">Descripción</a>
+                <a class="header__text" href="">Imágenes y videos</a>
+                <a class="header__text" href="">Especificaciones</a>
+                <button class="header__button button--blue">Comprar</button>
             </nav>
         </header>
 
 
         <figure class="intro">
-            <img src="./src/images/galaxys20figure.png" alt="Galaxy S20">
-            <p>Potencia, almacenamiento, seguridad, duración y resolución 8K a la palma de tu mano.</p>
-            <button>Comprar ahora</button>
+            <img class="intro__image" src="./src/images/galaxys20figure.png" alt="Galaxy S20">
+            <section class="intro__info">
+                <p class="intro__text">Potencia, almacenamiento, seguridad, duración y resolución 8K a la palma de tu
+                    mano.</p>
+                <button class="intro__button button--big button--blue">Comprar ahora</button>
+            </section>
         </figure>
     </main>
 
