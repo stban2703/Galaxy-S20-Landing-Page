@@ -26,9 +26,9 @@ $button-radius: 40px;
 
 @import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import "headerStyle";
-@import "productnavStyle";
-@import "bannerStyle";
+@import "header";
+@import "productnav";
+@import "banner";
 
 .benefits {
     background-color: black;

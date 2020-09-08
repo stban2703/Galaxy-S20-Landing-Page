@@ -262,7 +262,7 @@ input[type=button] {
           justify-content: space-between;
 }
 
-.header__products-services {
+.header__nav .header__products-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,27 +275,27 @@ input[type=button] {
           align-items: center;
 }
 
-.header__log-shop-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__item {
+.header__nav .header__products-services .header__item {
   margin: 0 10px;
   font-size: 1rem;
   font-family: "Open Sans";
   color: white;
 }
 
-.header__icon {
+.header__nav .header__log-shop-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav .header__log-shop-search .header__icon {
   max-width: none;
   margin: 0 10px;
   width: 25px;
@@ -334,14 +334,14 @@ input[type=button] {
   margin-left: auto;
 }
 
-.product-nav__item {
+.product-nav__sections .product-nav__item {
   font-size: 1rem;
   font-family: "Open Sans";
   color: white;
   margin: 0 10px;
 }
 
-.product-nav__button {
+.product-nav__sections .product-nav__button {
   background-color: #1089ff;
   color: white;
   font-size: 1rem;
@@ -373,24 +373,24 @@ input[type=button] {
 }
 
 .banner__image {
-  max-height: 600px;
+  max-height: 550px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin: 0 30px;
+  margin: 0 25px;
 }
 
 .banner__info {
-  max-width: 55%;
+  max-width: 550px;
 }
 
-.banner__desc {
+.banner__info .banner__desc {
   font-size: 2.7rem;
   font-weight: bold;
   font-family: "Open Sans";
   color: white;
 }
 
-.banner__button {
+.banner__info .banner__button {
   width: 100%;
   margin-top: 20px;
   background-color: #1089ff;
@@ -407,4 +407,95 @@ input[type=button] {
   font-size: 2em;
   padding: 15px 40px;
 }
-/*# sourceMappingURL=bannerStyle.css.map */
+
+.benefits {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 10vw;
+}
+
+.benefits__content {
+  margin: 50px 50px;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits__content .benefits__icon {
+  height: 85px;
+}
+
+.benefits__content .benefits__name {
+  font-family: "Open Sans";
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.phone-views {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.phone-views__desc {
+  font-size: 2.7rem;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: bold;
+  max-width: 500px;
+  margin-left: 100px;
+}
+
+.phone-views__image {
+  max-height: 650px;
+  margin-left: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.feature__intro .feature__image {
+  width: 100%;
+}
+
+.feature__intro .feature__desc {
+  color: black;
+  font-family: "Open Sans";
+}
+/*# sourceMappingURL=landing.css.map */
