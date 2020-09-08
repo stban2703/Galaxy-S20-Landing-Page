@@ -5,77 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung Galaxy S20</title>
-    <!--<link rel="stylesheet" href="./src/styles/reset.css">
-    <link rel="stylesheet" href="./src/styles/landStyle.css">--> 
+    <link rel="stylesheet" href="./src/styles/landingStyles.css">
 </head>
 
 <body>
 
-    <header class="header header--main">
-        <img class="header__logo" src="./src/icons/logoicon.svg" alt="Logo">
-        <nav class="header__nav nav--text">
-            <a class="header__text" href="">Smathphone</a>
-            <a class="header__text" href="">Tablets</a>
-            <a class="header__text" href="">Watches</a>
-            <a class="header__text" href="">Accesorios</a>
-            <a class="header__text" href="">Oferta</a>
-            <a class="header__text" href="">Soporte</a>
-        </nav>
-
-        <nav class="header__nav nav--icon">
-            <img class="header__icon" src="./src/icons/usericon.svg" alt="User icon">
-            <img class="header__icon" src="./src/icons/shopcarticon.svg" alt="Shopping cart icon">
-            <img class="header__icon" src="./src/icons/searchicon.svg" alt="Search icon">
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__main-page" src="./src/icons/logoicon.svg" alt="Logo">
+            <section class="header__products-services">
+                <a class="header__section" href="">Smathphone</a>
+                <a class="header__section" href="">Tablets</a>
+                <a class="header__section" href="">Watches</a>
+                <a class="header__section" href="">Accesorios</a>
+                <a class="header__section" href="">Oferta</a>
+                <a class="header__section" href="">Soporte</a>
+            </section>
+            <section class="header__log-shop-search">
+                <img class="header__icon" src="./src/icons/usericon.svg" alt="User icon">
+                <img class="header__icon" src="./src/icons/shopcarticon.svg" alt="Shopping cart icon">
+                <img class="header__icon" src="./src/icons/searchicon.svg" alt="Search icon">
+            </section>
         </nav>
     </header>
 
     <main>
-        <header class="header header--sub">
-            <h1 class="header__name">Galaxy S20 ULTRA</h1>
-            <nav class="header__nav nav--text">
-                <a class="header__text" href="">Descripción</a>
-                <a class="header__text" href="">Imágenes y videos</a>
-                <a class="header__text" href="">Especificaciones</a>
-                <button class="header__button button--blue">Comprar</button>
-            </nav>
-        </header>
-
-
-        <figure class="intro">
-            <img class="intro__image" src="./src/images/galaxys20figure.png" alt="Galaxy S20">
-            <section class="intro__info">
-                <p class="intro__desc">Potencia, almacenamiento, seguridad, duración y resolución 8K a la palma de tu
-                    mano.</p>
-                <button class="intro__button button--big button--blue">Comprar ahora</button>
+        <nav class="product-nav">
+            <h1 class="product-nav__name">Galaxy S20 ULTRA</h1>
+            <section class="product-nav__sections">
+                <a class="product-nav__section" href="">Descripción</a>
+                <a class="product-nav__section" href="">Imágenes y videos</a>
+                <a class="product-nav__section" href="">Especificaciones</a>
+                <button class="product-nav__button">Comprar</button>
             </section>
-        </figure>
+        </nav>
+
+
+        <article class="banner">
+            <img class="banner__image" src="./src/images/galaxys20figure.png" alt="Galaxy S20">
+            <section class="banner__info">
+                <p class="banner__desc">Potencia, almacenamiento, seguridad, duración y resolución 8K a la palma de tu
+                    mano.</p>
+                <button class="banner__button">Comprar ahora</button>
+            </section>
+        </article>
 
         <article class="benefits">
-            <section class="benefits__content">
+            <section class="benefits__item">
                 <img class="benefits__icon" src="./src/icons/8kicon.svg" alt="8k icon">
                 <h2 class="benefits__name">Ultra Hi-Definition</h2>
             </section>
             <section class="benefits__content">
-                <img class="benefits__icon" src="./src/icons/knoxicon.svg" alt="Knox icon">
+                <img class="benefits__item" src="./src/icons/knoxicon.svg" alt="Knox icon">
                 <h2 class="benefits__name">Seguridad Knox</h2>
             </section>
             <section class="benefits__content">
-                <img class="benefits__icon" src="./src/icons/batteryicon.svg" alt="Battery icon">
+                <img class="benefits__item" src="./src/icons/batteryicon.svg" alt="Battery icon">
                 <h2 class="benefits__name">Bateria inteligente</h2>
             </section>
             <section class="benefits__content">
-                <img class="benefits__icon" src="./src/icons/processoricon.svg" alt="Processor icon">
+                <img class="benefits__item" src="./src/icons/processoricon.svg" alt="Processor icon">
                 <h2 class="benefits__name">Procesador más potente</h2>
             </section>
             <section class="benefits__content">
-                <img class="benefits__icon" src="./src/icons/storageicon.svg" alt="Storage icon">
+                <img class="benefits__item" src="./src/icons/storageicon.svg" alt="Storage icon">
                 <h2 class="benefits__name">Almacenamiento masivo</h2>
             </section>
         </article>
 
-        <article class="views">
-            <h2 class="views__desc">Un celular con una cámara diseñada para darte una experiencia jamas vista.</h2>
-            <img class="views__image" src="./src/images/phonesviews.png" alt="Galaxy S20 views">
+        <article class="phone-views">
+            <h2 class="phone-views__desc">Un celular con una cámara diseñada para darte una experiencia jamas vista.</h2>
+            <img class="phone-views__image" src="./src/images/phonesviews.png" alt="Galaxy S20 views">
         </article>
 
         <article class="camera-mp">
@@ -83,9 +83,7 @@
                 <img src="" alt="Background">
                 <img src="" alt="108MP">
             </section>
-            <p class="camera-mp__desc">
-
-            </p>
+            <p class="camera-mp__desc"></p>
         </article>
     </main>
 </body>
