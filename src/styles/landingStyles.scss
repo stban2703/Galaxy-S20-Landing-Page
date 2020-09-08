@@ -12,10 +12,14 @@ $main-gradient: radial-gradient(70% 45% at 50% 50%, #273788 0%, #094f94 0.01%, #
 
 $header-font-size: 1rem;
 $name-font-size: 1.1rem;
+$banner-font-size: 2.7rem;
 
 $header-margin: 0 10px;
 $header-padding: 20px 100px;
+$banner-padding: 70px 150px;
 $button-padding: 10px 40px;
+$big-button-padding: 15px 40px;
+$banner-image-maxh: 550px;
 
 $icon-width: 25px;
 $button-radius: 40px;
@@ -24,39 +28,7 @@ $button-radius: 40px;
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import "headerStyle";
 @import "productnavStyle";
-
-.banner {
-    background: $main-gradient;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    &__image {
-        height: 750px;
-    }
-
-    &__desc {
-        font-size: 2.7rem;
-        font-weight: bold;
-        font-family: "Open Sans";
-        color: white;
-    }
-
-    &__button {
-        background-color: $light-blue;
-        color: $main-font-color;
-        font-size: $header-font-size;
-        border-style: none;
-        border-radius: $button-radius;
-        padding: $button-padding;
-        font-weight: bold;
-        font-family: "Open Sans";
-        border-style: none;
-        display: none;
-    }
-}
+@import "bannerStyle";
 
 .benefits {
     background-color: black;
@@ -65,37 +37,62 @@ $button-radius: 40px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0px 10vw;
+
+    &__content {
+        margin: 50px 50px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .benefits__icon {
+            height: 85px;
+        }
+
+        .benefits__name {
+            font-family: "Open Sans";
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+    }
 }
 
-.benefits__content {
-    margin: 50px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.benefits__icon {
-    height: 85px;
-}
-
-.benefits__name {
-    font-family: "Open Sans";
-    font-size: 24px;
-    text-align: center;
-    color: white;
-}
-
-.views {
+.phone-views {
     background-color: black;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px;
+
+    &__desc {
+        font-size: $banner-font-size;
+        color: white;
+        font-family: "Open Sans";
+        font-weight: bold;
+        max-width: 500px;
+        margin-left: 100px;
+    }
+
+    &__image {
+        max-height: 650px;
+        margin-left: auto;
+        object-fit: contain;
+    }
 }
 
-.views__desc {
-    color: white;
-    font-family: "Open Sans";
-    font-weight: bold;
+.feature {
+    &__intro {
+        .feature__image {
+            width: 100%;
+        }
+
+        .feature__desc {
+            color: black;
+            font-family: "Open Sans";
+        }
+    }
 }

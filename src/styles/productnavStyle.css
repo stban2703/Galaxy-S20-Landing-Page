@@ -27,10 +27,15 @@
   color: white;
 }
 
-.product-nav__section {
+.product-nav__sections {
+  margin-left: auto;
+}
+
+.product-nav__item {
   font-size: 1rem;
   font-family: "Open Sans";
   color: white;
+  margin: 0 10px;
 }
 
 .product-nav__button {

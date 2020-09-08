@@ -1,0 +1,49 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "headerStyle";
+@import "productnavStyle";
+
+.banner {
+    background: $main-gradient;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: $banner-padding;
+
+    &__image {
+        max-height: $banner-image-maxh;
+        object-fit: contain;
+        margin: 0 25px;
+    }
+
+    &__info {
+        max-width: 550px;
+
+        .banner__desc {
+            font-size: $banner-font-size;
+            font-weight: bold;
+            font-family: "Open Sans";
+            color: white;
+        }
+
+        .banner__button {
+            width: 100%;
+            margin-top: 20px;
+            background-color: $light-blue;
+            color: $main-font-color;
+            font-size: $header-font-size;
+            border-style: none;
+            border-radius: $button-radius;
+            padding: $button-padding;
+            font-weight: bold;
+            font-family: "Open Sans";
+        }
+    }
+
+    .button--big {
+        font-size: 2em;
+        padding: $big-button-padding;
+    }
+}

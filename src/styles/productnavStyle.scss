@@ -1,25 +1,3 @@
-$main-blue: #23374d;
-$light-blue: #1089ff;
-$main-font-color: white;
-$nav-gradient: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.65625) 41.15%,
-    rgba(0, 0, 0, 0.487832) 67.19%,
-    rgba(0, 0, 0, 0) 100%
-);
-$main-gradient: radial-gradient(70% 45% at 50% 50%, #273788 0%, #094f94 0.01%, #0a0a0e 71.64%, #000000 87.58%);
-
-$header-font-size: 1rem;
-$name-font-size: 1.1rem;
-
-$header-margin: 0 10px;
-$header-padding: 20px 100px;
-$button-padding: 10px 40px;
-
-$icon-width: 25px;
-$button-radius: 40px;
-
 .product-nav {
     width: 100%;
     padding: 20px 100px;
@@ -38,20 +16,25 @@ $button-radius: 40px;
         color: $main-font-color;
     }
 
-    &__section {
-        font-size: $header-font-size;
-        font-family: "Open Sans";
-        color: $main-font-color;
-    }
+    &__sections {
+        margin-left: auto;
 
-    &__button {
-        background-color: $light-blue;
-        color: $main-font-color;
-        font-size: $header-font-size;
-        border-style: none;
-        border-radius: $button-radius;
-        padding: $button-padding;
-        font-weight: bold;
-        font-family: "Open Sans";
+        .product-nav__item {
+            font-size: $header-font-size;
+            font-family: "Open Sans";
+            color: $main-font-color;
+            margin: $header-margin;
+        }
+
+        .product-nav__button {
+            background-color: $light-blue;
+            color: $main-font-color;
+            font-size: $header-font-size;
+            border-style: none;
+            border-radius: $button-radius;
+            padding: $button-padding;
+            font-weight: bold;
+            font-family: "Open Sans";
+        }
     }
 }
