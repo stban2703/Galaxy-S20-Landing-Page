@@ -7,30 +7,30 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
 
-        .header__products-services {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+    &__products-services {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
-            .header__item {
-                margin: $header-margin;
-                font-size: $header-font-size;
-                font-family: "Open Sans";
-                color: $main-font-color;
-            }
-        }
+    &__item {
+        margin: $header-margin;
+        font-size: $header-font-size;
+        font-family: $main-font;
+        color: $main-font-color;
+    }
 
-        .header__log-shop-search {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+    &__log-shop-search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 
-            .header__icon {
-                max-width: none;
-                margin: $header-margin;
-                width: $icon-width;
-            }
-        }
+    &__icon {
+        max-width: none;
+        margin: $header-margin;
+        width: $header-icon-width;
     }
 }

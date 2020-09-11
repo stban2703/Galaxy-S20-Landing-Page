@@ -1,6 +1,10 @@
+// Color variables
 $main-blue: #23374d;
 $light-blue: #1089ff;
+
 $main-font-color: white;
+$alt-font-color: black;
+
 $nav-gradient: linear-gradient(
     180deg,
     #000000 0%,
@@ -10,18 +14,44 @@ $nav-gradient: linear-gradient(
 );
 $main-gradient: radial-gradient(70% 45% at 50% 50%, #273788 0%, #094f94 0.01%, #0a0a0e 71.64%, #000000 87.58%);
 
-$header-font-size: 1rem;
-$name-font-size: 1.1rem;
-$banner-font-size: 2.7rem;
+$main-background-color: black;
+$alt-background-color: white;
 
+// Font variables
+$main-font: "Open Sans";
+$header-font-size: 1em;
+$name-font-size: 1.1em;
+$banner-font-size: 2.7rem;
+$benefit-name-font-size: 1.4rem;
+$button-big-font-size: 2rem;
+
+// Margin and padding variables
 $header-margin: 0 10px;
 $header-padding: 20px 100px;
-$banner-padding: 70px 150px;
-$button-padding: 10px 40px;
-$big-button-padding: 15px 40px;
-$banner-image-maxh: 550px;
 
-$icon-width: 25px;
+$banner-padding: 70px 150px;
+$banner-image-margin: 0 25px;
+$banner-image-maxh: 550px;
+$banner-info-maxw: 550px;
+
+$benefits-margin: 0px 10vw;
+$benefit-content-margin: 50px 50px;
+
+$phone-views-padding: 20px 0px;
+$pviews-desc-maxw: 500px;
+$pviews-desc-margin-left: 100px;
+$pv-image-maxh: 650px;
+
+$button-padding: 10px 40px;
+$big-button-margin: 20px;
+$big-button-padding: 15px 40px;
+
+// Width and heigh variables
+$header-icon-width: 25px;
+
+$benefit-content-width: 33%;
+$benefit-icon-height: 85px;
+
 $button-radius: 40px;
 
 @import "reset";
@@ -29,70 +59,51 @@ $button-radius: 40px;
 @import "header";
 @import "productnav";
 @import "banner";
+@import "benefits";
+@import "phoneviews";
+@import "button";
 
-.benefits {
-    background-color: black;
+.feature {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 0px 10vw;
 
-    &__content {
-        margin: 50px 50px;
-        width: 33%;
+    &__intro {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__intro-image {
+        max-width: 403;
+    }
+
+    &__desc {
+        padding: 80px 200px;
+        color: $alt-font-color;
+        font-family: $main-font;
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__interaction {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        .benefits__icon {
-            height: 85px;
-        }
-
-        .benefits__name {
-            font-family: "Open Sans";
-            font-size: 24px;
-            text-align: center;
-            color: white;
-        }
-    }
-}
-
-.phone-views {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0px;
-
-    &__desc {
-        font-size: $banner-font-size;
-        color: white;
-        font-family: "Open Sans";
-        font-weight: bold;
-        max-width: 500px;
-        margin-left: 100px;
+        max-width: 1030px;
     }
 
-    &__image {
-        max-height: 650px;
-        margin-left: auto;
-        object-fit: contain;
-    }
-}
-
-.feature {
-    &__intro {
-        .feature__image {
-            width: 100%;
-        }
-
-        .feature__desc {
-            color: black;
-            font-family: "Open Sans";
-        }
+    &__zoom-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
     }
 }

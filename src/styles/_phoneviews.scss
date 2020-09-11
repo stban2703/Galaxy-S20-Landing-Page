@@ -1,0 +1,24 @@
+.phone-views {
+    background-color: $main-background-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: $phone-views-padding;
+
+    &__desc {
+        font-size: $banner-font-size;
+        color: $main-font-color;
+        font-family: $main-font;
+        font-weight: bold;
+        max-width: $pviews-desc-maxw;
+        margin-left: $pviews-desc-margin-left;
+    }
+
+    &__image {
+        max-height: $pv-image-maxh;
+        margin-left: auto;
+        object-fit: contain;
+    }
+}

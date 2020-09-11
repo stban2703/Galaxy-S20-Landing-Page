@@ -1,0 +1,28 @@
+.benefits {
+    background-color: $main-background-color;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: $benefits-margin;
+
+    &__content {
+        margin: $benefit-content-margin;
+        width: $benefit-content-width;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        height: $benefit-icon-height;
+    }
+
+    &__name {
+        font-family: $main-font;
+        font-size: $benefit-name-font-size;
+        text-align: center;
+        color: $main-font-color;
+    }
+}

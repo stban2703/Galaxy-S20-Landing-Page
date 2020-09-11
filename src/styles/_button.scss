@@ -1,0 +1,17 @@
+.button {
+    background-color: $light-blue;
+    color: $main-font-color;
+    font-size: $header-font-size;
+    border-style: none;
+    border-radius: $button-radius;
+    padding: $button-padding;
+    font-weight: bold;
+    font-family: $main-font;
+}
+
+.button--big {
+    font-size: $button-big-font-size;
+    width: 100%;
+    margin-top: $big-button-margin;
+    padding: $big-button-padding;
+}

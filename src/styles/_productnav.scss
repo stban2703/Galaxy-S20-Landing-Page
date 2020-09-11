@@ -1,6 +1,6 @@
 .product-nav {
     width: 100%;
-    padding: 20px 100px;
+    padding: $header-padding;
     position: absolute;
     background: $nav-gradient;
     display: flex;
@@ -10,7 +10,7 @@
 
     &__name {
         font-size: $header-font-size;
-        font-family: "Open Sans";
+        font-family: $main-font;
         font-weight: bold;
         font-size: $name-font-size;
         color: $main-font-color;
@@ -18,23 +18,12 @@
 
     &__sections {
         margin-left: auto;
+    }
 
-        .product-nav__item {
-            font-size: $header-font-size;
-            font-family: "Open Sans";
-            color: $main-font-color;
-            margin: $header-margin;
-        }
-
-        .product-nav__button {
-            background-color: $light-blue;
-            color: $main-font-color;
-            font-size: $header-font-size;
-            border-style: none;
-            border-radius: $button-radius;
-            padding: $button-padding;
-            font-weight: bold;
-            font-family: "Open Sans";
-        }
+    &__item {
+        font-size: $header-font-size;
+        font-family: $main-font;
+        color: $main-font-color;
+        margin: $header-margin;
     }
 }

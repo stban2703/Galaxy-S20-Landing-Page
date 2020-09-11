@@ -262,7 +262,7 @@ input[type=button] {
           justify-content: space-between;
 }
 
-.header__nav .header__products-services {
+.header__products-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,14 +275,14 @@ input[type=button] {
           align-items: center;
 }
 
-.header__nav .header__products-services .header__item {
+.header__item {
   margin: 0 10px;
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Open Sans";
   color: white;
 }
 
-.header__nav .header__log-shop-search {
+.header__log-shop-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +295,7 @@ input[type=button] {
           align-items: center;
 }
 
-.header__nav .header__log-shop-search .header__icon {
+.header__icon {
   max-width: none;
   margin: 0 10px;
   width: 25px;
@@ -323,10 +323,10 @@ input[type=button] {
 }
 
 .product-nav__name {
-  font-size: 1rem;
+  font-size: 1em;
   font-family: "Open Sans";
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: white;
 }
 
@@ -334,22 +334,11 @@ input[type=button] {
   margin-left: auto;
 }
 
-.product-nav__sections .product-nav__item {
-  font-size: 1rem;
+.product-nav__item {
+  font-size: 1em;
   font-family: "Open Sans";
   color: white;
   margin: 0 10px;
-}
-
-.product-nav__sections .product-nav__button {
-  background-color: #1089ff;
-  color: white;
-  font-size: 1rem;
-  border-style: none;
-  border-radius: 40px;
-  padding: 10px 40px;
-  font-weight: bold;
-  font-family: "Open Sans";
 }
 
 .banner {
@@ -383,29 +372,11 @@ input[type=button] {
   max-width: 550px;
 }
 
-.banner__info .banner__desc {
+.banner__desc {
   font-size: 2.7rem;
   font-weight: bold;
   font-family: "Open Sans";
   color: white;
-}
-
-.banner__info .banner__button {
-  width: 100%;
-  margin-top: 20px;
-  background-color: #1089ff;
-  color: white;
-  font-size: 1rem;
-  border-style: none;
-  border-radius: 40px;
-  padding: 10px 40px;
-  font-weight: bold;
-  font-family: "Open Sans";
-}
-
-.banner .button--big {
-  font-size: 2em;
-  padding: 15px 40px;
 }
 
 .benefits {
@@ -443,13 +414,13 @@ input[type=button] {
           justify-content: center;
 }
 
-.benefits__content .benefits__icon {
+.benefits__icon {
   height: 85px;
 }
 
-.benefits__content .benefits__name {
+.benefits__name {
   font-family: "Open Sans";
-  font-size: 24px;
+  font-size: 1.4rem;
   text-align: center;
   color: white;
 }
@@ -490,12 +461,90 @@ input[type=button] {
      object-fit: contain;
 }
 
-.feature__intro .feature__image {
-  width: 100%;
+.button {
+  background-color: #1089ff;
+  color: white;
+  font-size: 1em;
+  border-style: none;
+  border-radius: 40px;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-family: "Open Sans";
 }
 
-.feature__intro .feature__desc {
+.button--big {
+  font-size: 2rem;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 40px;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feature__intro {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feature__intro-image {
+  max-width: 403;
+}
+
+.feature__desc {
+  padding: 80px 200px;
   color: black;
   font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feature__interaction {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1030px;
+}
+
+.feature__zoom-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 /*# sourceMappingURL=landing.css.map */
