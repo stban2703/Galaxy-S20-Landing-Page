@@ -493,6 +493,9 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /*&__details {
+
+    }*/
 }
 
 .feature__intro {
@@ -546,5 +549,17 @@ input[type=button] {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.feature__specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=landing.css.map */
