@@ -1,0 +1,14 @@
+.section-desc {
+    font-family: $main-font;
+    color: $main-font-color;
+}
+
+.desc--big {
+    font-size: $banner-font-size;
+    font-weight: bold;
+}
+
+.desc--views {
+    max-width: $pviews-desc-maxw;
+    margin-left: $pviews-desc-margin-left;
+}

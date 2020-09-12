@@ -243,70 +243,23 @@ input[type=button] {
 }
 
 .header {
+  width: 100%;
   padding: 20px 100px;
-  background-color: #23374d;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.header--main {
+  background-color: #23374d;
 }
 
-.header__products-services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__item {
-  margin: 0 10px;
-  font-size: 1em;
-  font-family: "Open Sans";
-  color: white;
-}
-
-.header__log-shop-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__icon {
-  max-width: none;
-  margin: 0 10px;
-  width: 25px;
-}
-
-.product-nav {
-  width: 100%;
-  padding: 20px 100px;
+.header--sub {
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(41.15%, rgba(0, 0, 0, 0.65625)), color-stop(67.19%, rgba(0, 0, 0, 0.487832)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65625) 41.15%, rgba(0, 0, 0, 0.487832) 67.19%, rgba(0, 0, 0, 0) 100%);
+}
+
+.section-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,15 +267,16 @@ input[type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  font-family: "Open Sans";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.product-nav__name {
+.section-nav__name {
   font-size: 1em;
   font-family: "Open Sans";
   font-weight: bold;
@@ -330,14 +284,31 @@ input[type=button] {
   color: white;
 }
 
-.product-nav__sections {
-  margin-left: auto;
+.section-nav__text-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.product-nav__item {
+.section-nav__text {
   font-size: 1em;
   font-family: "Open Sans";
   color: white;
+  margin: 0 10px;
+}
+
+.section-nav__icon-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-nav__icon {
+  max-width: none;
+  width: 25px;
   margin: 0 10px;
 }
 
@@ -370,13 +341,6 @@ input[type=button] {
 
 .banner__info {
   max-width: 550px;
-}
-
-.banner__desc {
-  font-size: 2.7rem;
-  font-weight: bold;
-  font-family: "Open Sans";
-  color: white;
 }
 
 .benefits {
@@ -445,20 +409,26 @@ input[type=button] {
   padding: 20px 0px;
 }
 
-.phone-views__desc {
-  font-size: 2.7rem;
-  color: white;
-  font-family: "Open Sans";
-  font-weight: bold;
-  max-width: 500px;
-  margin-left: 100px;
-}
-
 .phone-views__image {
   max-height: 650px;
   margin-left: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.section-desc {
+  font-family: "Open Sans";
+  color: white;
+}
+
+.desc--big {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.desc--views {
+  max-width: 500px;
+  margin-left: 100px;
 }
 
 .button {
@@ -493,9 +463,6 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*&__details {
-
-    }*/
 }
 
 .feature__intro {

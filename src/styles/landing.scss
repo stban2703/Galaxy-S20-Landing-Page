@@ -57,10 +57,11 @@ $button-radius: 40px;
 @import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import "header";
-@import "productnav";
+@import "section-nav";
 @import "banner";
 @import "benefits";
 @import "phoneviews";
+@import "section-desc";
 @import "button";
 
 .feature {

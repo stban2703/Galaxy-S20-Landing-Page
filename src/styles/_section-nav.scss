@@ -1,12 +1,9 @@
-.product-nav {
-    width: 100%;
-    padding: $header-padding;
-    position: absolute;
-    background: $nav-gradient;
+.section-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    font-family: $main-font;
     align-items: center;
+    justify-content: space-between;
 
     &__name {
         font-size: $header-font-size;
@@ -16,14 +13,25 @@
         color: $main-font-color;
     }
 
-    &__sections {
-        margin-left: auto;
+    &__text-content {
+        display: flex;
+        align-items: center;
     }
 
-    &__item {
+    &__text {
         font-size: $header-font-size;
         font-family: $main-font;
         color: $main-font-color;
+        margin: $header-margin;
+    }
+
+    &__icon-content {
+        display: flex;
+    }
+
+    &__icon {
+        max-width: none;
+        width: $header-icon-width;
         margin: $header-margin;
     }
 }

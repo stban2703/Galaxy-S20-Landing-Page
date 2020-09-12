@@ -1,36 +1,14 @@
 .header {
+    width: 100%;
     padding: $header-padding;
-    background-color: $main-blue;
     box-sizing: border-box;
+}
 
-    &__nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.header--main {
+    background-color: $main-blue;
+}
 
-    &__products-services {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    &__item {
-        margin: $header-margin;
-        font-size: $header-font-size;
-        font-family: $main-font;
-        color: $main-font-color;
-    }
-
-    &__log-shop-search {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    &__icon {
-        max-width: none;
-        margin: $header-margin;
-        width: $header-icon-width;
-    }
+.header--sub {
+    position: absolute;
+    background: $nav-gradient;
 }
