@@ -1,14 +1,53 @@
 .section-desc {
     font-family: $main-font;
-    color: $main-font-color;
+
+    &--left {
+        max-width: $pviews-desc-maxw;
+        margin-left: $pviews-desc-margin-left;
+    }
+
+    &--center {
+        margin: 80px 200px;
+        text-align: center;
+    }
+
+    &--two-colums {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__colum {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__header--big {
+        font-size: $big-font-size;
+        font-weight: bold;
+        color: $main-blue;
+    }
+
+    &__text--medium {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    &__text--big {
+        font-size: $big-font-size;
+        font-weight: bold;
+    }
+
+    &__text--black {
+        color: $alt-font-color;
+    }
+
+    &__text--white {
+        color: $main-font-color;
+    }
 }
 
-.desc--big {
-    font-size: $banner-font-size;
-    font-weight: bold;
-}
-
-.desc--views {
-    max-width: $pviews-desc-maxw;
-    margin-left: $pviews-desc-margin-left;
-}

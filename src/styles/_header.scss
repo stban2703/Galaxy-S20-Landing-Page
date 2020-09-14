@@ -2,13 +2,13 @@
     width: 100%;
     padding: $header-padding;
     box-sizing: border-box;
-}
 
-.header--main {
-    background-color: $main-blue;
-}
-
-.header--sub {
-    position: absolute;
-    background: $nav-gradient;
+    &--main {
+        background-color: $main-blue;
+    }
+    
+    &--sub {
+        position: absolute;
+        background: $nav-gradient;
+    }
 }

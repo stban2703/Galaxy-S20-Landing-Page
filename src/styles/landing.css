@@ -277,7 +277,6 @@ input[type=button] {
 }
 
 .section-nav__name {
-  font-size: 1em;
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 1.1em;
@@ -418,17 +417,72 @@ input[type=button] {
 
 .section-desc {
   font-family: "Open Sans";
-  color: white;
 }
 
-.desc--big {
+.section-desc--left {
+  max-width: 500px;
+  margin-left: 100px;
+}
+
+.section-desc--center {
+  margin: 80px 200px;
+  text-align: center;
+}
+
+.section-desc--two-colums {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-desc__colum {
+  margin: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-desc__header--big {
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: #23374d;
+}
+
+.section-desc__text--medium {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.section-desc__text--big {
   font-size: 2.7rem;
   font-weight: bold;
 }
 
-.desc--views {
-  max-width: 500px;
-  margin-left: 100px;
+.section-desc__text--black {
+  color: black;
+}
+
+.section-desc__text--white {
+  color: white;
 }
 
 .button {
@@ -485,15 +539,6 @@ input[type=button] {
   max-width: 403;
 }
 
-.feature__desc {
-  padding: 80px 200px;
-  color: black;
-  font-family: "Open Sans";
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .feature__interaction {
   position: relative;
   display: -webkit-box;
@@ -516,17 +561,5 @@ input[type=button] {
   position: absolute;
   right: 10px;
   top: 10px;
-}
-
-.feature__specs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 /*# sourceMappingURL=landing.css.map */

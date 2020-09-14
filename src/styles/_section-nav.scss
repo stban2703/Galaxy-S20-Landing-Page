@@ -6,7 +6,6 @@
     justify-content: space-between;
 
     &__name {
-        font-size: $header-font-size;
         font-family: $main-font;
         font-weight: bold;
         font-size: $name-font-size;
@@ -19,10 +18,10 @@
     }
 
     &__text {
-        font-size: $header-font-size;
+        font-size: $nav-font-size;
         font-family: $main-font;
         color: $main-font-color;
-        margin: $header-margin;
+        margin: $nav-margin;
     }
 
     &__icon-content {
@@ -31,7 +30,7 @@
 
     &__icon {
         max-width: none;
-        width: $header-icon-width;
-        margin: $header-margin;
+        width: $nav-icon-width;
+        margin: $nav-margin;
     }
 }

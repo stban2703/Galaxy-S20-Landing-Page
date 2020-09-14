@@ -19,14 +19,14 @@ $alt-background-color: white;
 
 // Font variables
 $main-font: "Open Sans";
-$header-font-size: 1em;
+$nav-font-size: 1em;
 $name-font-size: 1.1em;
-$banner-font-size: 2.7rem;
+$big-font-size: 2.7rem;
 $benefit-name-font-size: 1.4rem;
 $button-big-font-size: 2rem;
 
 // Margin and padding variables
-$header-margin: 0 10px;
+$nav-margin: 0 10px;
 $header-padding: 20px 100px;
 
 $banner-padding: 70px 150px;
@@ -47,7 +47,7 @@ $big-button-margin: 20px;
 $big-button-padding: 15px 40px;
 
 // Width and heigh variables
-$header-icon-width: 25px;
+$nav-icon-width: 25px;
 
 $benefit-content-width: 33%;
 $benefit-icon-height: 85px;
@@ -84,15 +84,6 @@ $button-radius: 40px;
         max-width: 403;
     }
 
-    &__desc {
-        padding: 80px 200px;
-        color: $alt-font-color;
-        font-family: $main-font;
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-align: center;
-    }
-
     &__interaction {
         position: relative;
         display: flex;
@@ -106,11 +97,5 @@ $button-radius: 40px;
         position: absolute;
         right: 10px;
         top: 10px;
-    }
-
-    &__specs {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
     }
 }
