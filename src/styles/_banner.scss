@@ -8,7 +8,7 @@
     padding: $banner-padding;
 
     &__image {
-        max-height: $banner-image-max-h;
+        height: $banner-image-max-h;
         object-fit: contain;
         margin: $banner-image-margin;
     }

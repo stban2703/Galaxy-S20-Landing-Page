@@ -24,12 +24,25 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: $interaction-max-w;
+        max-width: $feature-media-max-w;
     }
 
     &__zoom-icon {
         position: absolute;
         right: 10px;
         top: 10px;
+    }
+
+    &__video {
+        width: $feature-media-max-w;
+    }
+
+    .video--section {
+        max-width: 100%;
+        object-fit: fill;
+    }
+
+    &--black-bg {
+        background-color: $main-background-color;
     }
 }
