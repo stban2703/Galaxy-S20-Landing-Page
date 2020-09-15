@@ -409,7 +409,7 @@ input[type=button] {
 }
 
 .phone-views__image {
-  max-height: 650px;
+  height: 650px;
   margin-left: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -445,10 +445,12 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .section-desc__colum {
-  margin: 50px;
+  margin: 80px 40px;
+  width: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,24 +487,6 @@ input[type=button] {
   color: white;
 }
 
-.button {
-  background-color: #1089ff;
-  color: white;
-  font-size: 1em;
-  border-style: none;
-  border-radius: 40px;
-  padding: 10px 40px;
-  font-weight: bold;
-  font-family: "Open Sans";
-}
-
-.button--big {
-  font-size: 2rem;
-  width: 100%;
-  margin-top: 20px;
-  padding: 15px 40px;
-}
-
 .feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -536,7 +520,7 @@ input[type=button] {
 }
 
 .feature__intro-image {
-  max-width: 403;
+  max-width: 400px;
 }
 
 .feature__interaction {
@@ -561,5 +545,23 @@ input[type=button] {
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.button {
+  background-color: #1089ff;
+  color: white;
+  font-size: 1em;
+  border-style: none;
+  border-radius: 40px;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-family: "Open Sans";
+}
+
+.button--big {
+  font-size: 2rem;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 40px;
 }
 /*# sourceMappingURL=landing.css.map */

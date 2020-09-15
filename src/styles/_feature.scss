@@ -1,0 +1,35 @@
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__intro {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: $section-image-height;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__intro-image {
+        max-width: $section-image-width;
+    }
+
+    &__interaction {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: $interaction-max-w;
+    }
+
+    &__zoom-icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+}

@@ -2,8 +2,8 @@
     font-family: $main-font;
 
     &--left {
-        max-width: $pviews-desc-maxw;
-        margin-left: $pviews-desc-margin-left;
+        max-width: $pv-desc-max-w;
+        margin-left: $pv-desc-margin-left;
     }
 
     &--center {
@@ -17,10 +17,12 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
 
     &__colum {
-        margin: 50px;
+        margin: 80px 40px;
+        width: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;

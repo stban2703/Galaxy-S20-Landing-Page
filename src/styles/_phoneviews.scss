@@ -5,10 +5,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: $phone-views-padding;
+    padding: $pv-padding;
 
     &__image {
-        max-height: $pv-image-maxh;
+        height: $section-image-height;
         margin-left: auto;
         object-fit: contain;
     }

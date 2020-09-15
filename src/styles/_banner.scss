@@ -8,12 +8,12 @@
     padding: $banner-padding;
 
     &__image {
-        max-height: $banner-image-maxh;
+        max-height: $banner-image-max-h;
         object-fit: contain;
         margin: $banner-image-margin;
     }
 
     &__info {
-        max-width: $banner-info-maxw;
+        max-width: $banner-info-max-w;
     }
 }
