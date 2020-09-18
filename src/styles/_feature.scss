@@ -8,14 +8,14 @@
         background-size: cover;
         background-position: center;
         width: 100%;
-        height: $section-image-height;
+        height: $section-intro-height;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     &__intro-image {
-        max-width: $section-image-width;
+        max-width: $section-image-max-w;
     }
 
     &__interaction {
@@ -24,7 +24,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: $feature-media-max-w;
+        max-width: $feature-section-max-w;
     }
 
     &__zoom-icon {
@@ -33,13 +33,13 @@
         top: 10px;
     }
 
-    &__video {
-        width: $feature-media-max-w;
+    &__media {
+        max-width: $feature-section-max-w;
     }
 
-    .video--section {
-        max-width: 100%;
-        object-fit: fill;
+    &__video {
+        width: 100%;
+        height: auto;
     }
 
     &--black-bg {

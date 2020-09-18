@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: $benefits-margin;
+    padding: $benefits-padding;
 
     &__content {
         margin: $benefit-content-margin;
@@ -20,8 +20,9 @@
     }
 
     &__name {
+        margin: $banner-text-margin;
         font-family: $main-font;
-        font-size: $benefit-name-font-size;
+        font-size: $section-font-size;
         text-align: center;
         color: $main-font-color;
     }

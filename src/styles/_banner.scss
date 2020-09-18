@@ -1,4 +1,5 @@
 .banner {
+    width: 100%;
     background: $main-gradient;
     display: flex;
     flex-direction: row;
@@ -8,12 +9,19 @@
     padding: $banner-padding;
 
     &__image {
-        height: $banner-image-max-h;
-        object-fit: contain;
+        max-width: $banner-image-max-w;
         margin: $banner-image-margin;
     }
 
     &__info {
         max-width: $banner-info-max-w;
+    }
+
+    &__text {
+        margin: $banner-text-margin;
+        font-family: $main-font;
+        font-size: $big-font-size;
+        font-weight: bold;
+        color: $main-font-color;
     }
 }

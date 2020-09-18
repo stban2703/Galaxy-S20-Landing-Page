@@ -7,8 +7,17 @@
     align-items: center;
     padding: $pv-padding;
 
+    &__text {
+        max-width: $pv-text-max-w;
+        margin: $pv-text-margin;
+        font-family: $main-font;
+        font-size: $big-font-size;
+        font-weight: bold;
+        color: $main-font-color;
+    }
+
     &__image {
-        height: $section-image-height;
+        height: $pv-image-height;
         margin-left: auto;
         object-fit: contain;
     }

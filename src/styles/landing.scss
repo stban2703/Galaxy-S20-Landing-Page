@@ -19,35 +19,48 @@ $alt-background-color: white;
 
 // Font variables
 $main-font: "Open Sans";
-$nav-font-size: 1em;
-$name-font-size: 1.1em;
+$nav-font-size: 1em; //
+$name-font-size: 1.1em; //
 $big-font-size: 2.7rem;
-$benefit-name-font-size: 1.4rem;
+$section-font-size: 1.4rem; //
 $button-big-font-size: 2rem;
 
 // Margin and padding variables
-$nav-margin: 0 10px;
-$header-padding: 20px 100px;
-$banner-padding: 70px 150px;
-$banner-image-margin: 0 25px;
-$benefits-margin: 0px 10vw;
+$nav-margin: 0 10px; //
+$header-padding: 20px 100px; //
+
+$banner-padding: 70px 10px; //
+$banner-image-margin: 0 20px; //
+$banner-text-margin: 20px 0; //
+
+$benefits-padding: 0px 10vw;
 $benefit-content-margin: 50px 50px;
+
 $pv-padding: 20px 0px;
-$pv-desc-margin-left: 100px;
+$pv-text-margin: 0 auto;
+
+$section-desc-padding: 100px 0;
+
 $button-padding: 10px 40px;
 $big-button-margin: 20px;
 $big-button-padding: 15px 40px;
 
 // Width and heigh variables
-$nav-icon-width: 25px;
-$banner-image-max-h: 550px;
-$banner-info-max-w: 550px;
-$section-image-height: 650px;
-$section-image-width: 400px;
-$pv-desc-max-w: 500px;
-$benefit-content-width: 33%;
-$benefit-icon-height: 85px;
-$feature-media-max-w: 1030px;
+$nav-icon-width: 25px; //
+
+$banner-info-max-w: 550px; //
+$banner-image-max-w: 375px; //
+
+$section-intro-height: 650px; //
+$section-image-max-w: 400px; //
+
+$pv-text-max-w: 500px;
+$pv-image-height: 650px;
+
+$benefit-content-width: 33%; //
+$benefit-icon-height: 85px; //
+
+$feature-section-max-w: 1030px;
 $button-radius: 40px;
 
 @import "reset";
