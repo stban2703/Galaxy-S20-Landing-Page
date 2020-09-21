@@ -107,8 +107,10 @@
             </section>
 
             <section class="feature__interaction">
-                <img class="feature__interaction-image" src="./src/images/zoominteraction.jpg" alt="Zoom interaction">
-                <img class="feature__zoom-icon" src="./src/icons/zoomicon.svg" alt="Zoom icon">
+                <div class="feature__zoom">
+                    <img class="feature__image-zoom" src="./src/images/zoominteraction.jpg" alt="Zoom interaction">
+                    <img class="feature__image-icon" src="./src/icons/zoomicon.svg" alt="Zoom icon">
+                </div>
             </section>
 
             <section class="section-desc">
@@ -177,66 +179,117 @@
             </section>
 
             <section class="feature__interaction">
-                <img class="feature__interac-image" src="./src/images/nightmode-on.webp" alt="Nigh Mode Comparison">
+                <img class="feature__slider" src="./src/images/nightmode-on.webp" alt="Nigh Mode Comparison">
             </section>
         </article>
 
-        <section class="especifications">
-            <h2>Especificaciones</h2>
-            <table class="especifications__table">
-                <tr>
-                    <td>Procesador</td>
-                    <td>Velocidad de la CPU: 2.73GHz<br>
+        <section class="specs">
+            <h3 class="specs__title">Especificaciones</h3>
+
+            <table class="specs__table">
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Procesador</td>
+                    <td class="specs__colum">Velocidad de la CPU: 2.73GHz<br>
                         Tipo CPU: Octa-Core
                     </td>
                 </tr>
-                <tr>
-                    <td>Pantalla</td>
-                    <td>Tamaño:
-                        174.4 mm (rectángulo completo de 6.9 ") / 170.2 mm (esquinas redondeadas de 6.7")<br>
-                        Resolución: 3200 x 1440 (Quad HD+)<br>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Pantalla</td>
+                    <td class="specs__colum">Tamaño:
+                        174.4 mm (rectángulo completo de 6.9 ") / 170.2 mm (esquinas redondeadas de 6.7")
+                        <br>
+                        <br>
+                        Resolución: 3200 x 1440 (Quad HD+)
+                        <br>
+                        <br>
                         Intensidad de color: 16M
                     </td>
                 </tr>
-                <tr>
-                    <td>Row:3 Cell:1</td>
-                    <td>Row:3 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Pantalla</td>
+                    <td class="specs__colum">
+                        Cámara Principal - Resolución: 108.0 MP + 12.0 MP + 48.0 MP + VGA
+                        <br>
+                        <br>
+                        Cámara Principal - autoenfoque: Sí
+                        <br>
+                        <br>
+                        Cámara Principal - Zoom:
+                        Zoom óptico híbrido 10x, zoom digital 100x
+                        <br>
+                        <br>
+                        Resolución de grabación de video:
+                        UHD 8K (7680 x 4320) @24fps
+                    </td>
                 </tr>
-                <tr>
-                    <td>Row:4 Cell:1</td>
-                    <td>Row:4 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Memoria</td>
+                    <td class="specs__colum">(GB)Tamaño RAM: 12
+                        <br>
+                        <br>
+                        Tamaño ROM (GB): 128
+                        <br>
+                        <br>
+                        Memoria Externa Support: MicroSD (Hasta 1TB)
+                    </td>
                 </tr>
-                <tr>
-                    <td>Row:5 Cell:1</td>
-                    <td>Row:5 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Red / Plataforma</td>
+                    <td class="specs__colum">Número de SIM: Dual-SIM
+                        <br>
+                        <br>
+                        Tamaño de SIM: Nano SIM (4FF), SIM Incorporada
+                    </td>
                 </tr>
-                <tr>
-                    <td>Row:6 Cell:1</td>
-                    <td>Row:6 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Conectividad</td>
+                    <td class="specs__colum">USB Interfaz: USB Tipo-C
+                        <br>
+                        <br>
+                        Audífono: USB Tipo C
+                        <br>
+                        <br>
+                        Versión Bluetooth: Bluetooth v5.0
+                        <br>
+                        Wi-Fi: 802.11 a/b/g/n/ac/ax 2.4G+5GHz, HE80, MIMO, 1024-QAM
+                        <br>
+                        <br>
+                        Tecnología de localización: GPS, Glonass, Beidou, Galileo
+                    </td>
                 </tr>
-                <tr>
-                    <td>Row:7 Cell:1</td>
-                    <td>Row:7 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Sistema operativo</td>
+                    <td class="specs__colum">Android</td>
                 </tr>
-                <tr>
-                    <td>Row:8 Cell:1</td>
-                    <td>Row:8 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Sensores</td>
+                    <td class="specs__colum">Acelerómetro, Barómetro, Sensor de huella, Giroscópio, Geomagnético, Hall
+                        Sensor, Sensor de luz RGB, Sensor de proximidad</td>
                 </tr>
-                <tr>
-                    <td>Row:9 Cell:1</td>
-                    <td>Row:9 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Batería</td>
+                    <td class="specs__colum">Uso de internet Wi-Fi (Horas): Hasta 18
+                        <br>
+                        <br>
+                        Capacidad de la batería (mAh, Typical): 5000
+                        <br>
+                        <br>
+                        Removible: No
+                    </td>
                 </tr>
-                <tr>
-                    <td>Row:10 Cell:1</td>
-                    <td>Row:10 Cell:2</td>
-                </tr>
-                <tr>
-                    <td>Row:11 Cell:1</td>
-                    <td>Row:11 Cell:2</td>
-                </tr>
-                <tr>
-                    <td>Row:12 Cell:1</td>
-                    <td>Row:12 Cell:2</td>
+                <tr class="specs__row">
+                    <td class="specs__colum specs__colum--title">Audio y video</td>
+                    <td class="specs__colum">Resolucion de reproducción de video:
+                        UHD 8K (7680 x 4320) @30fps
+                        <br>
+                        <br>
+                        Formatos de reproducción de video:
+                        MP4, M4V, 3GP, 3G2, WMV, ASF, AVI, FLV, MKV, WEBM
+                        <br>
+                        <br>
+                        Formato de reproducción de audio: MP3, M4A, 3GA, AAC, OGG, OGA, WAV, WMA, AMR, AWB, FLAC, MID,
+                        MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA, DFF, DSF, APE
+                    </td>
                 </tr>
             </table>
         </section>
@@ -278,6 +331,8 @@
             <img class="footer__icon" src="./src/icons/youtubeicon.svg" alt="YouTube">
         </section>
     </footer>
+
+    <script src="./src/scripts/zoom.js"></script>
 </body>
 
 </html>

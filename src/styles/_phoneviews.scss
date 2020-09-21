@@ -5,11 +5,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: $pv-padding;
+    padding: 20px 0px;
 
     &__text {
-        max-width: $pv-text-max-w;
-        margin: $pv-text-margin;
+        max-width: 500px;
+        margin: 0 auto;
         font-family: $main-font;
         font-size: $big-font-size;
         font-weight: bold;
@@ -17,7 +17,7 @@
     }
 
     &__image {
-        height: $pv-image-height;
+        height: 650px;
         margin-left: auto;
         object-fit: contain;
     }

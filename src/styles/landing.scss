@@ -1,10 +1,9 @@
 // Color variables
 $main-blue: #23374d;
 $light-blue: #1089ff;
-
+$footer-font-color: #7c7c7c;
 $main-font-color: white;
 $alt-font-color: black;
-
 $nav-gradient: linear-gradient(
     180deg,
     #000000 0%,
@@ -13,55 +12,43 @@ $nav-gradient: linear-gradient(
     rgba(0, 0, 0, 0) 100%
 );
 $main-gradient: radial-gradient(70% 45% at 50% 50%, #273788 0%, #094f94 0.01%, #0a0a0e 71.64%, #000000 87.58%);
-
 $main-background-color: black;
 $alt-background-color: white;
 
 // Font variables
 $main-font: "Open Sans";
-$nav-font-size: 1em; //
-$name-font-size: 1.1em; //
+$nav-font-size: 1em;
+$title-font-size: 1.4em;
 $big-font-size: 2.7rem;
-$section-font-size: 1.4rem; //
+$section-font-size: 1.4rem;
 $button-big-font-size: 2rem;
 
 // Margin and padding variables
-$nav-margin: 0 10px; //
-$header-padding: 20px 100px; //
-
-$banner-padding: 70px 10px; //
-$banner-image-margin: 0 20px; //
-$banner-text-margin: 20px 0; //
-
-$benefits-padding: 0px 10vw;
-$benefit-content-margin: 50px 50px;
-
-$pv-padding: 20px 0px;
-$pv-text-margin: 0 auto;
-
+$nav-margin: 0 10px;
+$header-padding: 20px 100px;
+$banner-padding: 70px 10px;
+$banner-image-margin: 0 20px;
+$banner-text-margin: 20px 0;
 $section-desc-padding: 100px 0;
-
+$newsletter-padding: 25px 100px;
+$brand-info-padding: 20px 50px;
+$contact-pading: 50px auto;
+$footer-social-padding: 20px 100px;
 $button-padding: 10px 40px;
-
 $big-button-margin: 20px;
 $big-button-padding: 15px 40px;
 
 // Width and heigh variables
-$nav-icon-width: 25px; //
-
-$banner-info-max-w: 550px; //
-$banner-image-max-w: 375px; //
-
-$section-intro-height: 650px; //
-$section-image-max-w: 400px; //
-
-$pv-text-max-w: 500px;
-$pv-image-height: 650px;
-
-$benefit-content-width: 33%; //
-$benefit-icon-height: 85px; //
-
+$nav-icon-width: 25px;
+$banner-info-max-w: 550px;
+$banner-image-max-w: 375px;
+$section-intro-height: 650px;
+$section-image-max-w: 400px;
 $feature-section-max-w: 1030px;
+$contact-max-w: 500px;
+$footer-icon-width: 50px;
+$footer-icon-margin: 0 20px;
+$newsletter-max-w: 1000px;
 $button-radius: 40px;
 
 @import "reset";
@@ -73,82 +60,7 @@ $button-radius: 40px;
 @import "phoneviews";
 @import "section-desc";
 @import "feature";
+@import "specs";
+@import "footer";
+@import "newsletter";
 @import "button";
-
-.footer {
-    background-color: $alt-background-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    &__brand-info {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 50px;
-    }
-
-    &__contact {
-        margin: 50px auto;
-        max-width: 500px;
-        font-family: $main-font;
-        font-weight: lighter;
-        color: #7C7C7C;
-    }
-
-    &__certification {
-        margin: auto auto;
-    }
-
-    &__social-media {
-        background-color: $main-blue;
-        width: 100%;
-        padding: $header-padding;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.newsletter {
-    max-width: 1000px;
-    padding: 25px 100px;
-    background-color: #e8e8e8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 9px;
-
-    &__desc {
-        font-family: $main-font;
-        font-weight: bold;
-        color: $main-blue;
-        font-size: $section-font-size;
-    }
-
-    &__input {
-        width: 100%;
-        border: none;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 9px;
-        font-style: $main-font;
-        font-size: $section-font-size;
-        padding: 5px 10px;
-        margin: 25px 0;
-    }
-
-    &__form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}

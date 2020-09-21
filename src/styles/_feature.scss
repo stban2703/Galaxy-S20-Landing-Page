@@ -27,7 +27,23 @@
         max-width: $feature-section-max-w;
     }
 
-    &__zoom-icon {
+    &__zoom {
+        overflow: hidden;
+    }
+
+    &__image-zoom {
+        object-fit: cover;
+        transition: transform 0.25s ease;
+        cursor: zoom-in;
+
+        &--zoom-in {
+            transform: scale(4);
+            transition: transform 0.25s ease-out;
+            cursor: zoom-out;
+        }
+    }
+
+    &__image-icon {
         position: absolute;
         right: 10px;
         top: 10px;

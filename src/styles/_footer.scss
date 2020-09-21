@@ -1,0 +1,45 @@
+.footer {
+    background-color: $alt-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+    &__brand-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: $brand-info-padding;
+    }
+
+    &__contact {
+        margin: $contact-pading;
+        max-width: $contact-max-w;
+        font-family: $main-font;
+        font-weight: lighter;
+        color: $footer-font-color;
+    }
+
+    &__certification {
+        margin: auto auto;
+    }
+
+    &__social-media {
+        background-color: $main-blue;
+        width: 100%;
+        padding: $footer-social-padding;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        max-width: none;
+        width: $footer-icon-width;
+        margin: $footer-icon-margin;
+    }
+}

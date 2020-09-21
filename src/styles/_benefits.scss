@@ -4,11 +4,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: $benefits-padding;
+    padding: 0px 10vw;
 
     &__content {
-        margin: $benefit-content-margin;
-        width: $benefit-content-width;
+        margin: 50px 50px;
+        width: 33%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -16,11 +16,11 @@
     }
 
     &__icon {
-        height: $benefit-icon-height;
+        height: 85px;
     }
 
     &__name {
-        margin: $banner-text-margin;
+        margin: 20px 0;
         font-family: $main-font;
         font-size: $section-font-size;
         text-align: center;
