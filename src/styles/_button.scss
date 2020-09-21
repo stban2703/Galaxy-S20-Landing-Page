@@ -8,6 +8,11 @@
     font-weight: bold;
     font-family: $main-font;
 
+    &--medium {
+        width: 100%;
+        font-size: $section-font-size;
+    }
+
     &--big {
         font-size: $button-big-font-size;
         width: 100%;

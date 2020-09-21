@@ -42,6 +42,7 @@ $pv-text-margin: 0 auto;
 $section-desc-padding: 100px 0;
 
 $button-padding: 10px 40px;
+
 $big-button-margin: 20px;
 $big-button-padding: 15px 40px;
 
@@ -73,3 +74,81 @@ $button-radius: 40px;
 @import "section-desc";
 @import "feature";
 @import "button";
+
+.footer {
+    background-color: $alt-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__brand-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 50px;
+    }
+
+    &__contact {
+        margin: 50px auto;
+        max-width: 500px;
+        font-family: $main-font;
+        font-weight: lighter;
+        color: #7C7C7C;
+    }
+
+    &__certification {
+        margin: auto auto;
+    }
+
+    &__social-media {
+        background-color: $main-blue;
+        width: 100%;
+        padding: $header-padding;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.newsletter {
+    max-width: 1000px;
+    padding: 25px 100px;
+    background-color: #e8e8e8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 9px;
+
+    &__desc {
+        font-family: $main-font;
+        font-weight: bold;
+        color: $main-blue;
+        font-size: $section-font-size;
+    }
+
+    &__input {
+        width: 100%;
+        border: none;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 9px;
+        font-style: $main-font;
+        font-size: $section-font-size;
+        padding: 5px 10px;
+        margin: 25px 0;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
