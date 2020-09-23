@@ -591,9 +591,11 @@ input[type=button] {
   background-color: black;
 }
 
-.feature__image {
+.feature__image--compare {
   width: 100%;
   height: 900px;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
 }
 
 .feature__image--compare:last-child {
@@ -606,10 +608,12 @@ input[type=button] {
      object-position: left;
   left: 0;
   bottom: 0;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .feature__slider {
-  width: 100%;
+  width: 95%;
   height: 50px;
 }
 
