@@ -21,6 +21,7 @@
     }
 
     &:hover {
+        transition: .3s ease;
         background-color: #0b5094;
     }
 }

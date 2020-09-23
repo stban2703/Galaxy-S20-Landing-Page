@@ -9,8 +9,7 @@
 </head>
 
 <body>
-
-    <header class="header header--main">
+    <header class="header header--main" id="description">
         <nav class="section-nav section-nav--main">
             <img class="section-nav__logo" src="./src/icons/logoicon.svg" alt="Logo">
             <section class="section-nav__text-content">
@@ -31,12 +30,12 @@
     </header>
 
 
-    <main>
+    <main class="content">
         <header class="header header--sub">
             <nav class="section-nav section-nav--sub">
                 <h1 class="section-nav__name">Galaxy S20 ULTRA</h1>
                 <section class="section-nav__text-content">
-                    <a class="section-nav__text" href="#description">Descripción</a>
+                    <a class="section-nav__text section-nav__text--current" href="#description">Descripción</a>
                     <a class="section-nav__text" href="#images-videos">Imágenes y videos</a>
                     <a class="section-nav__text" href="#specifications">Especificaciones</a>
                     <button class="button">Comprar</button>
@@ -45,7 +44,7 @@
         </header>
 
 
-        <article id="description" class="banner">
+        <article class="banner">
             <img class="banner__image" src="./src/images/galaxys20banner.png" alt="Galaxy S20">
             <section class="banner__info">
                 <p class="banner__text">Potencia,
@@ -175,7 +174,11 @@
 
             <section class="section-desc">
                 <p class="section-desc__text section-desc__text--white">Con el modo noche, la
-                    magia de tus fotos nunca se apagará</p>
+                    magia de tus fotos nunca se apagará
+                    <br>
+                    <br>
+                    Prueba arrastrando el controlador
+                </p>
             </section>
 
             <section class="feature__interaction feature__interaction--compare">

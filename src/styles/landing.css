@@ -255,8 +255,15 @@ input[type=button] {
 
 .header--sub {
   position: absolute;
+  padding: 10px 100px;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(41.15%, rgba(0, 0, 0, 0.65625)), color-stop(67.19%, rgba(0, 0, 0, 0.487832)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65625) 41.15%, rgba(0, 0, 0, 0.487832) 67.19%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header--fixed {
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .section-nav {
@@ -297,6 +304,13 @@ input[type=button] {
   font-family: "Open Sans";
   color: white;
   margin: 0 10px;
+}
+
+.section-nav__text--current {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  color: #1089ff;
+  font-weight: bold;
 }
 
 .section-nav__icon-content {
@@ -363,11 +377,11 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0px 10vw;
+  padding: 0px 100px;
 }
 
 .benefits__content {
-  margin: 50px 50px;
+  margin: 25px 25px;
   width: 33%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -885,6 +899,8 @@ input[type=button] {
 }
 
 .button:hover {
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
   background-color: #0b5094;
 }
 /*# sourceMappingURL=landing.css.map */

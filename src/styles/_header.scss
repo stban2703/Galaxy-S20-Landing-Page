@@ -9,6 +9,13 @@
     
     &--sub {
         position: absolute;
+        padding: $sub-headder-padding;
         background: $nav-gradient;
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        z-index: 100;
     }
 }
