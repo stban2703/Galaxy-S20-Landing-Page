@@ -106,10 +106,10 @@
                     habías visto antes.</p>
             </section>
 
-            <section class="feature__interaction">
-                <div class="feature__zoom">
-                    <img class="feature__image-zoom" src="./src/images/zoominteraction.jpg" alt="Zoom interaction">
-                    <img class="feature__image-icon" src="./src/icons/zoomicon.svg" alt="Zoom icon">
+            <section class="feature__interaction feature__interaction--zoom">
+                <img class="feature__image" src="./src/images/zoominteraction.jpg" alt="Zoom interaction">
+                <img class="feature__zoom-icon" src="./src/icons/zoomicon.svg" alt="Zoom icon">
+                <div class="feature__zoom-image">
                 </div>
             </section>
 
@@ -142,7 +142,7 @@
             </section>
 
             <section class="feature__media">
-                <video class="feature__video"
+                <video autoplay loop class="feature__video"
                     src="https://images.samsung.com/co/smartphones/galaxy-s20/videos/galaxy-s20_highlights_8k.mp4"></video>
             </section>
 
@@ -178,8 +178,10 @@
                     magia de tus fotos nunca se apagará</p>
             </section>
 
-            <section class="feature__interaction">
-                <img class="feature__slider" src="./src/images/nightmode-on.webp" alt="Nigh Mode Comparison">
+            <section class="feature__interaction feature__interaction--compare">
+                <input type="range" min="0" max="1" step=".01" value="0" class="feature__slider">
+                <img class="feature__image feature__image--compare" src="./src/images/nightmode-off.webp" alt="Nigh Mode Off">
+                <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp" alt="Night Mode On">
             </section>
         </article>
 

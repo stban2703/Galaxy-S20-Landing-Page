@@ -544,33 +544,35 @@ input[type=button] {
   max-width: 1030px;
 }
 
-.feature__zoom {
+.feature__interaction--zoom {
   overflow: hidden;
 }
 
-.feature__image-zoom {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: -webkit-transform 0.25s ease;
-  transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+.feature__interaction--zoom:hover .feature__zoom-image {
+  display: block;
 }
 
-.feature__image-zoom--zoom-in {
-  -webkit-transform: scale(4);
-          transform: scale(4);
-  -webkit-transition: -webkit-transform 0.25s ease-out;
-  transition: -webkit-transform 0.25s ease-out;
-  transition: transform 0.25s ease-out;
-  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
-  cursor: -webkit-zoom-out;
-  cursor: zoom-out;
+.feature__interaction--zoom:active .feature__zoom-image {
+  display: block;
 }
 
-.feature__image-icon {
+.feature__zoom-image {
+  background: url("../images/zoominteraction.jpg") no-repeat #fff;
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  position: absolute;
+  border: 2px solid #efefef;
+  z-index: 99;
+  border-radius: 100%;
+  display: none;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.feature__zoom-icon {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -587,6 +589,28 @@ input[type=button] {
 
 .feature--black-bg {
   background-color: black;
+}
+
+.feature__image {
+  width: 100%;
+  height: 900px;
+}
+
+.feature__image--compare:last-child {
+  width: 0%;
+  height: 900px;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+  left: 0;
+  bottom: 0;
+}
+
+.feature__slider {
+  width: 100%;
+  height: 50px;
 }
 
 .specs {

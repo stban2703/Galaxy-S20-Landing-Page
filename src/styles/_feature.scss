@@ -25,25 +25,38 @@
         align-items: center;
         justify-content: center;
         max-width: $feature-section-max-w;
-    }
 
-    &__zoom {
-        overflow: hidden;
-    }
+        &--zoom {
+            overflow: hidden;
+            &:hover {
+                .feature__zoom-image {
+                    display: block;
+                }
+            }
 
-    &__image-zoom {
-        object-fit: cover;
-        transition: transform 0.25s ease;
-        cursor: zoom-in;
-
-        &--zoom-in {
-            transform: scale(4);
-            transition: transform 0.25s ease-out;
-            cursor: zoom-out;
+            &:active {
+                .feature__zoom-image {
+                    display: block;
+                }
+            }
         }
     }
 
-    &__image-icon {
+    &__zoom-image {
+        background: url("../images/zoominteraction.jpg") no-repeat #fff;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        position: absolute;
+        border: 2px solid #efefef;
+        z-index: 99;
+        border-radius: 100%;
+        display: none;
+        transition: opacity 0.2s;
+    }
+
+    &__zoom-icon {
         position: absolute;
         right: 10px;
         top: 10px;
@@ -60,5 +73,25 @@
 
     &--black-bg {
         background-color: $main-background-color;
+    }
+
+    &__image {
+        width: 100%;
+        height: 900px;
+
+        &--compare:last-child {
+            width: 0%;
+            height: 900px;
+            position: absolute;
+            object-fit: cover;
+            object-position: left;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        height: 50px;
     }
 }
