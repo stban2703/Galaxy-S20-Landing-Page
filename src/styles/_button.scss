@@ -19,4 +19,8 @@
         margin-top: $big-button-margin;
         padding: $big-button-padding;
     }
+
+    &:hover {
+        background-color: #0b5094;
+    }
 }

@@ -36,16 +36,16 @@
             <nav class="section-nav section-nav--sub">
                 <h1 class="section-nav__name">Galaxy S20 ULTRA</h1>
                 <section class="section-nav__text-content">
-                    <a class="section-nav__text" href="">Descripción</a>
-                    <a class="section-nav__text" href="">Imágenes y videos</a>
-                    <a class="section-nav__text" href="">Especificaciones</a>
+                    <a class="section-nav__text" href="#description">Descripción</a>
+                    <a class="section-nav__text" href="#images-videos">Imágenes y videos</a>
+                    <a class="section-nav__text" href="#specifications">Especificaciones</a>
                     <button class="button">Comprar</button>
                 </section>
             </nav>
         </header>
 
 
-        <article class="banner">
+        <article id="description" class="banner">
             <img class="banner__image" src="./src/images/galaxys20banner.png" alt="Galaxy S20">
             <section class="banner__info">
                 <p class="banner__text">Potencia,
@@ -143,7 +143,7 @@
 
             <section class="feature__media">
                 <video autoplay loop class="feature__video"
-                    src="https://images.samsung.com/co/smartphones/galaxy-s20/videos/galaxy-s20_highlights_8k.mp4"></video>
+                    src="./src/videos/galaxy-s20_highlights_8k.webm"></video>
             </section>
 
             <section class="section-desc section-desc--two-colums">
@@ -180,22 +180,32 @@
 
             <section class="feature__interaction feature__interaction--compare">
                 <input type="range" min="0" max="1" step=".01" value="0" class="feature__slider">
-                <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp" alt="Nigh Mode Off">
-                <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp" alt="Night Mode On">
+                <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp"
+                    alt="Nigh Mode Off">
+                <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp"
+                    alt="Night Mode On">
             </section>
         </article>
 
-        <section class="gallery">
+        <!--Gallery-->
+        <section class="gallery" id="images-videos">
             <h3 class="gallery__title">Imágenes y videos</h3>
             <div class="gallery__container">
-                <img src="" alt="">
-                <img src="" alt="">
-                <video src=""></video>
-                <video src=""></video>
+                <div class="gallery__stripe">
+                    <img class="gallery__image" src="./src/images/imagefrontphone.png" alt="Samsung de frente">
+                    <img class="gallery__image" src="./src/images/imagebackphone.png" alt="Samsung de espalda">
+                    <video controls class="gallery__video" src="./src/videos/Galaxy-S20-Ultra-Official-TVC.webm"></video>
+                    <video controls class="gallery__video" src="./src/videos/Galaxy-S20-Ultra-Official-Introduction.webm"></video>
+                </div>
+                <img class="gallery__button gallery__button--left" src="./src/icons/leftbutton.svg"
+                    alt="Botón Izquierda">
+                <img class="gallery__button gallery__button--right" src="./src/icons/rightbutton.svg"
+                    alt="Botón Derecha">
             </div>
         </section>
 
-        <section class="specs">
+        <!--Specifications table-->
+        <section class="specs" id="specifications">
             <h3 class="specs__title">Especificaciones</h3>
 
             <table class="specs__table">

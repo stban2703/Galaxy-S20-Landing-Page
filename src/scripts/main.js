@@ -36,3 +36,30 @@ function handleSlider () {
   img.style.width = (slider.value * 100) + '%';
 }
 slider.addEventListener('input', handleSlider);
+
+
+// Gallery
+const galleryContainer = document.querySelector('.gallery__container');
+const galleryStripe = document.querySelector('.gallery__stripe');
+const backButton = document.querySelector('.gallery__button--left');
+const nextButton = document.querySelector('.gallery__button--right');
+let current = 0;
+
+backButton.addEventListener('click', function () {
+  current--;
+  if(current < 0) {
+    current = galleryStripe.children.length - 1;
+  }
+  const width = galleryContainer.clientWidth;
+  galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
+})
+
+
+nextButton.addEventListener('click', function () {
+  current++;
+  if(current >= galleryStripe.children.length) {
+    current = 0;
+  }
+  const width = galleryContainer.clientWidth;
+  galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
+});

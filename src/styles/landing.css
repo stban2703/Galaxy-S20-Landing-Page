@@ -617,6 +617,75 @@ input[type=button] {
   height: 50px;
 }
 
+.gallery {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+}
+
+.gallery__title {
+  font-size: 1.4em;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.gallery__container {
+  margin-top: 50px;
+  position: relative;
+  max-width: 1028px;
+  overflow: hidden;
+}
+
+.gallery__stripe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+}
+
+.gallery__image {
+  width: 100%;
+}
+
+.gallery__video {
+  width: 100%;
+  height: auto;
+}
+
+.gallery__button {
+  position: absolute;
+  width: 80px;
+  top: 40%;
+}
+
+.gallery__button--left {
+  left: 2%;
+}
+
+.gallery__button--right {
+  right: 2%;
+}
+
+.gallery__button:hover {
+  cursor: pointer;
+}
+
 .specs {
   background-color: black;
   color: white;
@@ -813,5 +882,9 @@ input[type=button] {
   width: 100%;
   margin-top: 20px;
   padding: 15px 40px;
+}
+
+.button:hover {
+  background-color: #0b5094;
 }
 /*# sourceMappingURL=landing.css.map */
