@@ -13,7 +13,6 @@ function handleHeader() {
 }
 window.addEventListener('scroll', handleHeader);
 
-
 navTexts.forEach(function (elem, index) {
   window.addEventListener('scroll', function() {
     if(window.scrollY < gallery.offsetTop - 100) {
@@ -33,7 +32,6 @@ navTexts.forEach(function (elem, index) {
     }
   });
 });
-
 
 
 // Zoom interaction
@@ -101,3 +99,4 @@ nextButton.addEventListener('click', function () {
   const width = galleryContainer.clientWidth;
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 });
+
