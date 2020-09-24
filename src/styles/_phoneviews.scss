@@ -17,8 +17,18 @@
     }
 
     &__image {
-        height: 650px;
+        height: auto;
         margin-left: auto;
         object-fit: contain;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .phone-views {
+        &__text {
+            font-size: $medium-font-size;
+            text-align: center;
+            margin: 20px 0;
+        }
     }
 }

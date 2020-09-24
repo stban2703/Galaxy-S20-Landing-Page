@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0px 100px;
+    padding: 0 100px;
 
     &__content {
         margin: 25px 25px;
@@ -16,7 +16,7 @@
     }
 
     &__icon {
-        height: 85px;
+        height: 60px;
     }
 
     &__name {
@@ -25,5 +25,14 @@
         font-size: $section-font-size;
         text-align: center;
         color: $main-font-color;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .benefits {
+        padding: 0 50px;
+        &__content {
+            width: 100%;
+        }
     }
 }

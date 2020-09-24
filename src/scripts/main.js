@@ -1,3 +1,8 @@
+const html = document.querySelector(".section-nav__name");
+
+var computedFontSize = window.getComputedStyle(html).fontSize;
+console.log(computedFontSize);
+
 // Scroll interactions
 const header = document.querySelector(".header--sub");
 const gallery = document.querySelector(".gallery");
@@ -13,24 +18,22 @@ function handleHeader() {
 }
 window.addEventListener('scroll', handleHeader);
 
-navTexts.forEach(function (elem, index) {
-  window.addEventListener('scroll', function() {
-    if(window.scrollY < gallery.offsetTop - 100) {
-      navTexts[0].classList.add('section-nav__text--current');
-      navTexts[1].classList.remove('section-nav__text--current');
-      navTexts[2].classList.remove('section-nav__text--current');
+window.addEventListener('scroll', function () {
+  if (window.scrollY < gallery.offsetTop - 100) {
+    navTexts[0].classList.add('section-nav__text--current');
+    navTexts[1].classList.remove('section-nav__text--current');
+    navTexts[2].classList.remove('section-nav__text--current');
 
-    } else if (window.scrollY < specs.offsetTop - 100) {
-      navTexts[0].classList.remove('section-nav__text--current');
-      navTexts[1].classList.add('section-nav__text--current');
-      navTexts[2].classList.remove('section-nav__text--current');
+  } else if (window.scrollY < specs.offsetTop - 100) {
+    navTexts[0].classList.remove('section-nav__text--current');
+    navTexts[1].classList.add('section-nav__text--current');
+    navTexts[2].classList.remove('section-nav__text--current');
 
-    } else {
-      navTexts[0].classList.remove('section-nav__text--current');
-      navTexts[1].classList.remove('section-nav__text--current');
-      navTexts[2].classList.add('section-nav__text--current');
-    }
-  });
+  } else {
+    navTexts[0].classList.remove('section-nav__text--current');
+    navTexts[1].classList.remove('section-nav__text--current');
+    navTexts[2].classList.add('section-nav__text--current');
+  }
 });
 
 
@@ -60,7 +63,6 @@ function handleZoom(e) {
 }
 
 zoomContainer.addEventListener('mousemove', handleZoom);
-
 
 // Slider Interaction
 const slider = document.querySelector('.feature__slider');

@@ -98,3 +98,18 @@
         height: 50px;
     }
 }
+
+@media (max-width: $responsive-max-w) {
+    .section-desc {
+        padding: 80px 0;
+
+        &__colum {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        &__text {
+            font-size: $section-font-size - 0.1;
+        }
+    }
+}

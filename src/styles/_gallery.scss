@@ -52,3 +52,15 @@
         }
     }
 }
+
+@media (max-width: $responsive-max-w) {
+    .gallery {
+        &__container {
+            margin-top: 10px;
+        }
+
+        &__button {
+            width: 50px;
+        }
+    }
+}

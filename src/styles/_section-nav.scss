@@ -1,9 +1,20 @@
 .section-nav {
     display: flex;
+    position: relative;
     flex-direction: row;
     font-family: $main-font;
     align-items: center;
     justify-content: space-between;
+
+    &__burguer-menu {
+        display: none;
+        position: absolute;
+        left: 10px;
+    }
+
+    &__logo {
+        width: 200px;
+    }
 
     &__name {
         font-family: $main-font;
@@ -24,7 +35,7 @@
         margin: $nav-margin;
 
         &--current {
-            transition: .5s ease;
+            transition: 0.5s ease;
             color: $light-blue;
             font-weight: bold;
         }
@@ -38,5 +49,27 @@
         max-width: none;
         width: $nav-icon-width;
         margin: $nav-margin;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .section-nav {
+        display: flex;
+        flex-direction: row;
+        font-family: $main-font;
+        align-items: center;
+        justify-content: center;
+
+        &__burguer-menu {
+            display: block;
+        }
+
+        &__text-content {
+            display: none;
+        }
+
+        &__icon-content {
+            display: none;
+        }
     }
 }

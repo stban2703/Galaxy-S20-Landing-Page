@@ -6,7 +6,7 @@
     &--main {
         background-color: $main-blue;
     }
-    
+
     &--sub {
         position: absolute;
         padding: $sub-headder-padding;
@@ -17,5 +17,18 @@
         position: fixed;
         top: 0;
         z-index: 100;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+
+        &--sub {
+            padding-left: 0;
+            padding-right: 0;
+            background: $nav-gradient;
+        }
     }
 }

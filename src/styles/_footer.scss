@@ -17,7 +17,7 @@
     }
 
     &__contact {
-        margin: $contact-pading;
+        margin: $contact-margin;
         max-width: $contact-max-w;
         font-family: $main-font;
         font-weight: lighter;
@@ -41,5 +41,21 @@
         max-width: none;
         width: $footer-icon-width;
         margin: $footer-icon-margin;
+    }
+}
+
+@media (max-width: $responsive-max-w) {
+    .footer {
+        &__brand-info {
+            padding: 20px 20px;
+        }
+
+        &__social-media {
+            padding: 20px 10px;
+        }
+
+        &__certification {
+            margin: 0;
+        }
     }
 }

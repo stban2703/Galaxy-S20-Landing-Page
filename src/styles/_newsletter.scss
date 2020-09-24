@@ -36,3 +36,10 @@
         justify-content: center;
     }
 }
+
+@media (max-width: $responsive-max-w) {
+    .newsletter {
+        padding: 20px 20px;
+        margin: 0 10px;
+    }
+}
