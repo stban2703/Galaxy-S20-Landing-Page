@@ -3,16 +3,19 @@ const burguerBtn = document.querySelector(".section-nav__menu");
 const burguerMenu = document.querySelector(".burguer-menu");
 const closeBurguerBtn = document.querySelector(".burguer-menu__close");
 const darken = document.querySelector(".darken");
+const html = document.querySelector("html");
 
 function handleBurguer() {
   darken.classList.add("darken--active")
-  burguerMenu.classList.add("burguer-menu--active");
+  burguerMenu.classList.add("burguer-menu--move");
+  html.style.overflow = "hidden";
 }
 
 function handleCloseBurguer() {
-  if (darken.classList.contains("darken--active") && burguerMenu.classList.contains("burguer-menu--active")) {
+  if (darken.classList.contains("darken--active") && burguerMenu.classList.contains("burguer-menu--move")) {
     darken.classList.remove("darken--active")
-    burguerMenu.classList.remove("burguer-menu--active");
+    burguerMenu.classList.remove("burguer-menu--move");
+    html.style.overflow = "visible";
   }
 }
 

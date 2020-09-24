@@ -373,7 +373,7 @@ input[type=button] {
   .section-nav__menu {
     display: block;
   }
-  .section-nav__text-content--main {
+  .section-nav__text-content {
     display: none;
   }
   .section-nav__icon-content {
@@ -1067,7 +1067,29 @@ input[type=button] {
 }
 
 .burguer-menu {
-  display: none;
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: fixed;
+  z-index: 101;
+  background-color: black;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
 }
 
 .burguer-menu__header {
@@ -1117,27 +1139,10 @@ input[type=button] {
   padding-right: 100px;
 }
 
-.burguer-menu--active {
-  background-color: black;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 0;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  position: fixed;
-  z-index: 101;
-  background-color: black;
-  -webkit-transition: 10s ease;
-  transition: 10s ease;
+.burguer-menu--move {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
 /*# sourceMappingURL=landing.css.map */
