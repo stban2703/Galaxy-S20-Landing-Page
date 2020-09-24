@@ -116,6 +116,7 @@ backButton.addEventListener('click', function () {
   if (current < 0) {
     current = galleryStripe.children.length - 1;
   }
+
   const width = galleryContainer.clientWidth;
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 })
