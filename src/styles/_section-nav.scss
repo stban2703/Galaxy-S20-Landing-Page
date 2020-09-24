@@ -68,6 +68,10 @@
             display: block;
         }
 
+        &__name {
+            font-size: $medium-font-size;
+        }
+
         &__text-content {
             display: none;
         }

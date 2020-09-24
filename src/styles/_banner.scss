@@ -9,8 +9,8 @@
     padding: $banner-padding;
 
     &__image {
+        width: 100%;
         max-width: $banner-image-max-w;
-        margin: $banner-image-margin;
     }
 
     &__info {
@@ -28,6 +28,9 @@
 
 @media (max-width: $responsive-max-w) {
     .banner {
+        padding-top: 0;
+        padding-bottom: 0;
+
         background: radial-gradient(
             80% 30% at 50% 30%,
             #273788 0%,

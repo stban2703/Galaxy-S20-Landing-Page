@@ -45,9 +45,9 @@ $big-button-padding: 15px 40px;
 $responsive-max-w: 966px;
 $nav-icon-width: 25px;
 $banner-info-max-w: 550px;
-$banner-image-max-w: 340px;
+$banner-image-max-w: 350px;
 $section-intro-height: 650px;
-$section-image-max-w: 400px;
+$section-image-max-w: 350px;
 $feature-section-max-w: 1030px;
 $feature-image-height: 900px;
 $contact-max-w: 500px;
@@ -56,8 +56,8 @@ $footer-icon-margin: 0 20px;
 $newsletter-max-w: 1000px;
 $button-radius: 40px;
 
-@import "reset";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "reset";
 @import "header";
 @import "section-nav";
 @import "banner";
@@ -72,3 +72,7 @@ $button-radius: 40px;
 @import "button";
 @import "darken";
 @import "burguer-menu";
+
+body * {
+    //background-color: rgba(255, 0, 0, .5) !important;
+}

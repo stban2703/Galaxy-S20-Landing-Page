@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /*
 	HTML5 Reset :: style.css
 	----------------------------------------------------------
@@ -10,7 +11,6 @@
 -------------------------------------------------------------------------------*/
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -373,6 +373,9 @@ input[type=button] {
   .section-nav__menu {
     display: block;
   }
+  .section-nav__name {
+    font-size: 1.8rem;
+  }
   .section-nav__text-content {
     display: none;
   }
@@ -403,8 +406,8 @@ input[type=button] {
 }
 
 .banner__image {
-  max-width: 340px;
-  margin: 0 20px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .banner__info {
@@ -421,6 +424,8 @@ input[type=button] {
 
 @media (max-width: 966px) {
   .banner {
+    padding-top: 0;
+    padding-bottom: 0;
     background: radial-gradient(80% 30% at 50% 30%, #273788 0%, #094f94 0.01%, #0a0a0e 71.64%, #000000 87.58%);
   }
   .banner__text {
@@ -634,7 +639,8 @@ input[type=button] {
 }
 
 .feature__intro-image {
-  max-width: 400px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .feature__interaction {
@@ -705,6 +711,10 @@ input[type=button] {
 .feature__image--compare {
   width: 100%;
   height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   -webkit-filter: brightness(0.4);
           filter: brightness(0.4);
 }
@@ -724,7 +734,7 @@ input[type=button] {
 }
 
 .feature__slider {
-  width: 95%;
+  width: 98%;
   height: 50px;
 }
 
@@ -738,6 +748,10 @@ input[type=button] {
   }
   .section-desc__text {
     font-size: 1.3rem;
+  }
+  .section-desc__image--compare {
+    -webkit-transform: translate(-500px, 0);
+            transform: translate(-500px, 0);
   }
 }
 
@@ -868,8 +882,8 @@ input[type=button] {
   .specs__table {
     margin-top: 10px;
   }
-  .specs__button {
-    width: 50px;
+  .specs__colum {
+    padding: 20px 10px;
   }
 }
 
@@ -953,6 +967,9 @@ input[type=button] {
   }
   .footer__certification {
     margin: 0;
+  }
+  .footer__icon {
+    margin: 0 5px;
   }
 }
 

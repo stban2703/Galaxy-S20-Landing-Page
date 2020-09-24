@@ -63,9 +63,11 @@ const original = document.querySelector(".feature__image");
 const magnified = document.querySelector(".feature__zoom-image");
 
 function handleZoom(e) {
+  const pageX = e.pageX || e.touches[0].pageX;
+  const pageY = e.pageY || e.touches[0].pageY;
   var style = magnified.style,
-    x = e.pageX - this.offsetLeft,
-    y = e.pageY - this.offsetTop,
+    x = pageX - this.offsetLeft,
+    y = pageY - this.offsetTop,
     imgWidth = original.width,
     imgHeight = original.height,
     xperc = (x / imgWidth) * 100,
@@ -82,6 +84,15 @@ function handleZoom(e) {
 }
 
 zoomContainer.addEventListener('mousemove', handleZoom);
+zoomContainer.addEventListener('touchmove', handleZoom);
+zoomContainer.addEventListener('touchstart', function() {
+  html.style.overflow= "hidden";
+  console.log("ok")
+})
+zoomContainer.addEventListener('touchend', function() {
+  html.style.overflow = "visible";
+  console.log("okn't")
+})
 
 // Slider Interaction
 const slider = document.querySelector('.feature__slider');
