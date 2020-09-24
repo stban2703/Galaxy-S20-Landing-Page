@@ -1,7 +1,23 @@
-const html = document.querySelector(".section-nav__name");
+// Burguer menu
+const burguerBtn = document.querySelector(".section-nav__menu");
+const burguerMenu = document.querySelector(".burguer-menu");
+const closeBurguerBtn = document.querySelector(".burguer-menu__close");
+const darken = document.querySelector(".darken");
 
-var computedFontSize = window.getComputedStyle(html).fontSize;
-console.log(computedFontSize);
+function handleBurguer() {
+  darken.classList.add("darken--active")
+  burguerMenu.classList.add("burguer-menu--active");
+}
+
+function handleCloseBurguer() {
+  if (darken.classList.contains("darken--active") && burguerMenu.classList.contains("burguer-menu--active")) {
+    darken.classList.remove("darken--active")
+    burguerMenu.classList.remove("burguer-menu--active");
+  }
+}
+
+burguerBtn.addEventListener('click', handleBurguer);
+closeBurguerBtn.addEventListener('click', handleCloseBurguer);
 
 // Scroll interactions
 const header = document.querySelector(".header--sub");

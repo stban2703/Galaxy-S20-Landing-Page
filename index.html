@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
-    <title>Samsung Galaxy S20</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>Samsung Galaxy S20 ULTRA</title>
     <link rel="icon" href="./src/icons/favicon.ico">
     <link rel="stylesheet" href="./src/styles/landing.css">
 </head>
@@ -12,9 +12,9 @@
 <body>
     <header class="header header--main" id="description">
         <nav class="section-nav section-nav--main">
-            <img class="section-nav__burguer-menu" src="./src/icons/burguermenuicon.svg" alt="Menú">
+            <img class="section-nav__menu" src="./src/icons/burguermenuicon.svg" alt="Menú">
             <img class="section-nav__logo" src="./src/icons/logoicon.svg" alt="Logo">
-            <section class="section-nav__text-content">
+            <section class="section-nav__text-content section-nav__text-content--main">
                 <a class="section-nav__text" href="">Smathphone</a>
                 <a class="section-nav__text" href="">Tablets</a>
                 <a class="section-nav__text" href="">Watches</a>
@@ -31,6 +31,20 @@
         </nav>
     </header>
 
+    <div class="burguer-menu">
+        <header class="burguer-menu__header">
+            <img class="burguer-menu__close" src="./src/icons/closeicon.svg" alt="Close">
+            <h3 class="burguer-menu__title">Navegación</h3>
+        </header>
+        <section class="burguer-menu__content">
+            <a class="burguer-menu__text" href="">Smathphone</a>
+            <a class="burguer-menu__text" href="">Tablets</a>
+            <a class="burguer-menu__text" href="">Watches</a>
+            <a class="burguer-menu__text" href="">Accesorios</a>
+            <a class="burguer-menu__text" href="">Oferta</a>
+            <a class="burguer-menu__text" href="">Soporte</a>
+        </section>
+    </div>
 
     <main class="content">
         <header class="header header--sub">
@@ -40,8 +54,8 @@
                     <a class="section-nav__text section-nav__text--current" href="#description">Descripción</a>
                     <a class="section-nav__text" href="#images-videos">Imágenes y videos</a>
                     <a class="section-nav__text" href="#specifications">Especificaciones</a>
-                    <button class="button">Comprar</button>
                 </section>
+                <button class="button">Comprar</button>
             </nav>
         </header>
 
@@ -199,8 +213,10 @@
                 <div class="gallery__stripe">
                     <img class="gallery__image" src="./src/images/imagefrontphone.png" alt="Samsung de frente">
                     <img class="gallery__image" src="./src/images/imagebackphone.png" alt="Samsung de espalda">
-                    <video controls class="gallery__video" src="./src/videos/Galaxy-S20-Ultra-Official-TVC.webm"></video>
-                    <video controls class="gallery__video" src="./src/videos/Galaxy-S20-Ultra-Official-Introduction.webm"></video>
+                    <video controls class="gallery__video"
+                        src="./src/videos/Galaxy-S20-Ultra-Official-TVC.webm"></video>
+                    <video controls class="gallery__video"
+                        src="./src/videos/Galaxy-S20-Ultra-Official-Introduction.webm"></video>
                 </div>
                 <img class="gallery__button gallery__button--left" src="./src/icons/leftbutton.svg"
                     alt="Botón Izquierda">
@@ -352,13 +368,19 @@
         </section>
 
         <section class="footer__social-media">
-            <img class="footer__icon" src="./src/icons/facebookicon.svg" alt="Facebook">
-            <img class="footer__icon" src="./src/icons/twittericon.svg" alt="Twitter">
-            <img class="footer__icon" src="./src/icons/instagramicon.svg" alt="Instagram">
-            <img class="footer__icon" src="./src/icons/youtubeicon.svg" alt="YouTube">
+            <a target="_blank" href="https://www.facebook.com/SamsungColombia"><img class="footer__icon"
+                    src="./src/icons/facebookicon.svg" alt="Facebook"></a>
+            <a target="_blank" href="https://twitter.com/samsungmobile?lang=es"><img class="footer__icon"
+                    src="./src/icons/twittericon.svg" alt="Twitter"></a>
+            <a target="_blank" href="https://www.instagram.com/samsungcolombia/?hl=es-la"><img class="footer__icon"
+                    src="./src/icons/instagramicon.svg" alt="Instagram"></a>
+            <a target="_blank" href="https://www.youtube.com/user/samsungmobileco"><img class="footer__icon"
+                    src="./src/icons/youtubeicon.svg" alt="YouTube"></a>
         </section>
     </footer>
 
+    <div class="darken"></div>
+    
     <script src="./src/scripts/main.js"></script>
 </body>
 

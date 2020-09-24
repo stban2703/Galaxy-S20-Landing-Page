@@ -263,7 +263,7 @@ input[type=button] {
 .header--fixed {
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 99;
 }
 
 @media (max-width: 966px) {
@@ -297,10 +297,14 @@ input[type=button] {
           justify-content: space-between;
 }
 
-.section-nav__burguer-menu {
+.section-nav__menu {
   display: none;
   position: absolute;
-  left: 10px;
+  left: 20px;
+}
+
+.section-nav__menu:hover {
+  cursor: pointer;
 }
 
 .section-nav__logo {
@@ -366,10 +370,10 @@ input[type=button] {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section-nav__burguer-menu {
+  .section-nav__menu {
     display: block;
   }
-  .section-nav__text-content {
+  .section-nav__text-content--main {
     display: none;
   }
   .section-nav__icon-content {
@@ -1045,5 +1049,95 @@ input[type=button] {
   -webkit-transition: .3s ease;
   transition: .3s ease;
   background-color: #0b5094;
+}
+
+.darken {
+  display: none;
+}
+
+.darken--active {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.burguer-menu {
+  display: none;
+}
+
+.burguer-menu__header {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #23374d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burguer-menu__close {
+  max-width: none;
+}
+
+.burguer-menu__close:hover {
+  cursor: pointer;
+}
+
+.burguer-menu__title {
+  font-family: "Open Sans";
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 20px;
+}
+
+.burguer-menu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.burguer-menu__text {
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  color: white;
+  margin: 20px 0;
+  text-align: left;
+  padding-right: 100px;
+}
+
+.burguer-menu--active {
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: fixed;
+  z-index: 101;
+  background-color: black;
+  -webkit-transition: 10s ease;
+  transition: 10s ease;
 }
 /*# sourceMappingURL=landing.css.map */

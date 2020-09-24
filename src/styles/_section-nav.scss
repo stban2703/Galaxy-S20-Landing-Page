@@ -6,10 +6,14 @@
     align-items: center;
     justify-content: space-between;
 
-    &__burguer-menu {
+    &__menu {
         display: none;
         position: absolute;
-        left: 10px;
+        left: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     &__logo {
@@ -60,12 +64,14 @@
         align-items: center;
         justify-content: center;
 
-        &__burguer-menu {
+        &__menu {
             display: block;
         }
-
+        
         &__text-content {
-            display: none;
+            &--main {
+                display: none;
+            }
         }
 
         &__icon-content {
