@@ -1,0 +1,53 @@
+.input {
+    width: 100%;
+    margin: $input-margin;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $input-padding;
+
+    &__label {
+        position: absolute;
+        font-family: $main-font;
+        font-size: $section-font-size;
+        color: $light-gray-color;
+        pointer-events: none;
+        transition: 0.2s ease;
+
+        &--focus {
+            margin-bottom: $label-margin-bottom;
+            font-size: $section-font-size - 0.3;
+            transition: 0.2s ease;
+            color: $light-blue;
+        }
+    }
+
+    &__field {
+        background: none;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid $light-gray-color;
+        font-family: $main-font;
+        font-size: $section-font-size;
+        padding: $fiel-padding;
+        color: $dark-gray-color;
+        z-index: 1;
+
+        &:focus {
+            outline: none;
+            border-color: $light-blue;
+
+            + label {
+                margin-bottom: $label-margin-bottom;
+                font-size: $section-font-size - 0.3;
+                transition: 0.2s ease;
+                color: $light-blue;
+            }
+        }
+
+        &:valid {
+            background-color: $footer-background-color;
+        }
+    }
+}

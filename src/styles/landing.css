@@ -1066,7 +1066,14 @@ input[type=button] {
           justify-content: center;
 }
 
-.newsletter__input {
+@media (max-width: 966px) {
+  .newsletter {
+    padding: 20px 20px;
+    margin: 0 10px;
+  }
+}
+
+.input {
   width: 100%;
   margin: 10px 0;
   position: relative;
@@ -1083,7 +1090,7 @@ input[type=button] {
   padding: 20px 0;
 }
 
-.newsletter__input label {
+.input__label {
   position: absolute;
   font-family: "Open Sans";
   font-size: 1.4rem;
@@ -1093,28 +1100,7 @@ input[type=button] {
   transition: 0.2s ease;
 }
 
-.newsletter__input input {
-  background: none;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #7c7c7c;
-  font-family: "Open Sans";
-  font-size: 1.4rem;
-  padding: 5px 0px;
-  color: #4d4d4d;
-  z-index: 1;
-}
-
-.newsletter__input input:focus {
-  outline: none;
-  border-color: #1089ff;
-}
-
-.newsletter__input input:valid {
-  background-color: #e8e8e8;
-}
-
-.newsletter__input input:focus + label {
+.input__label--focus {
   margin-bottom: 60px;
   font-size: 1.1rem;
   -webkit-transition: 0.2s ease;
@@ -1122,11 +1108,33 @@ input[type=button] {
   color: #1089ff;
 }
 
-@media (max-width: 966px) {
-  .newsletter {
-    padding: 20px 20px;
-    margin: 0 10px;
-  }
+.input__field {
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7c7c7c;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  padding: 5px 0;
+  color: #4d4d4d;
+  z-index: 1;
+}
+
+.input__field:focus {
+  outline: none;
+  border-color: #1089ff;
+}
+
+.input__field:focus + label {
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #1089ff;
+}
+
+.input__field:valid {
+  background-color: #e8e8e8;
 }
 
 .button {

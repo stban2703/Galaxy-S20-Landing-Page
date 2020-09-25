@@ -24,53 +24,6 @@
         align-items: center;
         justify-content: center;
     }
-
-    &__input {
-        width: 100%;
-        margin: 10px 0;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px 0;
-
-        label {
-            position: absolute;
-            font-family: $main-font;
-            font-size: $section-font-size;
-            color: $light-gray-color;
-            pointer-events: none;
-            transition: 0.2s ease;
-        }
-
-        input {
-            background: none;
-            width: 100%;
-            border: none;
-            border-bottom: 2px solid $light-gray-color;
-            font-family: $main-font;
-            font-size: $section-font-size;
-            padding: 5px 0px;
-            color: $dark-gray-color;
-            z-index: 1;
-
-            &:focus {
-                outline: none;
-                border-color: $light-blue;
-            }
-
-            &:valid {
-                background-color: $footer-background-color;
-            }
-        }
-
-        input:focus + label {
-            margin-bottom: 60px;
-            font-size: $section-font-size - 0.3;
-            transition: 0.2s ease;
-            color: $light-blue;
-        }
-    }
 }
 
 @media (max-width: $responsive-max-w) {

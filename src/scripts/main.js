@@ -11,9 +11,7 @@ const navSections = document.querySelectorAll(".navegation");
 const burguerTexts = document.querySelectorAll(".burguer-menu__text");
 
 window.addEventListener('scroll', function () {
-
   let isSelected = false;
-
   for (let i = navSections.length - 1; i >= 0; i--) {
     if (window.scrollY > navSections[i].offsetTop - 100 && !isSelected) {
       burguerTexts[i].classList.add('burguer-menu__text--current');
@@ -29,7 +27,6 @@ window.addEventListener('scroll', function () {
 burguerTexts.forEach(function (e, i) {
   e.addEventListener('click', handleCloseBurguer);
 });
-
 
 // Burguer menu
 const burguerBtn = document.querySelector(".section-nav__menu");
@@ -117,8 +114,6 @@ backButton.addEventListener('click', function () {
   videos.forEach(function (e, i) {
     e.pause();
   });
-
-
   const width = galleryContainer.clientWidth;
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 })
@@ -138,3 +133,14 @@ nextButton.addEventListener('click', function () {
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 });
 
+// Float label
+const inputLabel = document.querySelector(".input__label");
+const inputField = document.querySelector(".input__field");
+
+inputField.addEventListener('change', function () {
+  if(inputField.value.length > 0) {
+    inputLabel.classList.add("input__label--focus");
+  } else {
+    inputLabel.classList.remove("input__label--focus");
+  }
+});
