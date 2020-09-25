@@ -250,7 +250,7 @@ input[type=button] {
   position: fixed;
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(41.15%, rgba(0, 0, 0, 0.65625)), color-stop(67.19%, rgba(0, 0, 0, 0.487832)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65625) 41.15%, rgba(0, 0, 0, 0.487832) 67.19%, rgba(0, 0, 0, 0) 100%);
-  z-index: 99;
+  z-index: 90;
 }
 
 @media (max-width: 966px) {
@@ -708,7 +708,7 @@ input[type=button] {
 }
 
 .feature__image--compare:last-child {
-  width: 0%;
+  width: 50%;
   height: 100%;
   position: absolute;
   -o-object-fit: cover;
@@ -724,7 +724,7 @@ input[type=button] {
   z-index: 90;
   position: absolute;
   width: 95%;
-  height: 50px;
+  height: 30px;
 }
 
 @media (max-width: 966px) {
@@ -1018,21 +1018,6 @@ input[type=button] {
   padding: 20px 0;
 }
 
-.newsletter__input input {
-  background-color: transparent;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #7c7c7c;
-  font-family: "Open Sans";
-  font-size: 1.4rem;
-  padding: 5px 0px;
-}
-
-.newsletter__input input:focus {
-  outline: none;
-  border-color: #1089ff;
-}
-
 .newsletter__input label {
   position: absolute;
   font-family: "Open Sans";
@@ -1043,16 +1028,33 @@ input[type=button] {
   transition: 0.2s ease;
 }
 
+.newsletter__input input {
+  background: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7c7c7c;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  padding: 5px 0px;
+  color: #4d4d4d;
+  z-index: 1;
+}
+
+.newsletter__input input:focus {
+  outline: none;
+  border-color: #1089ff;
+}
+
+.newsletter__input input:valid {
+  background-color: #e8e8e8;
+}
+
 .newsletter__input input:focus + label {
   margin-bottom: 60px;
   font-size: 1.1rem;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   color: #1089ff;
-}
-
-.newsletter__input input:valid textarea {
-  background-color: #e8e8e8;
 }
 
 @media (max-width: 966px) {
@@ -1105,7 +1107,7 @@ input[type=button] {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 95;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1131,7 +1133,7 @@ input[type=button] {
       -ms-flex-align: start;
           align-items: flex-start;
   position: fixed;
-  z-index: 101;
+  z-index: 100;
   background-color: black;
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out;

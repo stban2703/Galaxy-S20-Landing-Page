@@ -87,7 +87,7 @@
             object-fit: cover;
             object-position: left;
             &:last-child {
-                width: 0%;
+                width: 50%;
                 height: 100%;
                 position: absolute;
                 object-fit: cover;
@@ -103,7 +103,7 @@
         z-index: 90;
         position: absolute;
         width: 95%;
-        height: 50px;
+        height: 30px;
     }
 }
 

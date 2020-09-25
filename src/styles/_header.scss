@@ -4,7 +4,7 @@
     box-sizing: border-box;
     position: fixed;
     background: $nav-gradient;
-    z-index: 99;
+    z-index: 90;
 }
 
 @media (max-width: $responsive-max-w) {
