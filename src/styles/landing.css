@@ -551,6 +551,7 @@ input[type=button] {
   font-weight: bold;
   text-align: center;
   margin: 0 10px;
+  color: #5a5a5a;
 }
 
 .section-desc--two-colums {
@@ -569,10 +570,6 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.section-desc__text--black {
-  color: black;
 }
 
 .section-desc__text--white {
@@ -612,7 +609,7 @@ input[type=button] {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 400px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,8 +658,8 @@ input[type=button] {
 }
 
 .feature__zoom-image {
-  background: url("../images/zoominteraction.jpg") no-repeat #fff;
-  background-size: auto;
+  background: url("../images/zoomcatinteraction.webp") no-repeat #fff;
+  background-size: auto auto;
   width: 200px;
   height: 200px;
   -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
@@ -678,6 +675,8 @@ input[type=button] {
 }
 
 .feature__zoom-icon {
+  max-width: none;
+  width: 50px;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -701,7 +700,6 @@ input[type=button] {
 }
 
 .feature__image--compare {
-  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -735,8 +733,8 @@ input[type=button] {
 
 @media (max-width: 966px) {
   .feature__zoom-image {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border: .5px;
   }
 }
@@ -763,6 +761,7 @@ input[type=button] {
   font-size: 1.4rem;
   font-family: "Open Sans";
   font-weight: bold;
+  color: #23374d;
 }
 
 .gallery__container {

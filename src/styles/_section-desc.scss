@@ -21,6 +21,7 @@
         font-weight: bold;
         text-align: center;
         margin: 0 10px;
+        color: $alt-font-color;
     }
 
     &--two-colums {
@@ -29,10 +30,6 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    }
-
-    &__text--black {
-        color: $alt-font-color;
     }
 
     &__text--white {
