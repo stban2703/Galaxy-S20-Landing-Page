@@ -45,10 +45,11 @@
 
     &__zoom-image {
         background: url("../images/zoominteraction.jpg") no-repeat #fff;
+        background-size: auto;
         width: 200px;
         height: 200px;
         box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
-        pointer-events: none;
+        //pointer-events: none;
         position: absolute;
         border: 2px solid #efefef;
         z-index: 99;
@@ -104,4 +105,12 @@
 }
 
 @media (max-width: $responsive-max-w) {
+    .feature {
+        &__zoom-image {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border: .5px;
+        }
+    }
 }

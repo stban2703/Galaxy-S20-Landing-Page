@@ -66,7 +66,7 @@
         }
 
         &__name {
-            font-size: $medium-font-size;
+            font-size: $section-font-size;
         }
 
         &__text-content {
@@ -74,7 +74,14 @@
         }
 
         &__icon-content {
-            display: none;
+            &:first-child{
+                display: block;
+            }
+
+            &:last-child {
+                display: none;
+            }
         }
+
     }
 }

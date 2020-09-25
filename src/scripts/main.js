@@ -83,15 +83,13 @@ function handleZoom(e) {
   style.top = y - magnified.offsetHeight / 2 + 'px';
 }
 
-zoomContainer.addEventListener('mousemove', handleZoom);
-zoomContainer.addEventListener('touchmove', handleZoom);
+zoomContainer.addEventListener('mousemove', handleZoom, false);
+zoomContainer.addEventListener('touchmove', handleZoom, false);
 zoomContainer.addEventListener('touchstart', function() {
-  html.style.overflow= "hidden";
-  console.log("ok")
+  html.style.overflow = "hidden";
 })
 zoomContainer.addEventListener('touchend', function() {
   html.style.overflow = "visible";
-  console.log("okn't")
 })
 
 // Slider Interaction
@@ -117,16 +115,25 @@ backButton.addEventListener('click', function () {
     current = galleryStripe.children.length - 1;
   }
 
+  galleryStripe.children[2].pause();
+  galleryStripe.children[3].pause();
+
   const width = galleryContainer.clientWidth;
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 })
 
+//console.log(galleryStripe.children[2]);
 
 nextButton.addEventListener('click', function () {
   current++;
   if (current >= galleryStripe.children.length) {
     current = 0;
   }
+
+  //Pause video
+  galleryStripe.children[2].pause();
+  galleryStripe.children[3].pause();
+
   const width = galleryContainer.clientWidth;
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 });

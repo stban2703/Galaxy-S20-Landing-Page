@@ -367,12 +367,15 @@ input[type=button] {
     display: block;
   }
   .section-nav__name {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   .section-nav__text-content {
     display: none;
   }
-  .section-nav__icon-content {
+  .section-nav__icon-content:first-child {
+    display: block;
+  }
+  .section-nav__icon-content:last-child {
     display: none;
   }
 }
@@ -618,7 +621,7 @@ input[type=button] {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 650px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -632,7 +635,7 @@ input[type=button] {
 
 .feature__intro-image {
   width: 100%;
-  max-width: 350px;
+  max-width: 320px;
 }
 
 .feature__interaction {
@@ -667,11 +670,11 @@ input[type=button] {
 
 .feature__zoom-image {
   background: url("../images/zoominteraction.jpg") no-repeat #fff;
+  background-size: auto;
   width: 200px;
   height: 200px;
   -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
-  pointer-events: none;
   position: absolute;
   border: 2px solid #efefef;
   z-index: 99;
@@ -732,6 +735,15 @@ input[type=button] {
 .feature__slider {
   width: 95%;
   height: 50px;
+}
+
+@media (max-width: 966px) {
+  .feature__zoom-image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: .5px;
+  }
 }
 
 .gallery {
