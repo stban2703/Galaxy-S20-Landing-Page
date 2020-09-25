@@ -390,6 +390,7 @@ input[type=button] {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 90px 10px;
+  position: relative;
 }
 
 .banner__image {
@@ -403,7 +404,7 @@ input[type=button] {
 }
 
 .banner__text {
-  margin: 20px 0;
+  margin: 10px 0;
   font-family: "Open Sans";
   font-size: 2.7rem;
   font-weight: bold;
@@ -417,6 +418,60 @@ input[type=button] {
   .banner__text {
     font-size: 1.8rem;
     text-align: center;
+  }
+}
+
+.promo {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 50px;
+  top: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: rgba(35, 55, 77, 0.5);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Open Sans";
+  color: white;
+}
+
+.promo__desc {
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.promo__discount {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+@media (max-width: 966px) {
+  .promo {
+    width: 120px;
+    height: 120px;
+    left: 5px;
+    top: 50px;
+  }
+  .promo__desc {
+    font-size: 0.7rem;
+  }
+  .promo__discount {
+    font-size: 2.3rem;
   }
 }
 
@@ -439,7 +494,8 @@ input[type=button] {
 
 .benefits__content {
   margin: 25px 25px;
-  width: 33%;
+  width: 100%;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,6 +580,7 @@ input[type=button] {
   font-family: "Open Sans";
   max-width: 1030px;
   padding: 100px 0;
+  text-align: center;
 }
 
 .section-desc__colum {
@@ -549,7 +606,6 @@ input[type=button] {
 .section-desc__text {
   font-size: 1.4rem;
   font-weight: bold;
-  text-align: center;
   margin: 0 10px;
   color: #4d4d4d;
 }
@@ -695,6 +751,15 @@ input[type=button] {
   background-color: black;
 }
 
+.feature__instruct {
+  width: 100%;
+  position: absolute;
+  top: -50px;
+  text-align: center;
+  font-family: "Open Sans";
+  color: white;
+}
+
 .feature__image {
   width: 100%;
 }
@@ -721,7 +786,7 @@ input[type=button] {
 
 .feature__slider {
   top: 0;
-  z-index: 90;
+  z-index: 10;
   position: absolute;
   width: 95%;
   height: 30px;

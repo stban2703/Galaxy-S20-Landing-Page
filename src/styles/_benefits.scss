@@ -8,7 +8,8 @@
 
     &__content {
         margin: 25px 25px;
-        width: 33%;
+        width: 100%;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;

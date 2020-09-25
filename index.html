@@ -10,23 +10,26 @@
 </head>
 
 <body>
+    <header class="header">
+        <nav class="section-nav">
+            <img class="section-nav__menu" src="./src/icons/burguermenuicon.svg" alt="Menú">
+            <h1 class="section-nav__title">Galaxy S20 ULTRA</h1>
+            <section class="section-nav__text-content">
+                <a href="#intro"><span class="section-nav__text section-nav__text--current">Inicio</span></a>
+                <a href="#characteristics"><span class="section-nav__text">Características</span></a>
+                <a href="#images-videos"><span class="section-nav__text">Imágenes y videos</span></a>
+                <a href="#specifications"><span class="section-nav__text">Especificaciones</span></a>
+            </section>
+            <button class="button">Comprar</button>
+        </nav>
+    </header>
     <main class="content">
-        <header class="header">
-            <nav class="section-nav">
-                <img class="section-nav__menu" src="./src/icons/burguermenuicon.svg" alt="Menú">
-                <h1 class="section-nav__title">Galaxy S20 ULTRA</h1>
-                <section class="section-nav__text-content">
-                    <a href="#intro"><span class="section-nav__text section-nav__text--current">Inicio</span></a>
-                    <a href="#characteristics"><span class="section-nav__text">Características</span></a>
-                    <a href="#images-videos"><span class="section-nav__text">Imágenes y videos</span></a>
-                    <a href="#specifications"><span class="section-nav__text">Especificaciones</span></a>
-                </section>
-                <button class="button">Comprar</button>
-            </nav>
-        </header>
-
-
         <article class="banner navegation" id="intro">
+            <a href=""><div class="promo">
+                <span class="promo__desc">Compra hoy y obtén un descuento de</span>
+                <h2 class="promo__discount">30%</h2>
+            </div></a>
+
             <img class="banner__image" src="./src/images/galaxys20banner.png" alt="Galaxy S20">
             <section class="banner__info">
                 <p class="banner__text">Potencia,
@@ -39,7 +42,7 @@
         </article>
 
 
-        <article class="benefits">
+        <article class="benefits navegation" id="characteristics">
             <section class="benefits__content">
                 <img class="benefits__icon" src="./src/icons/8kicon.svg" alt="8k icon">
                 <h2 class="benefits__name">Ultra Hi-Definition</h2>
@@ -73,7 +76,7 @@
         </article>
 
         <!--108MP-->
-        <article class="feature navegation" id="characteristics">
+        <article class="feature">
             <section class="feature__intro" style="background-image: url(./src/images/108mpbg.png);">
                 <img class="feature__intro-image" src="./src/images/108mp.png" alt="108MP">
             </section>
@@ -98,7 +101,7 @@
                 <h3 class="section-desc__header">
                     100x Zoom
                 </h3>
-                <p class="section-desc__text">De alta resolución</p>
+                <span class="section-desc__text">De alta resolución</span>
             </section>
             <p></p>
         </article>
@@ -116,12 +119,12 @@
                 </div>
 
                 <div class="section-desc__colum">
-                    <p class="section-desc__text">Resolución súper nítida
+                    <span class="section-desc__text">Resolución súper nítida
                         <br>
                         <br>
                         4 veces mayor a UHD<br>
                         <br>
-                        16 veces mayor a FHD</p>
+                        16 veces mayor a FHD</span>
                 </div>
             </section>
 
@@ -135,12 +138,12 @@
                     <h3 class="section-desc__header section-desc__header--big">
                         8k
                     </h3>
-                    <p class="section-desc__text">Video</p>
+                    <span class="section-desc__text">Video</span>
                     <br>
                     <h3 class="section-desc__header section-desc__header--big">
                         33Mp
                     </h3>
-                    <p class="section-desc__text">Fotograma</p>
+                    <span class="section-desc__text">Fotograma</span>
                 </div>
 
                 <div class="section-desc__colum">
@@ -160,13 +163,11 @@
             <section class="section-desc">
                 <p class="section-desc__text section-desc__text--white">Con el modo noche, la
                     magia de tus fotos nunca se apagará
-                    <br>
-                    <br>
-                    Prueba arrastrando el controlador
                 </p>
             </section>
 
             <section class="feature__interaction feature__interaction--compare">
+                <span class="feature__instruct">Prueba arrastrando el controlador</span>
                 <input type="range" min="0" max="1" step=".01" value=".5" class="feature__slider">
                 <img class="feature__image feature__image--compare" src="./src/images/nightmode-off.webp"
                     alt="Nigh Mode Off">

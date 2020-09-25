@@ -80,6 +80,15 @@
         background-color: $main-background-color;
     }
 
+    &__instruct {
+        width: 100%;
+        position: absolute;
+        top: -50px;
+        text-align: center;
+        font-family: $main-font;
+        color: $main-font-color;
+    }
+
     &__image {
         width: 100%;
         &--compare {
@@ -100,7 +109,7 @@
 
     &__slider {
         top: 0;
-        z-index: 90;
+        z-index: 10;
         position: absolute;
         width: 95%;
         height: 30px;

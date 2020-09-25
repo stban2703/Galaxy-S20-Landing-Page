@@ -2,6 +2,7 @@
     font-family: $main-font;
     max-width: $feature-section-max-w;
     padding: $section-desc-padding;
+    text-align: center;
 
     &__colum {
         width: 500px;
@@ -19,7 +20,6 @@
     &__text {
         font-size: $section-font-size;
         font-weight: bold;
-        text-align: center;
         margin: 0 10px;
         color: $dark-gray-color;
     }
