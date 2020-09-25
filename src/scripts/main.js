@@ -1,14 +1,74 @@
+const html = document.querySelector("html");
+
+// Scroll interactions
+const header = document.querySelector(".header--sub");
+const caracteristics = document.querySelector(".benefits");
+const gallery = document.querySelector(".gallery");
+const specs = document.querySelector(".specs");
+const navTexts = document.querySelectorAll(".section-nav__text");
+const burguerTexts = document.querySelectorAll(".burguer-menu__text");
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY < caracteristics.offsetTop - 100) {
+    burguerTexts[0].classList.add('burguer-menu__text--current');
+    burguerTexts[1].classList.remove('burguer-menu__text--current');
+    burguerTexts[2].classList.remove('burguer-menu__text--current');
+    burguerTexts[3].classList.remove('burguer-menu__text--current');
+
+    navTexts[0].classList.add('section-nav__text--current');
+    navTexts[1].classList.remove('section-nav__text--current');
+    navTexts[2].classList.remove('section-nav__text--current');
+    navTexts[3].classList.remove('section-nav__text--current');
+
+  } else if (window.scrollY < gallery.offsetTop - 100) {
+    burguerTexts[0].classList.remove('burguer-menu__text--current');
+    burguerTexts[1].classList.add('burguer-menu__text--current');
+    burguerTexts[2].classList.remove('burguer-menu__text--current');
+    burguerTexts[3].classList.remove('burguer-menu__text--current');
+
+    navTexts[0].classList.remove('section-nav__text--current');
+    navTexts[1].classList.add('section-nav__text--current');
+    navTexts[2].classList.remove('section-nav__text--current');
+    navTexts[3].classList.remove('section-nav__text--current');
+
+  } else if(window.scrollY < specs.offsetTop - 100) {
+    burguerTexts[0].classList.remove('burguer-menu__text--current');
+    burguerTexts[1].classList.remove('burguer-menu__text--current');
+    burguerTexts[2].classList.add('burguer-menu__text--current');
+    burguerTexts[3].classList.remove('burguer-menu__text--current');
+
+    navTexts[0].classList.remove('section-nav__text--current');
+    navTexts[1].classList.remove('section-nav__text--current');
+    navTexts[2].classList.add('section-nav__text--current');
+    navTexts[3].classList.remove('section-nav__text--current');
+
+  } else {
+    burguerTexts[0].classList.remove('burguer-menu__text--current');
+    burguerTexts[1].classList.remove('burguer-menu__text--current');
+    burguerTexts[2].classList.remove('burguer-menu__text--current');
+    burguerTexts[3].classList.add('burguer-menu__text--current');
+
+    navTexts[0].classList.remove('section-nav__text--current');
+    navTexts[1].classList.remove('section-nav__text--current');
+    navTexts[2].classList.remove('section-nav__text--current');
+    navTexts[3].classList.add('section-nav__text--current');
+  }
+});
+
+burguerTexts.forEach(function(e, i) {
+  e.addEventListener('click', handleCloseBurguer);
+});
+
+
 // Burguer menu
 const burguerBtn = document.querySelector(".section-nav__menu");
 const burguerMenu = document.querySelector(".burguer-menu");
 const closeBurguerBtn = document.querySelector(".burguer-menu__close");
 const darken = document.querySelector(".darken");
-const html = document.querySelector("html");
 
 function handleBurguer() {
   darken.classList.add("darken--active")
   burguerMenu.classList.add("burguer-menu--move");
-  html.style.overflow = "hidden";
 }
 
 function handleCloseBurguer() {
@@ -21,40 +81,6 @@ function handleCloseBurguer() {
 
 burguerBtn.addEventListener('click', handleBurguer);
 closeBurguerBtn.addEventListener('click', handleCloseBurguer);
-
-// Scroll interactions
-const header = document.querySelector(".header--sub");
-const gallery = document.querySelector(".gallery");
-const specs = document.querySelector(".specs");
-const navTexts = document.querySelectorAll(".section-nav--sub .section-nav__text");
-
-function handleHeader() {
-  if (window.scrollY > header.offsetTop) {
-    header.classList.add("header--fixed");
-  } else {
-    header.classList.remove("header--fixed");
-  }
-}
-window.addEventListener('scroll', handleHeader);
-
-window.addEventListener('scroll', function () {
-  if (window.scrollY < gallery.offsetTop - 100) {
-    navTexts[0].classList.add('section-nav__text--current');
-    navTexts[1].classList.remove('section-nav__text--current');
-    navTexts[2].classList.remove('section-nav__text--current');
-
-  } else if (window.scrollY < specs.offsetTop - 100) {
-    navTexts[0].classList.remove('section-nav__text--current');
-    navTexts[1].classList.add('section-nav__text--current');
-    navTexts[2].classList.remove('section-nav__text--current');
-
-  } else {
-    navTexts[0].classList.remove('section-nav__text--current');
-    navTexts[1].classList.remove('section-nav__text--current');
-    navTexts[2].classList.add('section-nav__text--current');
-  }
-});
-
 
 // Zoom interaction
 // Based on https://daily-dev-tips.com/posts/vanilla-javascript-image-magnify-%F0%9F%94%8E/
@@ -121,8 +147,6 @@ backButton.addEventListener('click', function () {
   const width = galleryContainer.clientWidth;
   galleryStripe.style.transform = 'translate(-' + (width * current) + 'px, 0px)';
 })
-
-//console.log(galleryStripe.children[2]);
 
 nextButton.addEventListener('click', function () {
   current++;

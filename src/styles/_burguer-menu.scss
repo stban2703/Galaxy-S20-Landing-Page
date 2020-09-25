@@ -16,23 +16,19 @@
         width: 100%;
         padding: 20px;
         display: flex;
-        background-color: $main-blue;
+        justify-content: left;
         align-items: center;
+        background-color: $main-blue;
     }
 
     &__close {
+        align-self: flex-start;
         max-width: none;
+        width: 20px;
 
         &:hover {
             cursor: pointer;
         }
-    }
-
-    &__title {
-        font-family: $main-font;
-        color: $main-font-color;
-        font-size: $section-font-size;
-        margin-left: 20px;
     }
 
     &__content {
@@ -41,13 +37,21 @@
         padding: 0 20px;
     }
 
+    a {
+        margin: 15px 0;
+    }
+
     &__text {
         font-family: $main-font;
         font-size: $section-font-size;
         color: $main-font-color;
-        margin: 20px 0;
         text-align: left;
-        padding-right: 100px;
+
+        &--current {
+            transition: 0.5s ease;
+            color: $light-blue;
+            font-weight: bold;
+        }
     }
 
     &--move {

@@ -10,38 +10,23 @@
 </head>
 
 <body>
-    <header class="header header--main" id="description">
-        <nav class="section-nav section-nav--main">
-            <img class="section-nav__menu" src="./src/icons/burguermenuicon.svg" alt="Menú">
-            <img class="section-nav__logo" src="./src/icons/logoicon.svg" alt="Logo">
-            <section class="section-nav__text-content">
-                <a class="section-nav__text" href="">Smathphone</a>
-                <a class="section-nav__text" href="">Tablets</a>
-                <a class="section-nav__text" href="">Accesorios</a>
-            </section>
-            <section class="section-nav__icon-content">
-                <a href=""><img class="section-nav__icon" src="./src/icons/shopcarticon.svg"
-                        alt="Shopping cart icon"></a>
-                <a href=""><img class="section-nav__icon" src="./src/icons/searchicon.svg" alt="Search icon"></a>
-            </section>
-        </nav>
-    </header>
-
     <main class="content">
-        <header class="header header--sub">
-            <nav class="section-nav section-nav--sub">
-                <h1 class="section-nav__name">Galaxy S20 ULTRA</h1>
+        <header class="header">
+            <nav class="section-nav">
+                <img class="section-nav__menu" src="./src/icons/burguermenuicon.svg" alt="Menú">
+                <h1 class="section-nav__title">Galaxy S20 ULTRA</h1>
                 <section class="section-nav__text-content">
-                    <a class="section-nav__text section-nav__text--current" href="#description">Descripción</a>
-                    <a class="section-nav__text" href="#images-videos">Imágenes y videos</a>
-                    <a class="section-nav__text" href="#specifications">Especificaciones</a>
+                    <a href="#inicio"><span class="section-nav__text section-nav__text--current">Inicio</span></a>
+                    <a href="#caracteristicas"><span class="section-nav__text">Características</span></a>
+                    <a href="#images-videos"><span class="section-nav__text">Imágenes y videos</span></a>
+                    <a href="#specifications"><span class="section-nav__text">Especificaciones</span></a>
                 </section>
                 <button class="button">Comprar</button>
             </nav>
         </header>
 
 
-        <article class="banner">
+        <article class="banner" id="inicio">
             <img class="banner__image" src="./src/images/galaxys20banner.png" alt="Galaxy S20">
             <section class="banner__info">
                 <p class="banner__text">Potencia,
@@ -88,7 +73,7 @@
         </article>
 
         <!--108MP-->
-        <article class="feature">
+        <article class="feature" id="caracteristicas">
             <section class="feature__intro" style="background-image: url(./src/images/108mpbg.png);">
                 <img class="feature__intro-image" src="./src/images/108mp.png" alt="108MP">
             </section>
@@ -363,22 +348,19 @@
     </footer>
 
     <div class="darken"></div>
-    
+
     <div class="burguer-menu">
         <header class="burguer-menu__header">
             <img class="burguer-menu__close" src="./src/icons/closeicon.svg" alt="Close">
-            <h3 class="burguer-menu__title">Navegación</h3>
         </header>
         <section class="burguer-menu__content">
-            <a class="burguer-menu__text" href="">Smathphone</a>
-            <a class="burguer-menu__text" href="">Tablets</a>
-            <a class="burguer-menu__text" href="">Watches</a>
-            <a class="burguer-menu__text" href="">Accesorios</a>
-            <a class="burguer-menu__text" href="">Oferta</a>
-            <a class="burguer-menu__text" href="">Soporte</a>
+            <a href="#inicio"><span class="burguer-menu__text burguer-menu__text--current">Inicio</span></a>
+            <a href="#caracteristicas"><span class="burguer-menu__text">Características</span></a>
+            <a href="#images-videos"><span class="burguer-menu__text">Imágenes y videos</span></a>
+            <a href="#specifications"><span class="burguer-menu__text">Especificaciones</span></a>
         </section>
+        <button class="button button--menu">Comprar</button>
     </div>
-
 
     <script src="./src/scripts/main.js"></script>
 </body>

@@ -20,6 +20,11 @@
         padding: $big-button-padding;
     }
 
+    &--menu {
+        margin: 15px 5%;
+        width: 90%;
+    }
+
     &:hover {
         transition: .3s ease;
         background-color: #0b5094;

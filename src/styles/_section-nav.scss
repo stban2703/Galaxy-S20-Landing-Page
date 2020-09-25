@@ -18,7 +18,7 @@
         width: 200px;
     }
 
-    &__name {
+    &__title {
         font-family: $main-font;
         font-weight: bold;
         font-size: $title-font-size;
@@ -57,16 +57,15 @@
 @media (max-width: $responsive-max-w) {
     .section-nav {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         font-family: $main-font;
-        margin: 0 5px;
+        margin: 0 10px;
 
         &__menu {
             display: block;
-        }
-
-        &__name {
-            font-size: $section-font-size;
+            position: absolute;
+            left: 5px;
         }
 
         &__text-content {
@@ -83,5 +82,17 @@
             }
         }
 
+        button {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: 398px) {
+    .section-nav {
+        &__title {
+            font-size: $nav-font-size;
+        }
     }
 }

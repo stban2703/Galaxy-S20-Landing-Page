@@ -2,33 +2,14 @@
     width: 100%;
     padding: $header-padding;
     box-sizing: border-box;
-
-    &--main {
-        background-color: $main-blue;
-    }
-
-    &--sub {
-        position: absolute;
-        padding: $sub-headder-padding;
-        background: $nav-gradient;
-    }
-
-    &--fixed {
-        position: fixed;
-        top: 0;
-        z-index: 99;
-    }
+    position: fixed;
+    background: $nav-gradient;
+    z-index: 99;
 }
 
 @media (max-width: $responsive-max-w) {
     .header {
         padding-left: 0;
         padding-right: 0;
-
-        &--sub {
-            padding-left: 0;
-            padding-right: 0;
-            background: $nav-gradient;
-        }
     }
 }
