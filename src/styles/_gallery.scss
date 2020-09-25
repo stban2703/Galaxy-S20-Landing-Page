@@ -1,5 +1,5 @@
 .gallery {
-    background-color: $alt-background-color;
+    background-color: $main-background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,11 +10,11 @@
         font-size: $title-font-size;
         font-family: $main-font;
         font-weight: bold;
-        color: $main-blue;
+        color: $main-font-color;
     }
 
     &__container {
-        margin-top: 50px;
+        margin-top: 20px;
         position: relative;
         max-width: 1028px;
         overflow: hidden;

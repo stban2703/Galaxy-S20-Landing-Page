@@ -244,7 +244,7 @@ input[type=button] {
 
 .header {
   width: 100%;
-  padding: 10px 80px;
+  padding: 10px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
@@ -740,7 +740,7 @@ input[type=button] {
 }
 
 .gallery {
-  background-color: white;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,11 +761,11 @@ input[type=button] {
   font-size: 1.4rem;
   font-family: "Open Sans";
   font-weight: bold;
-  color: #23374d;
+  color: white;
 }
 
 .gallery__container {
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
   max-width: 1028px;
   overflow: hidden;
@@ -845,7 +845,7 @@ input[type=button] {
 
 .specs__table {
   max-width: 1200px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .specs__row {
