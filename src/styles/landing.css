@@ -551,7 +551,7 @@ input[type=button] {
   font-weight: bold;
   text-align: center;
   margin: 0 10px;
-  color: #5a5a5a;
+  color: #4d4d4d;
 }
 
 .section-desc--two-colums {
@@ -705,8 +705,6 @@ input[type=button] {
      object-fit: cover;
   -o-object-position: left;
      object-position: left;
-  -webkit-filter: brightness(0.4);
-          filter: brightness(0.4);
 }
 
 .feature__image--compare:last-child {
@@ -719,8 +717,6 @@ input[type=button] {
      object-position: left;
   left: 0;
   bottom: 0;
-  -webkit-filter: none;
-          filter: none;
 }
 
 .feature__slider {
@@ -988,18 +984,6 @@ input[type=button] {
   font-size: 1.4rem;
 }
 
-.newsletter__input {
-  width: 100%;
-  border: none;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 9px;
-  font-style: "Open Sans";
-  font-size: 1.4rem;
-  padding: 5px 10px;
-  margin: 25px 0;
-}
-
 .newsletter__form {
   width: 100%;
   display: -webkit-box;
@@ -1015,6 +999,60 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.newsletter__input {
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+.newsletter__input input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #7c7c7c;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  padding: 5px 0px;
+}
+
+.newsletter__input input:focus {
+  outline: none;
+  border-color: #1089ff;
+}
+
+.newsletter__input label {
+  position: absolute;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  color: #7c7c7c;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.newsletter__input input:focus + label {
+  margin-bottom: 60px;
+  font-size: 1.1rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #1089ff;
+}
+
+.newsletter__input input:valid textarea {
+  background-color: #e8e8e8;
 }
 
 @media (max-width: 966px) {

@@ -168,7 +168,7 @@
 
             <section class="feature__interaction feature__interaction--compare">
                 <input type="range" min="0" max="1" step=".01" value="0" class="feature__slider">
-                <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp"
+                <img class="feature__image feature__image--compare" src="./src/images/nightmode-off.webp"
                     alt="Nigh Mode Off">
                 <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp"
                     alt="Night Mode On">
@@ -310,9 +310,12 @@
         <section class="newsletter">
             <p class="newsletter__desc">Suscríbete para estar al día sobre nuevos dispositivos Samsung y nuestras
                 promociones.</p>
-            <form action="" class="newsletter__form">
-                <input class="newsletter__input" type="email" placeholder="tucorreo@correo.com">
-                <button type="submit" class="button button--medium">Suscribirse</button>
+            <form class="newsletter__form">
+                <div class="newsletter__input">
+                    <input type="email" required>
+                    <label>Tu correo</label>
+                </div>
+                <button class="button button--medium">Suscribirse</button>
             </form>
         </section>
 

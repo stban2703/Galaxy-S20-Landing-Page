@@ -86,7 +86,6 @@
             height: auto;
             object-fit: cover;
             object-position: left;
-            filter: brightness(0.4);
             &:last-child {
                 width: 0%;
                 height: 100%;
@@ -95,7 +94,6 @@
                 object-position: left;
                 left: 0;
                 bottom: 0;
-                filter: none;
             }
         }
     }
