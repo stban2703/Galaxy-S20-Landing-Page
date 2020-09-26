@@ -50,6 +50,11 @@
             #000000 87.58%
         );
 
+        &__image {
+            max-width: 250px;
+        }
+
+
         &__text {
             font-size: $medium-font-size;
             text-align: center;
