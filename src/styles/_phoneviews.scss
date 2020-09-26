@@ -9,7 +9,7 @@
 
     &__text {
         max-width: 500px;
-        margin: 0 auto;
+        margin-left: auto;
         font-family: $main-font;
         font-size: $big-font-size;
         font-weight: bold;
@@ -18,8 +18,8 @@
 
     &__image {
         height: auto;
-        margin-left: auto;
-        object-fit: contain;
+        //margin-left: auto;
+    
     }
 }
 
@@ -28,7 +28,7 @@
         &__text {
             font-size: $medium-font-size;
             text-align: center;
-            margin: 20px 0;
+            margin: 20px 5px;
         }
     }
 }
