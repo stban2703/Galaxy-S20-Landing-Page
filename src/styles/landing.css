@@ -557,6 +557,7 @@ input[type=button] {
 
 .phone-views__image {
   height: auto;
+  margin-left: auto;
 }
 
 @media (max-width: 966px) {
