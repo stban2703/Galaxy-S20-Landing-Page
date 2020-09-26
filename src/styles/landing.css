@@ -248,8 +248,8 @@ input[type=button] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(41.15%, rgba(0, 0, 0, 0.65625)), color-stop(67.19%, rgba(0, 0, 0, 0.487832)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.65625) 41.15%, rgba(0, 0, 0, 0.487832) 67.19%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(90.1%, rgba(0, 0, 0, 0.96)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.96) 90.1%, rgba(0, 0, 0, 0) 100%);
   z-index: 90;
 }
 
@@ -286,10 +286,6 @@ input[type=button] {
   cursor: pointer;
 }
 
-.section-nav__logo {
-  width: 200px;
-}
-
 .section-nav__title {
   font-family: "Open Sans";
   font-weight: bold;
@@ -320,18 +316,6 @@ input[type=button] {
   font-weight: bold;
 }
 
-.section-nav__icon-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.section-nav__icon {
-  max-width: none;
-  width: 25px;
-  margin: 0 10px;
-}
-
 @media (max-width: 966px) {
   .section-nav {
     display: -webkit-box;
@@ -350,6 +334,7 @@ input[type=button] {
     display: block;
     position: absolute;
     left: 5px;
+    width: 30px;
   }
   .section-nav__text-content {
     display: none;
@@ -714,8 +699,7 @@ input[type=button] {
 }
 
 .feature__zoom-image {
-  background: url("../images/zoomcatinteraction.webp") no-repeat #fff;
-  background-size: auto auto;
+  background: url("../images/zoomcatinteraction.jpg") no-repeat #fff;
   width: 200px;
   height: 200px;
   -webkit-box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
@@ -723,7 +707,7 @@ input[type=button] {
   pointer-events: none;
   position: absolute;
   border: 2px solid #efefef;
-  z-index: 99;
+  z-index: 50;
   border-radius: 100%;
   display: none;
   -webkit-transition: opacity 0.2s;
@@ -849,7 +833,6 @@ input[type=button] {
 
 .gallery__video {
   width: 100%;
-  height: auto;
 }
 
 .gallery__button {
@@ -933,8 +916,8 @@ input[type=button] {
   text-align: center;
   width: 100%;
   padding: 30px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(15.1%, rgba(0, 0, 0, 0.487832)), color-stop(24.48%, rgba(0, 0, 0, 0.65625)), color-stop(78.65%, #000000));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.487832) 15.1%, rgba(0, 0, 0, 0.65625) 24.48%, #000000 78.65%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(19.27%, rgba(0, 0, 0, 0.78)), color-stop(78.65%, #000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 19.27%, #000000 78.65%);
   cursor: pointer;
   font-family: "Open Sans";
   font-size: 1.4rem;

@@ -4,14 +4,8 @@ $light-blue: #1089ff;
 $light-gray-color: #7c7c7c;
 $main-font-color: white;
 $dark-gray-color: rgb(77, 77, 77);
-$nav-gradient: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(0, 0, 0, 0.65625) 41.15%,
-    rgba(0, 0, 0, 0.487832) 67.19%,
-    rgba(0, 0, 0, 0) 100%
-);
-$view-more-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.487832) 15.1%, rgba(0, 0, 0, 0.65625) 24.48%, #000000 78.65%);
+$nav-gradient: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.96) 90.1%, rgba(0, 0, 0, 0) 100%);
+$view-more-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 19.27%, #000000 78.65%);
 $main-gradient: radial-gradient(70% 45% at 50% 50%, #273788 0%, #094f94 0.01%, #0a0a0e 71.64%, #000000 87.58%);
 $main-background-color: black;
 $alt-background-color: white;

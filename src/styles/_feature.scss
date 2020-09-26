@@ -45,15 +45,14 @@
     }
 
     &__zoom-image {
-        background: url("../images/zoomcatinteraction.webp") no-repeat #fff;
-        background-size: auto auto;
+        background: url("../images/zoomcatinteraction.jpg") no-repeat #fff;
         width: 200px;
         height: 200px;
         box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
         pointer-events: none;
         position: absolute;
         border: 2px solid #efefef;
-        z-index: 99;
+        z-index: 50;
         border-radius: 100%;
         display: none;
         transition: opacity 0.2s;
