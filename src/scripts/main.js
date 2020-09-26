@@ -144,3 +144,17 @@ inputField.addEventListener('change', function () {
     inputLabel.classList.remove("input__label--focus");
   }
 });
+
+// View more table
+const table = document.querySelector(".specs__table");
+const viewMoreBtn = document.querySelector(".specs__view-more");
+
+viewMoreBtn.addEventListener('click', function() {
+  table.classList.toggle("specs__table--visible");
+
+  if(table.classList.contains("specs__table--visible")) {
+    viewMoreBtn.innerHTML = "Ver menos";
+  } else {
+    viewMoreBtn.innerHTML = "Ver más";
+  }
+})

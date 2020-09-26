@@ -3,9 +3,10 @@
     color: $main-font-color;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    object-fit: cover;
     padding-top: 100px;
+    overflow: hidden;
 
     &__title {
         font-size: $title-font-size;
@@ -15,7 +16,12 @@
 
     &__table {
         max-width: 1200px;
+        height: 300px;
         margin-top: 20px;
+
+        &--visible {
+            height: auto;
+        }
     }
 
     &__row {
@@ -30,6 +36,18 @@
             width: 20%;
             font-weight: bold;
         }
+    }
+
+    &__view-more {
+        text-align: center;
+        width: 100%;
+        padding: 30px 0;
+        background: $view-more-gradient;
+        cursor: pointer;
+        font-family: $main-font;
+        font-size: $section-font-size;
+        font-weight: bold;
+        color: $light-blue;
     }
 }
 

@@ -889,13 +889,13 @@ input[type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .specs__title {
@@ -906,7 +906,12 @@ input[type=button] {
 
 .specs__table {
   max-width: 1200px;
+  height: 300px;
   margin-top: 20px;
+}
+
+.specs__table--visible {
+  height: auto;
 }
 
 .specs__row {
@@ -922,6 +927,19 @@ input[type=button] {
 .specs__colum--title {
   width: 20%;
   font-weight: bold;
+}
+
+.specs__view-more {
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(15.1%, rgba(0, 0, 0, 0.487832)), color-stop(24.48%, rgba(0, 0, 0, 0.65625)), color-stop(78.65%, #000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.487832) 15.1%, rgba(0, 0, 0, 0.65625) 24.48%, #000000 78.65%);
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1089ff;
 }
 
 @media (max-width: 966px) {
