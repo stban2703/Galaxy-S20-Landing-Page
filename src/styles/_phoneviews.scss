@@ -2,29 +2,32 @@
     background-color: $main-background-color;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px;
+    padding: 20px 0;
+    padding-left: 10px;
 
     &__text {
-        max-width: 500px;
+        max-width: 600px;
         margin-left: auto;
         font-family: $main-font;
-        font-size: $big-font-size;
+        font-size: $medium-font-size + 0.2;
         font-weight: bold;
         color: $main-font-color;
     }
 
     &__image {
-        height: auto;
+        width: 100%;
+        max-width: 600px;
         margin-left: auto;
-    
+        height: auto;
     }
 }
 
 @media (max-width: $responsive-max-w) {
     .phone-views {
+        flex-wrap: wrap;
+        padding-left: 0;
         &__text {
             font-size: $medium-font-size;
             text-align: center;
