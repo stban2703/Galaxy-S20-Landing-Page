@@ -5,10 +5,6 @@ _Landing page for Samsung Galaxy S20. This is a project for the Web Programming 
 
 _SASS Compiler_
 
-```
-You can use the extension "SASS Compiler" for Visual Studio Code
-```
-
 ## Built with 🛠️
 
 * HTML5: for structure
