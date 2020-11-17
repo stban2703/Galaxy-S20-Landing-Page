@@ -3,6 +3,14 @@ if (typeof window.history.replaceState == 'function') {
   history.replaceState({}, '', window.location.href.slice(0, -1));
 }
 
+const redirectBtn = document.querySelectorAll('.button--go');
+
+redirectBtn.forEach(function (elem) {
+  elem.addEventListener('click', function () {
+    window.location.href = "https://stban2703.github.io/Samsung-Mobile-Project/product.html?VbDwvh1xMyJKdZuiQrk2-Galaxy_S20";
+  });
+});
+
 const html = document.querySelector("html");
 
 // Scroll interactions
@@ -138,7 +146,7 @@ const inputLabel = document.querySelector(".input__label");
 const inputField = document.querySelector(".input__field");
 
 inputField.addEventListener('change', function () {
-  if(inputField.value.length > 0) {
+  if (inputField.value.length > 0) {
     inputLabel.classList.add("input__label--focus");
   } else {
     inputLabel.classList.remove("input__label--focus");
@@ -149,10 +157,10 @@ inputField.addEventListener('change', function () {
 const table = document.querySelector(".specs__table");
 const viewMoreBtn = document.querySelector(".specs__view-more");
 
-viewMoreBtn.addEventListener('click', function() {
+viewMoreBtn.addEventListener('click', function () {
   table.classList.toggle("specs__table--visible");
 
-  if(table.classList.contains("specs__table--visible")) {
+  if (table.classList.contains("specs__table--visible")) {
     viewMoreBtn.innerHTML = "Ver menos";
   } else {
     viewMoreBtn.innerHTML = "Ver más";
