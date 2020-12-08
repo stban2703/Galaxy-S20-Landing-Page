@@ -81,6 +81,28 @@ window.addEventListener('load', function () {
         })
     });
 
+    // Transicion gatos
+    gsap.to(".feature__interaction--zoom", {
+        scrollTrigger: {
+            trigger: document.querySelector(".feature__interaction--zoom"),
+            toggleActions: "restart pause reverse pause"
+        },
+        opacity: 1,
+        ease: "in",
+        duration: 2.5
+    });
+
+    // Transicion video
+    gsap.to(".feature__media", {
+        scrollTrigger: {
+            trigger: document.querySelector(".feature__media"),
+            toggleActions: "restart pause reverse pause"
+        },
+        opacity: 1,
+        ease: "in",
+        duration: 1.5
+    });
+
     // Oscurecer fondo
     const features = document.querySelectorAll(".feature");
 
@@ -118,7 +140,7 @@ window.addEventListener('load', function () {
         ease: "in"
     });
 
-    
+
 
 
     // Modo noche transicion

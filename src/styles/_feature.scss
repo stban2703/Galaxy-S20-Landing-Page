@@ -47,6 +47,7 @@
         height: auto;
 
         &--zoom {
+            opacity: 0;
             overflow: hidden;
             &:hover {
                 .feature__zoom-image {
@@ -85,6 +86,7 @@
     }
 
     &__media {
+        opacity: 0;
         max-width: $feature-section-max-w;
     }
 
