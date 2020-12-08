@@ -728,6 +728,7 @@ input[type=button] {
 }
 
 .feature__interaction--zoom {
+  opacity: 0;
   overflow: hidden;
 }
 
@@ -764,6 +765,7 @@ input[type=button] {
 }
 
 .feature__media {
+  opacity: 0;
   max-width: 1030px;
 }
 
