@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>Samsung Galaxy S20 ULTRA</title>
     <link rel="icon" href="./src/icons/favicon.ico">
     <link rel="stylesheet" href="./src/styles/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
@@ -27,7 +28,7 @@
         </nav>
     </header>
     <main class="content">
-        <article class="banner navegation" id="intro">
+        <article class="banner" id="intro">
             <a href="">
                 <div class="promo">
                     <span class="promo__desc">Compra hoy y obtén un descuento de</span>
@@ -35,8 +36,9 @@
                 </div>
             </a>
 
-            <img class="banner__image" src="./src/images/galaxys20banner.png" alt="Galaxy S20">
-            <section class="banner__info">
+            <img class="banner__image animate__animated animate__fadeIn" src="./src/images/galaxys20banner.png"
+                alt="Galaxy S20">
+            <section class="banner__info navegation animate__animated animate__fadeIn">
                 <p class="banner__text">Potencia,
                     almacenamiento, seguridad, duración y resolución
                     8K a la
@@ -69,7 +71,6 @@
             </section>
         </article>
 
-
         <article class="phone-views">
             <p class="phone-views__text">Un celular con una
                 cámara diseñada para darte una experiencia
@@ -82,7 +83,9 @@
         <!--108MP-->
         <article class="feature">
             <section class="feature__intro" style="background-image: url(./src/images/108mpbg.png);">
+                <div class="feature__windowLeft"></div>
                 <img class="feature__intro-image" src="./src/images/108mp.png" alt="108MP">
+                <div class="feature__windowRight"></div>
             </section>
 
             <section class="section-desc">
@@ -113,7 +116,9 @@
         <!--8K Video-->
         <article class="feature">
             <section class="feature__intro" style="background-image: url(./src/images/8kresbg.png);">
-                <img class="feature__intro-image" src="./src/images/8kres.png" alt="108MP">
+                <div class="feature__windowLeft"></div>
+                <img class="feature__intro-image" src="./src/images/8kres.png" alt="8K">
+                <div class="feature__windowRight"></div>
             </section>
 
             <section class="section-desc section-desc--two-colums">
@@ -159,9 +164,11 @@
         </article>
 
         <!--Night Mode-->
-        <article class="feature feature--black-bg">
+        <article class="feature">
             <section class="feature__intro" style="background-image: url(./src/images/nightmodebg.jpg);">
-                <img class="feature__intro-image" src="./src/images/nightmode.png" alt="108MP">
+                <div class="feature__windowLeft"></div>
+                <img class="feature__intro-image" src="./src/images/nightmode.png" alt="Night Mode">
+                <div class="feature__windowRight"></div>
             </section>
 
             <section class="section-desc">
@@ -387,8 +394,10 @@
         </section>
         <button class="button button--menu button--go">Comprar</button>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="./src/scripts/gs.js"></script>
     <script src="./src/scripts/main.js"></script>
 </body>
 
