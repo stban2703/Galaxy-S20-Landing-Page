@@ -5,7 +5,17 @@ window.addEventListener('load', function () {
     ScrollTrigger.defaults({
         toggleActions: "restart pause resume pause"
     });
-
+    //Beneficios
+    gsap.to(".benefits__content", {
+        opacity: 1,
+        scrollTrigger: {
+            trigger: ".benefits__content",
+            toggleActions: "restart pause reverse pause"
+        },
+        duration: 0.5,
+        stagger: 0.3,
+        ease: "in"
+    });
     //inicio
     gsap.to(".phone-views__image", {
         xPercent: -100,
@@ -28,4 +38,6 @@ window.addEventListener('load', function () {
         duration: 1.2,
         ease: "circ"
     });
+
+
 });
