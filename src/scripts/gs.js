@@ -2,22 +2,19 @@ window.addEventListener('load', function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    ScrollTrigger.defaults({
-        toggleActions: "restart pause resume pause"
-    });
 
     //Beneficios
     gsap.to(".benefits__content", {
         opacity: 1,
         scrollTrigger: {
-            scrub: true,
             trigger: ".benefits__content",
             toggleActions: "restart pause reverse pause"
         },
-        stagger: 0.3,
+        stagger: 0.1,
+        duration: 0.5,
         ease: "in"
     });
-    
+
     //inicio
     gsap.to(".phone-views__image", {
         xPercent: -100,
@@ -33,10 +30,10 @@ window.addEventListener('load', function () {
         xPercent: 100,
         opacity: 100,
         scrollTrigger: {
-            scrub: true,
             trigger: ".phone-views__text",
             toggleActions: "restart pause reverse pause"
         },
+        duration: 0.5,
         ease: "circ"
     });
 
@@ -77,24 +74,51 @@ window.addEventListener('load', function () {
             opacity: 1,
             scrollTrigger: {
                 trigger: elem,
-                scrub: true,
                 toggleActions: "restart pause reverse pause"
             },
+            duration: 0.5,
             ease: "sine"
         })
     });
 
     // Oscurecer fondo
     const features = document.querySelectorAll(".feature");
-    gsap.to(features[2], {
+
+    gsap.to(features[1], {
         scrollTrigger: {
-            trigger: features[1],
+            start: "top top",
+            trigger: document.querySelector(".blank"),
             scrub: true,
             toggleActions: "restart pause reverse pause"
         },
         backgroundColor: "#000000",
         ease: "in"
     });
+
+    gsap.to(document.querySelector(".blank"), {
+        scrollTrigger: {
+            trigger: document.querySelector(".blank"),
+            scrub: true,
+            start: "top top",
+            toggleActions: "restart pause reverse pause"
+        },
+        backgroundColor: "#000000",
+        ease: "in"
+    });
+
+
+    gsap.to(features[2], {
+        scrollTrigger: {
+            trigger: document.querySelector(".blank"),
+            scrub: true,
+            start: "top top",
+            toggleActions: "restart pause reverse pause"
+        },
+        backgroundColor: "#000000",
+        ease: "in"
+    });
+
+    
 
 
     // Modo noche transicion

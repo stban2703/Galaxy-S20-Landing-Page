@@ -83,12 +83,6 @@ html {
     overflow-x: hidden;
 }
 
-.gs_reveal {
-    opacity: 0;
-    visibility: hidden;
-    transition: transform 0s;
-}
-
 .comparisonSection {
     width: 100%;
     position: relative;
@@ -114,4 +108,11 @@ html {
     position: absolute;
     object-fit: cover;
     top: 0;
+}
+
+
+.blank {
+    padding-top: 10px;
+    width: 100%;
+    height: 300vh;
 }
