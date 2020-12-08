@@ -140,9 +140,6 @@ window.addEventListener('load', function () {
         ease: "in"
     });
 
-
-
-
     // Modo noche transicion
     gsap.utils.toArray(".comparisonSection").forEach(section => {
         let tl = gsap.timeline({
@@ -163,5 +160,41 @@ window.addEventListener('load', function () {
             // ...and the image the opposite way (at the same time)
             .fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0)
     });
+
+    // Tabla
+    gsap.to(".specs", {
+        scrollTrigger: {
+            trigger: document.querySelector(".specs"),
+            toggleActions: "restart pause reverse pause"
+        },
+        opacity: 1,
+        duration: 1.2,
+        xPercent: 100,
+        ease: "in"
+    })
+
+    // Animacion Newsletter
+    gsap.to(".newsletter", {
+        scrollTrigger: {
+            trigger: document.querySelector(".newsletter"),
+            toggleActions: "restart pause reverse pause"
+        },
+        opacity: 1,
+        duration: 1.2,
+        xPercent: 100,
+        ease: "in"
+    })
+
+    const newsletterContainer = document.querySelector(".newsletter__container");
+    const nlForm = document.querySelector(".newsletter__form");
+
+    nlForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const tl = gsap.timeline({});
+        tl.to(newsletterContainer, {x: -100, duration: 0.5});
+        tl.to(newsletterContainer, {x: 1000, opacity: 0, duration: 1, ease: "power3"});
+        tl.to(newsletterContainer, {x: -2000, duration: 0});
+        tl.to(newsletterContainer, {x: 0, opacity: 1, duration: 2, ease: "sine"});
+    })
 
 });
