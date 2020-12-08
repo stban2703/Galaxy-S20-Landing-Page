@@ -69,4 +69,32 @@ window.addEventListener('load', function () {
         })
     });
 
+    // Texto de las secciones
+    const sectionDescText = document.querySelectorAll(".section-desc__text");
+    sectionDescText.forEach(elem => {
+        gsap.to(elem, {
+            yPercent: 100,
+            opacity: 1,
+            scrollTrigger: {
+                trigger: elem,
+                delay: 5,
+                toggleActions: "restart pause reverse pause"
+            },
+            duration: 1,
+            ease: "sine"
+        })
+    });
+
+    // Oscurecer fondo
+    const features = document.querySelectorAll(".feature");
+    gsap.to(features[2], {
+        scrollTrigger: {
+            trigger: features[2],
+            toggleActions: "restart pause reverse pause"
+        },
+        backgroundColor: "#000000",
+        duration: 3,
+        ease: "in"
+    });
+
 });
