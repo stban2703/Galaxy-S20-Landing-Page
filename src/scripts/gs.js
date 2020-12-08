@@ -161,18 +161,7 @@ window.addEventListener('load', function () {
             .fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0)
     });
 
-    // Animacion Newsletter
-    gsap.to(".newsletter", {
-        scrollTrigger: {
-            trigger: document.querySelector(".newsletter"),
-            toggleActions: "restart pause reverse pause"
-        },
-        opacity: 1,
-        duration: 1.2,
-        xPercent: 100,
-        ease: "in"
-    })
-
+    // Animacion newsletter
     const newsletterContainer = document.querySelector(".newsletter__container");
     const nlForm = document.querySelector(".newsletter__form");
 

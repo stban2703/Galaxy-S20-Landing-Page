@@ -1,8 +1,6 @@
 .newsletter {
     max-width: $newsletter-max-w;
-    opacity: 0;
-    transform: translate(-100%, 0);
-
+    
     &__container {
         padding: $newsletter-padding;
         max-width: $newsletter-max-w;

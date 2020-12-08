@@ -1146,9 +1146,6 @@ input[type=button] {
 
 .newsletter {
   max-width: 1000px;
-  opacity: 0;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
 }
 
 .newsletter__container {
