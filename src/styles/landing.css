@@ -316,7 +316,7 @@ input[type=button] {
   font-weight: bold;
 }
 
-@media (max-width: 966px) {
+@media (max-width: 1066px) {
   .section-nav {
     display: -webkit-box;
     display: -ms-flexbox;

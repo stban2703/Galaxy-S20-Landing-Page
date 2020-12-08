@@ -40,7 +40,7 @@
     }
 }
 
-@media (max-width: $responsive-max-w) {
+@media (max-width: $responsive-max-w + 100) {
     .section-nav {
         display: flex;
         justify-content: center;

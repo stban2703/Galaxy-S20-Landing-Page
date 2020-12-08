@@ -161,18 +161,6 @@ window.addEventListener('load', function () {
             .fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0)
     });
 
-    // Tabla
-    gsap.to(".specs", {
-        scrollTrigger: {
-            trigger: document.querySelector(".specs"),
-            toggleActions: "restart pause reverse pause"
-        },
-        opacity: 1,
-        duration: 1.2,
-        xPercent: 100,
-        ease: "in"
-    })
-
     // Animacion Newsletter
     gsap.to(".newsletter", {
         scrollTrigger: {
