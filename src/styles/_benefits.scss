@@ -5,8 +5,10 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px 100px;
+    overflow: hidden;
 
     &__content {
+        opacity: 0;
         margin: 25px 25px;
         width: 100%;
         max-width: 300px;

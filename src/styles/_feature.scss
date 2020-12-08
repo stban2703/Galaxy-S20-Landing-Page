@@ -12,6 +12,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    &__windowLeft {
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        left: 0;
+    }
+    
+    &__windowRight {
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        right: 0;
     }
 
     &__intro-image {

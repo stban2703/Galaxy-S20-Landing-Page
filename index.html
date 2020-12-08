@@ -7,6 +7,8 @@
     <title>Samsung Galaxy S20 ULTRA</title>
     <link rel="icon" href="./src/icons/favicon.ico">
     <link rel="stylesheet" href="./src/styles/landing.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body>
@@ -18,6 +20,7 @@
                 <a href="#intro"><span class="section-nav__text section-nav__text--current">Inicio</span></a>
                 <a href="#characteristics"><span class="section-nav__text">Características</span></a>
                 <a href="#images-videos"><span class="section-nav__text">Imágenes y videos</span></a>
+                <a href="#3dtest"><span class="section-nav__text">Prueba</span></a>
                 <a href="#specifications"><span class="section-nav__text">Especificaciones</span></a>
             </section>
             <button class="button button--go">Comprar</button>
@@ -25,10 +28,12 @@
     </header>
     <main class="content">
         <article class="banner navegation" id="intro">
-            <a href=""><div class="promo">
-                <span class="promo__desc">Compra hoy y obtén un descuento de</span>
-                <h2 class="promo__discount">30%</h2>
-            </div></a>
+            <a href="">
+                <div class="promo">
+                    <span class="promo__desc">Compra hoy y obtén un descuento de</span>
+                    <h2 class="promo__discount">30%</h2>
+                </div>
+            </a>
 
             <img class="banner__image" src="./src/images/galaxys20banner.png" alt="Galaxy S20">
             <section class="banner__info">
@@ -184,13 +189,29 @@
                     <img class="gallery__image" src="./src/images/imagebackphone.png" alt="Samsung de espalda">
                     <video controls class="gallery__video"
                         src="./src/videos/Samsung-Elige_tu_mejor_momento.mp4"></video>
-                    <video controls class="gallery__video"
-                        src="./src/videos/Space_Zoom-Galaxy S20.mp4"></video>
+                    <video controls class="gallery__video" src="./src/videos/Space_Zoom-Galaxy S20.mp4"></video>
                 </div>
                 <img class="gallery__button gallery__button--left" src="./src/icons/leftbutton.svg"
                     alt="Botón Izquierda">
                 <img class="gallery__button gallery__button--right" src="./src/icons/rightbutton.svg"
                     alt="Botón Derecha">
+            </div>
+        </section>
+
+        <!--3d test-->
+        <section class="test navegation" id="3dtest">
+            <section class="test__desc">
+                <h3 class="test__title">Prueba Galaxy S20</h3>
+            </section>
+
+            <div class="test__container">
+                <!--<model-viewer class="modelViewer" poster="./src/images/3dtestportada.png"
+                    src="./src/renders/s20test.gltf" alt="Modelo 3D de Samsung Galaxy S20" auto-rotate camera-controls
+                    shadow-intensity="0.5" loading="eager" ar ar-scale="auto" ar-placement="wall" scale="0.5">
+
+                    <div class="modelViewer__annotation">Arrastra para interactuar con el modelo.</div>
+
+                </model-viewer>-->
             </div>
         </section>
 
@@ -361,10 +382,13 @@
             <a href="#intro"><span class="burguer-menu__text burguer-menu__text--current">Inicio</span></a>
             <a href="#characteristics"><span class="burguer-menu__text">Características</span></a>
             <a href="#images-videos"><span class="burguer-menu__text">Imágenes y videos</span></a>
+            <a href="#3dtest"><span class="burguer-menu__text">Prueba</span></a>
             <a href="#specifications"><span class="burguer-menu__text">Especificaciones</span></a>
         </section>
         <button class="button button--menu button--go">Comprar</button>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="./src/scripts/main.js"></script>
 </body>
 

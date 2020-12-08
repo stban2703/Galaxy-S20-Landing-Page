@@ -70,6 +70,7 @@ $button-radius: 50px;
 @import "section-desc";
 @import "feature";
 @import "gallery";
+@import "test";
 @import "specs";
 @import "footer";
 @import "newsletter";
@@ -77,3 +78,13 @@ $button-radius: 50px;
 @import "button";
 @import "darken";
 @import "burguer-menu";
+
+html {
+    overflow-x: hidden;
+}
+
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0s;
+}

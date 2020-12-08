@@ -1,0 +1,65 @@
+.test {
+    background-color: $main-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
+    &__title {
+        font-size: $title-font-size;
+        font-family: $main-font;
+        font-weight: bold;
+        color: $main-font-color;
+    }
+
+    &__container {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 1028px;
+        height: 600px;
+    }
+
+    &__desc {
+        margin: 10px 0 0 10px;
+
+        h4 {
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: 2rem;
+            color: $main-font-color;
+        }
+
+        h3 {
+            font-family: $main-font;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: $main-font-color;
+        }
+    }
+}
+
+.modelViewer {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    height: 100%;
+
+    &__annotation {
+        font-family: $main-font;
+        font-size: 1rem;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+        width: fit-content;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        color: white;
+    }
+
+    &--progress-bar-color {
+        background-color: rgb(255, 255, 255);
+    }
+
+    &--progress-mask {
+        background: #fff;
+    }
+}
