@@ -40,4 +40,33 @@ window.addEventListener('load', function () {
     });
 
 
+    //Ventanas
+    const featureWindowLeft = document.querySelectorAll(".feature__windowLeft");
+    featureWindowLeft.forEach(elem => {
+        gsap.to(elem, {
+            xPercent: -100,
+            scrollTrigger: {
+                trigger: elem,
+                delay: 5,
+                toggleActions: "restart pause reverse pause"
+            },
+            duration: 1.5,
+            ease: "circ",
+        })
+    });
+
+    const featureWindowRight = document.querySelectorAll(".feature__windowRight");
+    featureWindowRight.forEach(elem => {
+        gsap.to(elem, {
+            xPercent: 100,
+            scrollTrigger: {
+                trigger: elem,
+                delay: 5,
+                toggleActions: "restart pause reverse pause"
+            },
+            duration: 1.5,
+            ease: "circ"
+        })
+    });
+
 });
