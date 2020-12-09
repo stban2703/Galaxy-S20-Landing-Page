@@ -85,8 +85,10 @@ html {
 
 .comparisonSection {
     width: 100%;
+    overflow-x: hidden;
     position: relative;
     padding-bottom: 56.25%; /* to maintain aspect ratio (responsive!) */
+    max-width: $feature-section-max-w;
 }
 .comparisonImage {
     width: 100%;

@@ -3,12 +3,13 @@ window.addEventListener('load', function () {
     gsap.registerPlugin(ScrollTrigger);
 
 
+    const benefits = document.querySelectorAll(".benefits__content")
     //Beneficios
     gsap.to(".benefits__content", {
         opacity: 1,
         scrollTrigger: {
             trigger: ".benefits__content",
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         stagger: 0.1,
         duration: 0.5,
@@ -19,10 +20,10 @@ window.addEventListener('load', function () {
     gsap.to(".phone-views__image", {
         xPercent: -100,
         scrollTrigger: {
-            scrub: true,
             trigger: ".phone-views__text",
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
+        duration: 0.5,
         ease: "circ"
     });
 
@@ -31,7 +32,7 @@ window.addEventListener('load', function () {
         opacity: 100,
         scrollTrigger: {
             trigger: ".phone-views__text",
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         duration: 0.5,
         ease: "circ"
@@ -46,7 +47,7 @@ window.addEventListener('load', function () {
             scrollTrigger: {
                 scrub: true,
                 trigger: elem,
-                toggleActions: "restart pause reverse pause"
+                toggleActions: "play none reverse reset"
             },
             ease: "circ",
         })
@@ -60,7 +61,7 @@ window.addEventListener('load', function () {
                 scrub: true,
                 trigger: elem,
                 delay: 1,
-                toggleActions: "restart pause reverse pause"
+                toggleActions: "play none reverse reset"
             },
             ease: "circ"
         })
@@ -74,7 +75,7 @@ window.addEventListener('load', function () {
             opacity: 1,
             scrollTrigger: {
                 trigger: elem,
-                toggleActions: "restart pause reverse pause"
+                toggleActions: "play none reverse reset"
             },
             duration: 0.5,
             ease: "sine"
@@ -85,7 +86,7 @@ window.addEventListener('load', function () {
     gsap.to(".feature__interaction--zoom", {
         scrollTrigger: {
             trigger: document.querySelector(".feature__interaction--zoom"),
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         opacity: 1,
         ease: "in",
@@ -96,7 +97,7 @@ window.addEventListener('load', function () {
     gsap.to(".feature__media", {
         scrollTrigger: {
             trigger: document.querySelector(".feature__media"),
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         opacity: 1,
         ease: "in",
@@ -111,7 +112,7 @@ window.addEventListener('load', function () {
             start: "top top",
             trigger: document.querySelector(".blank"),
             scrub: true,
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         backgroundColor: "#000000",
         ease: "in"
@@ -122,7 +123,7 @@ window.addEventListener('load', function () {
             trigger: document.querySelector(".blank"),
             scrub: true,
             start: "top top",
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         backgroundColor: "#000000",
         ease: "in"
@@ -134,7 +135,7 @@ window.addEventListener('load', function () {
             trigger: document.querySelector(".blank"),
             scrub: true,
             start: "top top",
-            toggleActions: "restart pause reverse pause"
+            toggleActions: "play none reverse reset"
         },
         backgroundColor: "#000000",
         ease: "in"
