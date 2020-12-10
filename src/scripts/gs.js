@@ -21,11 +21,10 @@ window.addEventListener('load', function () {
     gsap.to(".phone-views__image", {
         xPercent: -100,
         scrollTrigger: {
-            start: "top center",
             trigger: ".phone-views__text",
             toggleActions: "play none reverse reset"
         },
-        duration: 1,
+        duration: 1.5,
         ease: "circ"
     });
 
@@ -33,11 +32,10 @@ window.addEventListener('load', function () {
         xPercent: 100,
         opacity: 100,
         scrollTrigger: {
-            start: "top center",
             trigger: ".phone-views__text",
             toggleActions: "play none reverse reset"
         },
-        duration: 1,
+        duration: 1.5,
         ease: "circ"
     });
 
@@ -78,11 +76,10 @@ window.addEventListener('load', function () {
             yPercent: 100,
             opacity: 1,
             scrollTrigger: {
-                start: "top center",
                 trigger: elem,
                 toggleActions: "play none reverse reset"
             },
-            duration: 0.5,
+            duration: 1.2,
             ease: "sine"
         })
     });
