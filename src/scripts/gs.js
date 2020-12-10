@@ -50,7 +50,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reverse"
             },
-            duration: 1.5,
+            duration: 1.8,
             ease: "expo",
         })
     });
@@ -64,7 +64,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reverse"
             },
-            duration: 1.5,
+            duration: 1.8,
             ease: "expo"
         })
     });
@@ -79,7 +79,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reset"
             },
-            duration: 1.2,
+            duration: 1,
             ease: "sine"
         })
     });
