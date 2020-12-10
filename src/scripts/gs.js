@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
             trigger: ".phone-views__text",
             toggleActions: "play none reverse reset"
         },
-        duration: 0.5,
+        duration: 1,
         ease: "circ"
     });
 
@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
             trigger: ".phone-views__text",
             toggleActions: "play none reverse reset"
         },
-        duration: 0.5,
+        duration: 1,
         ease: "circ"
     });
 
@@ -52,7 +52,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reverse"
             },
-            duration: 1,
+            duration: 1.5,
             ease: "expo",
         })
     });
@@ -66,7 +66,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reverse"
             },
-            duration: 1,
+            duration: 1.5,
             ease: "expo"
         })
     });
