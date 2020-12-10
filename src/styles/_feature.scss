@@ -32,6 +32,14 @@
         right: 0;
     }
 
+    &__window--light {
+        background-color: white;
+    }
+
+    &__window--dark {
+        background-color: white;
+    }
+
     &__intro-image {
         width: 100%;
         max-width: $section-image-max-w;

@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
     gsap.to(".benefits__content", {
         opacity: 1,
         scrollTrigger: {
+            start: "top center",
             trigger: ".benefits__content",
             toggleActions: "play none reverse reset"
         },
@@ -20,6 +21,7 @@ window.addEventListener('load', function () {
     gsap.to(".phone-views__image", {
         xPercent: -100,
         scrollTrigger: {
+            start: "top center",
             trigger: ".phone-views__text",
             toggleActions: "play none reverse reset"
         },
@@ -31,6 +33,7 @@ window.addEventListener('load', function () {
         xPercent: 100,
         opacity: 100,
         scrollTrigger: {
+            start: "top center",
             trigger: ".phone-views__text",
             toggleActions: "play none reverse reset"
         },
@@ -45,11 +48,12 @@ window.addEventListener('load', function () {
         gsap.to(elem, {
             xPercent: -100,
             scrollTrigger: {
-                scrub: true,
+                start: "top 10% center",
                 trigger: elem,
-                toggleActions: "play none reverse reset"
+                toggleActions: "play none reverse reverse"
             },
-            ease: "circ",
+            duration: 1,
+            ease: "expo",
         })
     });
 
@@ -58,12 +62,12 @@ window.addEventListener('load', function () {
         gsap.to(elem, {
             xPercent: 100,
             scrollTrigger: {
-                scrub: true,
+                start: "top 10% center",
                 trigger: elem,
-                delay: 1,
-                toggleActions: "play none reverse reset"
+                toggleActions: "play none reverse reverse"
             },
-            ease: "circ"
+            duration: 1,
+            ease: "expo"
         })
     });
 
@@ -74,6 +78,7 @@ window.addEventListener('load', function () {
             yPercent: 100,
             opacity: 1,
             scrollTrigger: {
+                start: "top center",
                 trigger: elem,
                 toggleActions: "play none reverse reset"
             },
@@ -85,17 +90,19 @@ window.addEventListener('load', function () {
     // Transicion gatos
     gsap.to(".feature__interaction--zoom", {
         scrollTrigger: {
+            start: "top center",
             trigger: document.querySelector(".feature__interaction--zoom"),
             toggleActions: "play none reverse reset"
         },
         opacity: 1,
         ease: "in",
-        duration: 2.5
+        duration: 1.5
     });
 
     // Transicion video
     gsap.to(".feature__media", {
         scrollTrigger: {
+            start: "top center",
             trigger: document.querySelector(".feature__media"),
             toggleActions: "play none reverse reset"
         },
@@ -140,6 +147,18 @@ window.addEventListener('load', function () {
         backgroundColor: "#000000",
         ease: "in"
     });
+
+    gsap.to(".feature__window--dark", {
+        scrollTrigger: {
+            trigger: document.querySelector(".blank"),
+            scrub: true,
+            start: "top top",
+            toggleActions: "play none reverse reset"
+        },
+        backgroundColor: "#000000",
+        ease: "in"
+    });
+
 
     // Modo noche transicion
     gsap.utils.toArray(".comparisonSection").forEach(section => {

@@ -703,6 +703,14 @@ input[type=button] {
   right: 0;
 }
 
+.feature__window--light {
+  background-color: white;
+}
+
+.feature__window--dark {
+  background-color: white;
+}
+
 .feature__intro-image {
   width: 100%;
   max-width: 320px;
@@ -1459,6 +1467,6 @@ html {
 .blank {
   padding-top: 10px;
   width: 100%;
-  height: 300vh;
+  height: 50vh;
 }
 /*# sourceMappingURL=landing.css.map */
