@@ -4,14 +4,14 @@ window.addEventListener('load', function () {
 
     // Header
     const headertL = gsap.timeline({});
-    headertL.to(".header", { yPercent: 100, opacity: 1, duration: 0.75, ease: "in" })
+    headertL.to(".header", { yPercent: 100, opacity: 1, duration: 0.5, ease: "in" })
 
     // Banner
     const bannerTl = gsap.timeline({});
-    bannerTl.to(".banner__image", { yPercent: -100, opacity: 1, duration: 0.75, ease: "in" });
-    bannerTl.to(".banner__text", { opacity: 1, duration: 0.75, ease: "in" });
-    bannerTl.to(".banner__button", { yPercent: 100, opacity: 1, duration: 0.75, ease: "in" });
-    bannerTl.to(".promo", { opacity: 1, duration: 0.6, ease: "power3"})
+    bannerTl.to(".banner__image", { yPercent: -100, opacity: 1, duration: 0.5, ease: "in" });
+    bannerTl.to(".banner__text", { opacity: 1, duration: 0.5, ease: "in" });
+    bannerTl.to(".banner__button", { yPercent: 100, opacity: 1, duration: 0.5, ease: "in" });
+    bannerTl.to(".promo", { opacity: 1, duration: 0.5, ease: "power3" })
 
 
     const benefits = document.querySelectorAll(".benefits__content")
@@ -23,13 +23,24 @@ window.addEventListener('load', function () {
             trigger: ".benefits__content",
             toggleActions: "play none reverse reset"
         },
-        stagger: 0.1,
-        duration: 0.5,
+        stagger: 0.3,
+        duration: 1,
         ease: "in"
     });
 
     //inicio
-    gsap.to(".phone-views__image", {
+    const descriptionTl = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".phone-views",
+            start: "top center",
+            toggleActions: "play none reverse reset"
+        }
+    });
+
+    descriptionTl.to( ".phone-views__text", { xPercent: 100, opacity: 1, duration: 1, ease: "circ"})
+    descriptionTl.to( ".phone-views__image", { xPercent: -100, duration: 1, ease: "circ" })
+    
+    /*gsap.to(".phone-views__image", {
         xPercent: -100,
         scrollTrigger: {
             trigger: ".phone-views__text",
@@ -48,8 +59,7 @@ window.addEventListener('load', function () {
         },
         duration: 1.5,
         ease: "circ"
-    });
-
+    });*/
 
     //Ventanas
     const featureWindowLeft = document.querySelectorAll(".feature__windowLeft");
