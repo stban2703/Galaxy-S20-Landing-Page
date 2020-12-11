@@ -13,6 +13,8 @@
         width: 100%;
         max-width: $banner-image-max-w;
         margin: $banner-image-margin;
+        opacity: 0;
+        transform: translate(0, 100%);
     }
 
     &__info {
@@ -20,11 +22,17 @@
     }
 
     &__text {
+        opacity: 0;
         margin: $banner-text-margin;
         font-family: $main-font;
         font-size: $big-font-size;
         font-weight: bold;
         color: $main-font-color;
+    }
+
+    &__button {
+        transform: translate(0, -100%);
+        opacity: 0;
     }
 }
 

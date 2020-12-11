@@ -2,6 +2,17 @@ window.addEventListener('load', function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
+    // Header
+    const headertL = gsap.timeline({});
+    headertL.to(".header", { yPercent: 100, opacity: 1, duration: 0.75, ease: "in" })
+
+    // Banner
+    const bannerTl = gsap.timeline({});
+    bannerTl.to(".banner__image", { yPercent: -100, opacity: 1, duration: 0.75, ease: "in" });
+    bannerTl.to(".banner__text", { opacity: 1, duration: 0.75, ease: "in" });
+    bannerTl.to(".banner__button", { yPercent: 100, opacity: 1, duration: 0.75, ease: "in" });
+    bannerTl.to(".promo", { opacity: 1, duration: 0.6, ease: "power3"})
+
 
     const benefits = document.querySelectorAll(".benefits__content")
     //Beneficios
@@ -182,13 +193,13 @@ window.addEventListener('load', function () {
     const newsletterContainer = document.querySelector(".newsletter__container");
     const nlForm = document.querySelector(".newsletter__form");
 
-    nlForm.addEventListener("submit", function(event) {
+    nlForm.addEventListener("submit", function (event) {
         event.preventDefault();
         const tl = gsap.timeline({});
-        tl.to(newsletterContainer, {x: -100, duration: 0.5});
-        tl.to(newsletterContainer, {x: 1000, opacity: 0, duration: 1, ease: "power3"});
-        tl.to(newsletterContainer, {x: -2000, duration: 0});
-        tl.to(newsletterContainer, {x: 0, opacity: 1, duration: 2, ease: "sine"});
+        tl.to(newsletterContainer, { x: -100, duration: 0.5 });
+        tl.to(newsletterContainer, { x: 1000, opacity: 0, duration: 1, ease: "power3" });
+        tl.to(newsletterContainer, { x: -2000, duration: 0 });
+        tl.to(newsletterContainer, { x: 0, opacity: 1, duration: 2, ease: "sine" });
     })
 
 });

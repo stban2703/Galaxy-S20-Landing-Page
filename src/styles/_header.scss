@@ -5,6 +5,8 @@
     position: fixed;
     background: $nav-gradient;
     z-index: 90;
+    transform: translate(0, -100%);
+    opacity: 0;
 }
 
 @media (max-width: $responsive-max-w) {

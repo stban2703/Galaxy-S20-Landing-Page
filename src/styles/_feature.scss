@@ -43,6 +43,7 @@
     &__intro-image {
         width: 100%;
         max-width: $section-image-max-w;
+        z-index: 1;
     }
 
     &__interaction {
