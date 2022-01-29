@@ -18,4 +18,4 @@ _SASS Compiler_
 ## Thanks for watching! ❤️
 
 ## Behance presentation
-_https://www.behance.net/gallery/104983393/Landing-Page-Galaxy-S20-Ultra_
+_https://www.behance.net/gallery/109429291/Samsung-Galaxy-S20-Ultra-Landing-Page_
