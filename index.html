@@ -27,8 +27,8 @@
             <button class="button button--go">Comprar</button>
         </nav>
     </header>
-    <main class="content">
-        <article class="banner" id="intro">
+    <main class="content" id="intro">
+        <article class="banner">
             <!--<a href="">
                 <div class="promo">
                     <span class="promo__desc">Compra hoy y obtén un descuento de</span>
@@ -99,7 +99,7 @@
 
             <p class="feature__instruction">Prueba pasando el cursor sobre la imágen</p>
             <section class="feature__interaction feature__interaction--zoom">
-                <img class="feature__image" src="./src/images/zoomcatinteraction.jpg" alt="Zoom interaction">
+                <img class="feature__image feature__image--border" src="./src/images/zoomcatinteraction.jpg" alt="Zoom interaction">
                 <img class="feature__zoom-icon" src="./src/icons/zoomicon.svg" alt="Zoom icon">
                 <div class="feature__zoom-image">
                 </div>
@@ -148,7 +148,7 @@
 
             <p class="feature__instruction">Demostración</p>
             <section class="feature__media">
-                <video autoplay muted loop class="feature__video"
+                <video autoplay muted loop class="feature__video feature__video--border"
                     src="./src/videos/galaxy-s20_highlights_8k.webm"></video>
             </section>
 
@@ -188,23 +188,23 @@
                 </p>
             </section>
 
-            <section class="comparisonSection">
+            <!--<section class="comparisonSection">
                 <div class="comparisonImage beforeImage">
                     <img src="./src/images/nightmode-off.webp" alt="before">
                 </div>
                 <div class="comparisonImage afterImage">
                     <img src="./src/images/nightmode-on.webp" alt="after">
                 </div>
-            </section>
+            </section>-->
 
-            <!--<section class="feature__interaction feature__interaction--compare">
-                <span class="feature__instruct">Prueba arrastrando el controlador</span>
+            <p class="feature__instruction">Prueba arrastrando el controlador</p>
+            <section class="feature__interaction feature__interaction--compare">
                 <input type="range" min="0" max="1" step=".01" value=".5" class="feature__slider">
                 <img class="feature__image feature__image--compare" src="./src/images/nightmode-off.webp"
                     alt="Nigh Mode Off">
                 <img class="feature__image feature__image--compare" src="./src/images/nightmode-on.webp"
                     alt="Night Mode On">
-            </section>-->
+            </section>
         </article>
 
         <!--Gallery-->

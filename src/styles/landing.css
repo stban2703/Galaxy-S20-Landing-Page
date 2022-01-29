@@ -396,9 +396,9 @@ input[type=button] {
 
 .banner__text {
   opacity: 0;
-  margin: 10px 0;
+  margin: 10px;
   font-family: "Open Sans";
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   font-weight: bold;
   color: white;
 }
@@ -630,7 +630,7 @@ input[type=button] {
 }
 
 .section-desc__header {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   font-weight: bold;
   color: #1089FF;
 }
@@ -825,6 +825,9 @@ input[type=button] {
 .feature__video {
   width: 100%;
   height: auto;
+}
+
+.feature__video--border {
   border: solid 1px #1089FF;
   border-radius: 10px;
   border-width: 10px;
@@ -839,25 +842,19 @@ input[type=button] {
   font-family: "Open Sans";
   font-weight: bold;
   color: #1089FF;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
-}
-
-.feature__instruct {
-  width: 100%;
-  position: absolute;
-  top: -50px;
-  text-align: center;
-  font-family: "Open Sans";
-  color: white;
 }
 
 .feature__image {
   width: 100%;
+  display: block;
+}
+
+.feature__image--border {
   border: solid 1px #1089FF;
   border-radius: 10px;
   border-width: 10px;
-  display: block;
 }
 
 .feature__image--compare {
@@ -1081,6 +1078,7 @@ input[type=button] {
 }
 
 .specs__table {
+  display: block;
   max-width: 1200px;
   height: 300px;
   margin-top: 20px;
@@ -1146,7 +1144,6 @@ input[type=button] {
 }
 
 .footer__brand-info {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1162,15 +1159,19 @@ input[type=button] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px 50px;
+  padding: 20px 0;
+  margin: 0, 5px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .footer__contact {
-  margin: 20px auto;
+  margin-top: 20px;
   max-width: 500px;
   font-family: "Open Sans";
   font-weight: lighter;
   color: #7c7c7c;
+  text-align: left;
 }
 
 .footer__certification {

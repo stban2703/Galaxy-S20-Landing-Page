@@ -99,10 +99,10 @@ window.addEventListener('load', function () {
   const slider = document.querySelector('.feature__slider');
   const img = document.querySelector('.feature__image--compare:last-child');
 
-  /*function handleSlider() {
+  function handleSlider() {
     img.style.width = (slider.value * 100) + '%';
   }
-  slider.addEventListener('input', handleSlider);*/
+  slider.addEventListener('input', handleSlider);
 
 
   // Gallery

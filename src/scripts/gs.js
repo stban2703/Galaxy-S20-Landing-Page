@@ -14,16 +14,16 @@ window.addEventListener('load', function () {
     bannerTl.to(".promo", { opacity: 1, duration: 0.5, ease: "power3" })
 
 
-    const benefits = document.querySelectorAll(".benefits__content")
+    //const benefits = document.querySelectorAll(".benefits__content")
     //Beneficios
     gsap.to(".benefits__content", {
         opacity: 1,
         scrollTrigger: {
             start: "top center",
             trigger: ".benefits__content",
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
-        stagger: 0.3,
+        stagger: 0.2,
         duration: 1,
         ease: "in"
     });
@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
         scrollTrigger: {
             trigger: ".phone-views",
             start: "top center",
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         }
     });
 
@@ -71,7 +71,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reverse"
             },
-            duration: 1.8,
+            duration: 1,
             ease: "expo",
         })
     });
@@ -85,7 +85,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none reverse reverse"
             },
-            duration: 1.8,
+            duration: 1,
             ease: "expo"
         })
     });
@@ -98,7 +98,7 @@ window.addEventListener('load', function () {
             opacity: 1,
             scrollTrigger: {
                 trigger: elem,
-                toggleActions: "play none reverse reset"
+                toggleActions: "play none none reset"
             },
             duration: 1,
             ease: "sine"
@@ -110,7 +110,7 @@ window.addEventListener('load', function () {
         scrollTrigger: {
             start: "top center",
             trigger: document.querySelector(".feature__interaction--zoom"),
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
         opacity: 1,
         ease: "in",
@@ -122,7 +122,7 @@ window.addEventListener('load', function () {
         scrollTrigger: {
             start: "top center",
             trigger: document.querySelector(".feature__media"),
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
         opacity: 1,
         ease: "in",
@@ -137,7 +137,7 @@ window.addEventListener('load', function () {
             start: "top top",
             trigger: document.querySelector(".blank"),
             scrub: true,
-            toggleActions: "play none reverse reset"
+            toggleActions: "play none none reset"
         },
         backgroundColor: "#000000",
         ease: "in"
@@ -179,7 +179,7 @@ window.addEventListener('load', function () {
 
 
     // Modo noche transicion
-    gsap.utils.toArray(".comparisonSection").forEach(section => {
+    /*gsap.utils.toArray(".comparisonSection").forEach(section => {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: section,
@@ -197,7 +197,7 @@ window.addEventListener('load', function () {
         tl.fromTo(section.querySelector(".afterImage"), { xPercent: 100, x: 0 }, { xPercent: 0 })
             // ...and the image the opposite way (at the same time)
             .fromTo(section.querySelector(".afterImage img"), { xPercent: -100, x: 0 }, { xPercent: 0 }, 0)
-    });
+    });*/
 
     // Animacion newsletter
     const newsletterContainer = document.querySelector(".newsletter__container");
@@ -206,10 +206,10 @@ window.addEventListener('load', function () {
     nlForm.addEventListener("submit", function (event) {
         event.preventDefault();
         const tl = gsap.timeline({});
-        tl.to(newsletterContainer, { x: -100, duration: 0.5 });
+        tl.to(newsletterContainer, { x: -100, duration: 0.2 });
         tl.to(newsletterContainer, { x: 1000, opacity: 0, duration: 1, ease: "power3" });
         tl.to(newsletterContainer, { x: -2000, duration: 0 });
-        tl.to(newsletterContainer, { x: 0, opacity: 1, duration: 2, ease: "sine" });
+        tl.to(newsletterContainer, { x: 0, opacity: 1, duration: 1, ease: "sine" });
     })
 
 });
