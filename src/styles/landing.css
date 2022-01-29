@@ -315,7 +315,7 @@ input[type=button] {
 .section-nav__text--current {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  color: #1089ff;
+  color: #1089FF;
   font-weight: bold;
 }
 
@@ -528,7 +528,7 @@ input[type=button] {
   font-family: "Open Sans";
   font-size: 1.4rem;
   text-align: center;
-  color: white;
+  color: #1089FF;
 }
 
 @media (max-width: 966px) {
@@ -616,10 +616,23 @@ input[type=button] {
           align-items: center;
 }
 
+.section-desc__colum section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .section-desc__header {
   font-size: 2.7rem;
   font-weight: bold;
-  color: #23374d;
+  color: #1089FF;
 }
 
 .section-desc__text {
@@ -630,6 +643,23 @@ input[type=button] {
   font-weight: bold;
   margin: 0 10px;
   color: #4d4d4d;
+  width: 100%;
+  max-width: 600px;
+}
+
+.section-desc__text--small {
+  margin: 0;
+  max-width: none;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.section-desc__text--left {
+  text-align: left;
+}
+
+.section-desc__text--last {
+  margin-top: 20px;
 }
 
 .section-desc--two-colums {
@@ -783,8 +813,8 @@ input[type=button] {
   max-width: none;
   width: 50px;
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
 }
 
 .feature__media {
@@ -795,10 +825,22 @@ input[type=button] {
 .feature__video {
   width: 100%;
   height: auto;
+  border: solid 1px #1089FF;
+  border-radius: 10px;
+  border-width: 10px;
 }
 
 .feature--black-bg {
   background-color: black;
+}
+
+.feature__instruction {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: #1089FF;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
 }
 
 .feature__instruct {
@@ -812,6 +854,10 @@ input[type=button] {
 
 .feature__image {
   width: 100%;
+  border: solid 1px #1089FF;
+  border-radius: 10px;
+  border-width: 10px;
+  display: block;
 }
 
 .feature__image--compare {
@@ -846,7 +892,7 @@ input[type=button] {
   .feature__zoom-image {
     width: 130px;
     height: 130px;
-    border: .5px;
+    border: 0.5px;
   }
 }
 
@@ -1069,7 +1115,7 @@ input[type=button] {
   font-family: "Open Sans";
   font-size: 1.4rem;
   font-weight: bold;
-  color: #1089ff;
+  color: #1089FF;
 }
 
 @media (max-width: 966px) {
@@ -1257,7 +1303,7 @@ input[type=button] {
   font-size: 1.1rem;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #1089ff;
+  color: #1089FF;
 }
 
 .input__field {
@@ -1274,7 +1320,7 @@ input[type=button] {
 
 .input__field:focus {
   outline: none;
-  border-color: #1089ff;
+  border-color: #1089FF;
 }
 
 .input__field:focus + label {
@@ -1282,7 +1328,7 @@ input[type=button] {
   font-size: 1.1rem;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #1089ff;
+  color: #1089FF;
 }
 
 .input__field:valid {
@@ -1290,7 +1336,7 @@ input[type=button] {
 }
 
 .button {
-  background-color: #1089ff;
+  background-color: #1089FF;
   color: white;
   font-size: 1rem;
   border-style: none;
@@ -1331,7 +1377,7 @@ input[type=button] {
 .button:active {
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: #1089ff;
+  background-color: #1089FF;
 }
 
 .darken {
@@ -1426,7 +1472,7 @@ input[type=button] {
 .burguer-menu__text--current {
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  color: #1089ff;
+  color: #1089FF;
   font-weight: bold;
 }
 

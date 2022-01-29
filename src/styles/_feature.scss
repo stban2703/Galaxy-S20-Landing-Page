@@ -23,7 +23,7 @@
         width: 50%;
         left: 0;
     }
-    
+
     &__windowRight {
         background-color: black;
         position: absolute;
@@ -90,8 +90,8 @@
         max-width: none;
         width: 50px;
         position: absolute;
-        right: 10px;
-        top: 10px;
+        right: 20px;
+        top: 20px;
     }
 
     &__media {
@@ -102,10 +102,22 @@
     &__video {
         width: 100%;
         height: auto;
+        border: solid 1px $light-blue;
+        border-radius: 10px;
+        border-width: 10px;
     }
 
     &--black-bg {
         background-color: $main-background-color;
+    }
+
+    &__instruction {
+        text-align: center;
+        font-family: $main-font;
+        font-weight: bold;
+        color: $light-blue;
+        font-size: $section-font-size;
+        margin-bottom: 20px;
     }
 
     &__instruct {
@@ -119,10 +131,16 @@
 
     &__image {
         width: 100%;
+        border: solid 1px $light-blue;
+        border-radius: 10px;
+        border-width: 10px;
+        display: block;
+
         &--compare {
             height: auto;
             object-fit: cover;
             object-position: left;
+
             &:last-child {
                 width: 50%;
                 height: 100%;
@@ -149,7 +167,7 @@
         &__zoom-image {
             width: 130px;
             height: 130px;
-            border: .5px;
+            border: 0.5px;
         }
     }
 }

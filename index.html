@@ -29,16 +29,15 @@
     </header>
     <main class="content">
         <article class="banner" id="intro">
-            <a href="">
+            <!--<a href="">
                 <div class="promo">
                     <span class="promo__desc">Compra hoy y obtén un descuento de</span>
                     <h2 class="promo__discount">30%</h2>
                 </div>
-            </a>
+            </a>-->
 
             <!--animate__animated animate__fadeIn-->
-            <img class="banner__image" src="./src/images/galaxys20banner-min.png"
-                alt="Galaxy S20">
+            <img class="banner__image" src="./src/images/galaxys20banner-min.png" alt="Galaxy S20">
             <section class="banner__info navegation animate__animated animate__fadeIn">
                 <p class="banner__text">Potencia,
                     almacenamiento, seguridad, duración y resolución
@@ -98,6 +97,7 @@
                     habías visto antes.</p>
             </section>
 
+            <p class="feature__instruction">Prueba pasando el cursor sobre la imágen</p>
             <section class="feature__interaction feature__interaction--zoom">
                 <img class="feature__image" src="./src/images/zoomcatinteraction.jpg" alt="Zoom interaction">
                 <img class="feature__zoom-icon" src="./src/icons/zoomicon.svg" alt="Zoom icon">
@@ -105,12 +105,32 @@
                 </div>
             </section>
 
-            <section class="section-desc">
+            <section class="section-desc section-desc--two-colums">
+                <div class="section-desc__colum">
+                    <section>
+                        <h3 class="section-desc__header">
+                            10x
+                        </h3>
+                        <span class="section-desc__text section-desc__text--small">Zoom Óptico Híbrido</span>
+                    </section>
+                </div>
+
+                <div class="section-desc__colum">
+                    <section>
+                        <h3 class="section-desc__header">
+                            100x Zoom
+                        </h3>
+                        <span class="section-desc__text section-desc__text--small">De alta resolución</span>
+                    </section>
+                </div>
+            </section>
+
+            <!--<section class="section-desc">
                 <h3 class="section-desc__header">
                     100x Zoom
                 </h3>
                 <span class="section-desc__text">De alta resolución</span>
-            </section>
+            </section>-->
             <p></p>
         </article>
 
@@ -121,43 +141,29 @@
                 <img class="feature__intro-image" src="./src/images/8kres.png" alt="8K">
                 <div class="feature__windowRight feature__window--light"></div>
             </section>
-
-            <section class="section-desc section-desc--two-colums">
-                <div class="section-desc__colum">
-                    <p class="section-desc__text">El Galaxy S20 Ultra ha
-                        llevado la resolución móvil del 4K al 8K. </p>
-                </div>
-
-                <div class="section-desc__colum">
-                    <span class="section-desc__text">Resolución súper nítida
-                        <br>
-                        <br>
-                        4 veces mayor a UHD<br>
-                        <br>
-                        16 veces mayor a FHD</span>
-                </div>
+            <section class="section-desc">
+                <p class="section-desc__text">El Galaxy S20 Ultra ha llevado la resolución móvil del 4K al 8K. Con una
+                    resolución súper nítida 4 veces mayor a UHD y 16 veces mayor a FHD.</p>
             </section>
 
+            <p class="feature__instruction">Demostración</p>
             <section class="feature__media">
                 <video autoplay muted loop class="feature__video"
                     src="./src/videos/galaxy-s20_highlights_8k.webm"></video>
             </section>
 
-            <section class="section-desc section-desc--two-colums">
+            <section class="section-desc">
                 <div class="section-desc__colum">
-                    <h3 class="section-desc__header section-desc__header--big">
-                        8k
-                    </h3>
-                    <span class="section-desc__text">Video</span>
-                    <br>
-                    <h3 class="section-desc__header section-desc__header--big">
-                        33Mp
-                    </h3>
-                    <span class="section-desc__text">Fotograma</span>
+                    <section>
+                        <h3 class="section-desc__header section-desc__header--big">
+                            33Mp
+                        </h3>
+                        <p class="section-desc__text section-desc__text--small section-desc__text--small">Fotograma</p>
+                    </section>
                 </div>
 
                 <div class="section-desc__colum">
-                    <p class="section-desc__text">Cada que pulses el botón de grabación, el
+                    <p class="section-desc__text section-desc__text--last">Cada que pulses el botón de grabación, el
                         video en 8K convierte un fotograma en una imagen fija de alta resolución.</p>
                 </div>
             </section>
@@ -376,7 +382,8 @@
                     Teléfonos 600 12 72 - 01 8000 112 112 - # 726
                     <br>
                     Este sitio se visualiza mejor desde Microsoft Internet Explorer 11 o superior, y/o la última versión
-                    de los navegadores Google Chrome y Mozilla Firefox.</p>
+                    de los navegadores Google Chrome y Mozilla Firefox.
+                </p>
             </section>
             <section class="footer__certification">
                 <img src="./src/images/iycslogo.webp" alt="Industria y Comercio Superintendencia">

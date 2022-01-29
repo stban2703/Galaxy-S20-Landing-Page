@@ -9,12 +9,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__header {
         font-size: $big-font-size;
         font-weight: bold;
-        color: $main-blue;
+        color: $light-blue;
     }
 
     &__text {
@@ -24,6 +30,23 @@
         font-weight: bold;
         margin: 0 10px;
         color: $dark-gray-color;
+        width: 100%;
+        max-width: 600px;
+
+        &--small {
+            margin: 0;
+            max-width: none;
+            text-align: left;
+            margin-left: 2px;
+        }
+
+        &--left {
+            text-align: left;
+        }
+
+        &--last {
+            margin-top: 20px;
+        }
     }
 
     &--two-colums {

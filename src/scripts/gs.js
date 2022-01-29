@@ -37,8 +37,8 @@ window.addEventListener('load', function () {
         }
     });
 
-    descriptionTl.to( ".phone-views__text", { xPercent: 100, opacity: 1, duration: 1, ease: "circ"})
-    descriptionTl.to( ".phone-views__image", { xPercent: -100, duration: 1, ease: "circ" })
+    descriptionTl.to( ".phone-views__text", { xPercent: 100, opacity: 1, duration: 0.3, ease: "circ"})
+    descriptionTl.to( ".phone-views__image", { xPercent: -100, duration: 0.6, ease: "circ" })
     
     /*gsap.to(".phone-views__image", {
         xPercent: -100,
