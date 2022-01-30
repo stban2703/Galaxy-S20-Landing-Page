@@ -21,6 +21,11 @@
         font-size: $big-font-size;
         font-weight: bold;
         color: $light-blue;
+
+        &--center {
+            text-align: center;
+            width: 100%;
+        }
     }
 
     &__text {

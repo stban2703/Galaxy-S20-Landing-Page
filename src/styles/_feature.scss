@@ -151,11 +151,60 @@
     }
 
     &__slider {
-        top: 0;
+        top: 50%;
         z-index: 10;
         position: absolute;
-        width: 95%;
-        height: 30px;
+        width: 100%;
+        -webkit-appearance: none;
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 0px;
+            cursor: pointer;
+            box-shadow: none;
+            background: #ffffff;
+            border-radius: 0px;
+            border: 0px solid #010101;
+        }
+        &::-moz-range-track {
+            width: 100%;
+            height: 0px;
+            cursor: pointer;
+            box-shadow: none;
+            background: #ffffff;
+            border-radius: 0px;
+            border: 0px solid #010101;
+        }
+
+        &::-webkit-slider-thumb {
+            box-shadow: none;
+            border: 0px solid #ffffff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            height: 100px;
+            width: 22px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -20px;
+        }
+        &::-moz-range-thumb {
+            box-shadow: none;
+            border: 0px solid #ffffff;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            height: 100px;
+            width: 22px;
+            border-radius: 22px;
+            background: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: -20px;
+        }
+        &::-moz-focus-outer {
+            border: 0;
+        }
     }
 }
 
@@ -165,6 +214,26 @@
             width: 130px;
             height: 130px;
             border: 0.5px;
+        }
+    }
+}
+
+@media (max-width: 403px) {
+    .feature {
+        &__slider {
+            top: 40%;
+            &::-webkit-slider-thumb {
+                height: 75px;
+                width: 15px;
+                border-radius: 22px;
+                margin-top: 0px;
+            }
+            &::-moz-range-thumb {
+                height: 75px;
+                width: 15px;
+                border-radius: 22px;
+                margin-top: 0px;
+            }
         }
     }
 }
