@@ -28,7 +28,7 @@
         transform: translate(0, -100%);
         font-size: $section-font-size;
         font-weight: bold;
-        margin: 0 10px;
+        padding: 0 10px;
         color: $dark-gray-color;
         width: 100%;
         max-width: 600px;
@@ -52,7 +52,7 @@
     &--two-colums {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
@@ -73,6 +73,43 @@
 
         &__text {
             font-size: $section-font-size - 0.1;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .section-desc {
+        &__colum {
+            section {
+                align-items: center;
+            }
+        }
+
+        &--two-colums {
+            flex-direction: column;
+        }
+
+        &__text {
+            &--small {
+                margin: 0;
+                max-width: none;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .section-desc {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 403px) {
+    .section-desc {
+        padding: 35px 0;
+        &__text {
+            font-size: $section-font-size - 0.25;
         }
     }
 }

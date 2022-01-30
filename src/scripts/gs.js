@@ -100,7 +100,7 @@ window.addEventListener('load', function () {
                 trigger: elem,
                 toggleActions: "play none none reset"
             },
-            duration: 1,
+            duration: 0.5,
             ease: "sine"
         })
     });
@@ -114,7 +114,7 @@ window.addEventListener('load', function () {
         },
         opacity: 1,
         ease: "in",
-        duration: 1.5
+        duration: 1
     });
 
     // Transicion video
@@ -126,7 +126,7 @@ window.addEventListener('load', function () {
         },
         opacity: 1,
         ease: "in",
-        duration: 1.5
+        duration: 1
     });
 
     // Oscurecer fondo

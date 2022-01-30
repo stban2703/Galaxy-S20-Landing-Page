@@ -9,6 +9,20 @@
     opacity: 0;
 }
 
+//$responsive-max-w: 966px;
+/*@media (max-width: ) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}*/
+@media (max-width: 1010px) {
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 @media (max-width: $responsive-max-w) {
     .header {
         padding-left: 0;

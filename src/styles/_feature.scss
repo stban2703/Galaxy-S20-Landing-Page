@@ -168,3 +168,11 @@
         }
     }
 }
+
+@media (max-width: 403px) {
+    .feature {
+        &__instruction {
+            font-size: $section-font-size - 0.4;
+        }
+    }
+}
